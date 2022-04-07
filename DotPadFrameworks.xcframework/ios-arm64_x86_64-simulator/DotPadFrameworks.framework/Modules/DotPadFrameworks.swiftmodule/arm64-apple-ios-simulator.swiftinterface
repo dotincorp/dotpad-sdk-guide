@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DotPadFrameworks
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DotPadFrameworks
 import BrailleEngine
 import CoreBluetooth
 @_exported import DotPadFrameworks
@@ -180,12 +180,15 @@ public protocol SendDataProtocol {
   public var isConnected: Swift.Bool
   public var deviceName: Swift.String
   public var AutoReconnect: Swift.Bool
+  public var pBrailleCode: Swift.UnsafeMutablePointer<Swift.UInt8>
+  public var order: Swift.Int
   public func scan()
   @objc override dynamic public init()
   public func startAutoPairing()
   public func connect(_ remotePeripheral: DotPadFrameworks.BKRemotePeripheral)
   public func disconnect()
   public func write(msg: Foundation.Data)
+  public func setBrailleText(_ pBrailleCode: Swift.UnsafeMutablePointer<Swift.UInt8>, _ order: Swift.Int)
   public func availabilityObserver(_ availabilityObservable: DotPadFrameworks.BKAvailabilityObservable, availabilityDidChange availability: DotPadFrameworks.BKAvailability)
   public func central(_ central: DotPadFrameworks.BKCentral, remotePeripheralDidDisconnect remotePeripheral: DotPadFrameworks.BKRemotePeripheral)
   @objc deinit
@@ -247,6 +250,8 @@ public enum DeviceType {
 @_hasMissingDesignatedInitializers open class DotPad_ProcessData {
   public var deviceType: DotPadFrameworks.DeviceType
   public var dtm_Data: [Swift.UInt8]
+  public var startSendingMessage: Swift.Bool
+  public var startSendingText: Swift.Bool
   public func setDeviceType()
   public func sendMessage(writeString: Swift.String)
   public func sendPixelPattern()
@@ -261,8 +266,6 @@ public enum DeviceType {
   public func Make_DTM_Data_File(_ deviceType: DotPadFrameworks.DeviceType)
   public func Make_DTM_Data(_ deviceType: DotPadFrameworks.DeviceType)
   public func Sub_dot_Cell_Matrix(_ cell_ID: Swift.Int) -> [[Swift.UInt8]]
-  public func hexStringToByteArray(_ str: Swift.String) -> Swift.Array<Swift.UInt8>
-  public func checkPacket(data: [Swift.UInt8]) -> Swift.Bool
   @objc deinit
 }
 extension Swift.Array where Element == Swift.UInt8 {

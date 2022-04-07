@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DotPadFrameworks-Swift.h</key>
 		<data>
-		CkiMZ6cBtXVPbQh9t8llhz7u2P0=
+		XuelEVPx1RK4BayaHfPbLd3o5KY=
 		</data>
 		<key>Headers/DotPadFrameworks.h</key>
 		<data>
@@ -14,39 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OZ8cL6J5Rw5kOAciJJrvBvGPLRw=
-		</data>
-		<key>Modules/DotPadFrameworks.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		6cx6RSHuw6M6mweWrWvnfElrZDo=
-		</data>
-		<key>Modules/DotPadFrameworks.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		6cx6RSHuw6M6mweWrWvnfElrZDo=
+		lAXuSVlxdOpL7FBO5HuhAPNanVE=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		PGY/EGDwbNuvxGxHs3jvi4rFpY8=
+		/xb+F7buymaDN4Etu0PqJHMUhYc=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		hEHQlufcggrCGohsT+IgHsOYg6U=
+		x3vBsVWufOQXQFVUPRZMlxWMYDE=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8bn2u6SKy0ek4hlT0J2d3uLsU2I=
-		</data>
-		<key>Modules/DotPadFrameworks.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		PGY/EGDwbNuvxGxHs3jvi4rFpY8=
-		</data>
-		<key>Modules/DotPadFrameworks.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		hEHQlufcggrCGohsT+IgHsOYg6U=
-		</data>
-		<key>Modules/DotPadFrameworks.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		8bn2u6SKy0ek4hlT0J2d3uLsU2I=
+		39g3Uxq2vh8ifj9KyXv2A0jhuEg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2YxzCVlRji3rANUHakuWZYgt0EoByw6iBYJZfUeLJ/Y=
+			QxgbsU8ig3w3QjzMXWVtieQIGFoTf7XVhhG9iRGKjnY=
 			</data>
 		</dict>
 		<key>Headers/DotPadFrameworks.h</key>
@@ -69,60 +49,25 @@
 			ZhOCOZMBG8ld4Ev5/wePRWx9Dv2paNZrUulI6HhrZ/o=
 			</data>
 		</dict>
-		<key>Modules/DotPadFrameworks.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hF7m9XDg6l6fmYD6idzjml7VVlq0q1ZWWSVv4HM0R1U=
-			</data>
-		</dict>
-		<key>Modules/DotPadFrameworks.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hF7m9XDg6l6fmYD6idzjml7VVlq0q1ZWWSVv4HM0R1U=
-			</data>
-		</dict>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QD1+sIGepgGabLOftUuOWfLSSlCc9e4Z4Db1WUH4YqM=
+			TmhfNWdNNV0ZI54fy7edffL1Q3UIZMSHLR16VNZiXx0=
 			</data>
 		</dict>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sf55VjbL/eXT2sqE1Sk1f02ytPvRuKkejVnpfwe0pN0=
+			VgdzEGP5iSMDAfvX6wBe1ir+T7PN82sFvtMPdZIZxv0=
 			</data>
 		</dict>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R2R7GY84Aia7srb0pO/v/JuOCWJ6YamZdxmq5hlH4Zw=
-			</data>
-		</dict>
-		<key>Modules/DotPadFrameworks.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QD1+sIGepgGabLOftUuOWfLSSlCc9e4Z4Db1WUH4YqM=
-			</data>
-		</dict>
-		<key>Modules/DotPadFrameworks.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sf55VjbL/eXT2sqE1Sk1f02ytPvRuKkejVnpfwe0pN0=
-			</data>
-		</dict>
-		<key>Modules/DotPadFrameworks.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			R2R7GY84Aia7srb0pO/v/JuOCWJ6YamZdxmq5hlH4Zw=
+			zC8XCOxQmUvQX3RU4ubHzsm5sNSrHGiEh1jtxcEg4bg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
