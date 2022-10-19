@@ -47,6 +47,8 @@ typedef enum {
 	DOT_ERROR_DISPLAY_DATA_INVALIDE_LENGTH, // display 데이터 파일명의 길이가 유효하지 않을 경우
 	DOT_ERROR_DISPLAY_DATA_SYNC_DATA_FAIL, // display 데이터의 SYNC 데이터 오류
 
+	DOT_ERROR_DISPLAY_DATA_UNCHAGNED, // 현재 출력 데이터가 이전과 같은 경우
+
 	DOT_ERROR_INVALID_DEVICE, // 유효하지 않은 장치
 
 	DOT_ERROR_MAX
