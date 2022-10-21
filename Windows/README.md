@@ -1,13 +1,12 @@
 # Windows
 
 
-### Overview
+## Overview
 * A Windows library for Dot Incorporation's Dot Pad
 * To be used for application development for the Dot Pad
 
 
-### Directory
-
+## Directory
 ```
 32bit
 ├── DotPadSDK.dll
@@ -46,7 +45,7 @@
 ```
 
 
-### File description
+## File description
 * DotPadSDK.dll: the library for control the Dot Pad
 * TTBEngine.dll: the library for braille translation using in DotPadSDK.dll
 * MeCab.dll: the library for braille translation using in MeCab.dll
@@ -56,9 +55,8 @@
 * ipadic: the dictionary folder for braille translation
 
 
-### Function description
-```
-DOT_PAD_SDK_ERROR DOT_PAD_INIT(int port_number);
+## Function description
+### DOT_PAD_SDK_ERROR DOT_PAD_INIT(int port_number);
 * the function that initiates the Dot Pad
 * an app should call this function before using the Dot Pad
     ```
@@ -68,7 +66,25 @@ DOT_PAD_SDK_ERROR DOT_PAD_INIT(int port_number);
         COM ports
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_DEINIT(void);
+### DOT_PAD_SDK_ERROR DOT_PAD_INIT_WITH_DEVICE_TYPE(int port_number, int deviceType);
+* the function that initiates the Dot Pad
+* an app should call this function before using the Dot Pad
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        COM ports
+        device type
+            0: 300(20*15)
+            1: 300(30*10)
+            2: 320
+            3: 832
+            4: 140
+            5: 20
+            6: 12
+    ```
+
+### DOT_PAD_SDK_ERROR DOT_PAD_DEINIT(void);
 * the function that de-initiates the Dot Pad
 * an app should call this function after using the Dot Pad
     ```
@@ -78,7 +94,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_DEINIT(void);
         none
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY(char* displayFile);
+### DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY(char* displayFile);
 * the function that displays on the Dot Pad using the file path
     ```
     return
@@ -87,7 +103,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY(char* displayFile);
         display file(DTM file) path
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY_DATA(uint8_t* data, int len);
+### DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY_DATA(uint8_t* data, int len);
 * the function that displays on the Dot Pad using the data
     ```
     return
@@ -97,7 +113,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY_DATA(uint8_t* data, int len);
         2nd: the length of the data
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_RESET_DISPLAY();
+### DOT_PAD_SDK_ERROR DOT_PAD_RESET_DISPLAY();
 * the function that reset the display
     ```
     return
@@ -106,7 +122,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_RESET_DISPLAY();
         none
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_BRAILLE_DISPLAY(const wchar_t* strInput, int language);
+### DOT_PAD_SDK_ERROR DOT_PAD_BRAILLE_DISPLAY(const wchar_t* strInput, int language);
 * the function that displays on the braille of Dot Pad using string
     ```
     return
@@ -130,7 +146,16 @@ DOT_PAD_SDK_ERROR DOT_PAD_BRAILLE_DISPLAY(const wchar_t* strInput, int language)
             0x12: Norwegian
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_RESET_BRAILLE_DISPLAY();
+### DOT_PAD_SDK_ERROR DOT_PAD_BRAILLE_ASCII_DISPLAY(const char* brailleASCII);
+* the function that displays on the braille of Dot Pad using braille ASCII data
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        braille ASCII data
+    ```
+
+### DOT_PAD_SDK_ERROR DOT_PAD_RESET_BRAILLE_DISPLAY();
 * the function that reset the braille display
     ```
     return
@@ -139,7 +164,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_RESET_BRAILLE_DISPLAY();
         none
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_SEND_KEY(int nKeyCode);
+### DOT_PAD_SDK_ERROR DOT_PAD_SEND_KEY(int nKeyCode);
 * the function that sends key input
     ```
     return
@@ -149,7 +174,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_SEND_KEY(int nKeyCode);
         2: next
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_GET_FW_VERSION(char* FWVersion);
+### DOT_PAD_SDK_ERROR DOT_PAD_GET_FW_VERSION(char* FWVersion);
 * the function that gets the firmware version
     ```
     return
@@ -158,7 +183,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_GET_FW_VERSION(char* FWVersion);
         firmware version characters pointer
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_GET_HW_VERSION(unsigned char& HWVersion);
+### DOT_PAD_SDK_ERROR DOT_PAD_GET_HW_VERSION(unsigned char& HWVersion);
 * the function that gets the hardware version
     ```
     return
@@ -167,7 +192,7 @@ DOT_PAD_SDK_ERROR DOT_PAD_GET_HW_VERSION(unsigned char& HWVersion);
         hardware version character pointer
     ```
 
-DOT_PAD_SDK_ERROR DOT_PAD_GET_DEVICE_NAME(char* deviceName);
+### DOT_PAD_SDK_ERROR DOT_PAD_GET_DEVICE_NAME(char* deviceName);
 * the function that gets the device name
     ```
     return
@@ -176,10 +201,8 @@ DOT_PAD_SDK_ERROR DOT_PAD_GET_DEVICE_NAME(char* deviceName);
         device name characters pointer
     ```
 
-```
 
-
-### how to use the Dot Pad SDK for Windows
+## how to use the Dot Pad SDK for Windows
 * Power on the Dot Pad
 * Check the battery status.
 * Connect the Dot Pad to your laptop

@@ -18,6 +18,8 @@ typedef enum {
 
 	DOT_ERROR_DISPLAY_TYPE_SET, // 디스플레이 유형 설정 오류
 
+	DOT_ERROR_HAS_NO_BRAILLE_DISPLAY, // 디바이스에 점자 출력 부분이 없는 경우
+
 	DOT_ERROR_READ_EEPROM_PARAM, // read EEPROM parameter error
 	DOT_ERROR_WRITE_EEPROM_PARAM, // write EEPROM parameter error
 
