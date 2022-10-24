@@ -32,6 +32,7 @@ extern "C"
 		DOTPADSDK_API DOT_PAD_SDK_ERROR DOT_PAD_GET_FW_VERSION(char* FWVersion);
 		DOTPADSDK_API DOT_PAD_SDK_ERROR DOT_PAD_GET_HW_VERSION(unsigned char& HWVersion);
 		DOTPADSDK_API DOT_PAD_SDK_ERROR DOT_PAD_GET_DEVICE_NAME(char* deviceName);
+		DOTPADSDK_API DOT_PAD_SDK_ERROR DOT_PAD_REGISTER_CALLBACK(void(CALLBACK* cb)(int));
 #if !defined(DOT_PAD_SDK_DLL_EXPORTS)
 		// function type retrieved from DotPadSDK DLL
 		typedef DOT_PAD_SDK_ERROR(*DOT_PAD_INIT_FUNC)(int port_number);
@@ -47,6 +48,7 @@ extern "C"
 		typedef DOT_PAD_SDK_ERROR(*DOT_PAD_GET_FW_VERSION_FUNC)(char* FWVersion);
 		typedef DOT_PAD_SDK_ERROR(*DOT_PAD_GET_HW_VERSION_FUNC)(unsigned char& HWVersion);
 		typedef DOT_PAD_SDK_ERROR(*DOT_PAD_GET_DEVICE_NAME_FUNC)(char* deviceName);
+		typedef DOT_PAD_SDK_ERROR(*DOT_PAD_REGISTER_CALLBACK_FUNC)(void(CALLBACK* cb)(int));
 #endif
 	}
 

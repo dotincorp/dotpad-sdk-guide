@@ -201,6 +201,22 @@
         device name characters pointer
     ```
 
+### DOT_PAD_SDK_ERROR DOT_PAD_REGISTER_CALLBACK(void(CALLBACK* cb)(int));
+* the function that registers a callback function
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        function pointer
+    ```
+* callback function
+    ```
+    return
+        none
+    parameter
+        pressed key information(e.g. 0/1/2/3 from the left on 320 Dot Pad)
+    ```
+
 
 ## how to use the Dot Pad SDK for Windows
 * Power on the Dot Pad
