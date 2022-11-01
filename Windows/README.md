@@ -113,6 +113,17 @@
         2nd: the length of the data
     ```
 
+### DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY_DATA_PART(uint8_t* data, int len, int startIdx);
+* the function that displays on the Dot Pad using the data
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        1st: display data (depends on the device type)
+        2nd: the length of the data
+        3rd: start index of the Dot Pad (from left top to right bottom)
+    ```
+
 ### DOT_PAD_SDK_ERROR DOT_PAD_RESET_DISPLAY();
 * the function that reset the display
     ```

@@ -50,6 +50,7 @@ typedef enum {
 	DOT_ERROR_DISPLAY_DATA_SYNC_DATA_FAIL, // display 데이터의 SYNC 데이터 오류
 
 	DOT_ERROR_DISPLAY_DATA_UNCHAGNED, // 현재 출력 데이터가 이전과 같은 경우
+	DOT_ERROR_DISPLAY_DATA_RANGE_INVALID, // 디스플레이 데이터가 유효하지 않음
 
 	DOT_ERROR_INVALID_DEVICE, // 유효하지 않은 장치
 
