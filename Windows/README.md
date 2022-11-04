@@ -212,8 +212,8 @@
         device name characters pointer
     ```
 
-### DOT_PAD_SDK_ERROR DOT_PAD_REGISTER_CALLBACK(void(CALLBACK* cb)(int));
-* the function that registers a callback function
+### DOT_PAD_SDK_ERROR DOT_PAD_REGISTER_KEY_CALLBACK(void(CALLBACK* cb)(int));
+* the function that registers a callback function to be called by key input
     ```
     return
         DOT_PAD_SDK_ERROR
@@ -225,7 +225,24 @@
     return
         none
     parameter
-        pressed key information(e.g. 0/1/2/3 from the left on 320 Dot Pad)
+        callback function pointer
+        - pressed key information(e.g. 0/1/2/3 from the left on 320 Dot Pad)
+    ```
+
+### DOT_PAD_SDK_ERROR DOT_PAD_REGISTER_DISPLAY_CALLBACK(void(CALLBACK* cb)(void));
+* the function that registers a callback function to be called when the display is complete
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        function pointer
+    ```
+* callback function
+    ```
+    return
+        none
+    parameter
+        callback function pointer
     ```
 
 
