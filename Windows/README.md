@@ -103,7 +103,7 @@
         display file(DTM file) path
     ```
 
-### DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY_DATA(uint8_t* data, int len);
+### DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY_DATA(uint8_t* data, int len, bool refresh);
 * the function that displays on the Dot Pad using the data
     ```
     return
@@ -111,6 +111,7 @@
     parameter
         1st: display data (depends on the device type, 300 Dot Pad needs 300 bytes of data)
         2nd: the length of the data
+        3rd: if true, refresh all displays
     ```
 
 ### DOT_PAD_SDK_ERROR DOT_PAD_DISPLAY_DATA_PART(uint8_t* data, int len, int startIdx);
