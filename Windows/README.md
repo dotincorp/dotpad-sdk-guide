@@ -213,6 +213,23 @@
         device name characters pointer
     ```
 
+### DOT_PAD_SDK_ERROR GetDisplayInfo(void(CALLBACK* cb)(int, int));
+* the function that gets the display info
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        function pointer
+    ```
+* callback function
+    ```
+    return
+        none
+    parameter
+        callback function pointer
+        - display information(1st: the number of rows, 2nd: the number of columns)
+    ```
+
 ### DOT_PAD_SDK_ERROR DOT_PAD_REGISTER_KEY_CALLBACK(void(CALLBACK* cb)(int));
 * the function that registers a callback function to be called by key input
     ```
