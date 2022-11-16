@@ -186,35 +186,8 @@
         2: next
     ```
 
-### DOT_PAD_SDK_ERROR DOT_PAD_GET_FW_VERSION(char* FWVersion);
+### DOT_PAD_SDK_ERROR DOT_PAD_GET_FW_VERSION(void(CALLBACK* cb)(char*));
 * the function that gets the firmware version
-    ```
-    return
-        DOT_PAD_SDK_ERROR
-    parameter
-        firmware version characters pointer
-    ```
-
-### DOT_PAD_SDK_ERROR DOT_PAD_GET_HW_VERSION(unsigned char& HWVersion);
-* the function that gets the hardware version
-    ```
-    return
-        DOT_PAD_SDK_ERROR
-    parameter
-        hardware version character pointer
-    ```
-
-### DOT_PAD_SDK_ERROR DOT_PAD_GET_DEVICE_NAME(char* deviceName);
-* the function that gets the device name
-    ```
-    return
-        DOT_PAD_SDK_ERROR
-    parameter
-        device name characters pointer
-    ```
-
-### DOT_PAD_SDK_ERROR GetDisplayInfo(void(CALLBACK* cb)(int, int));
-* the function that gets the display info
     ```
     return
         DOT_PAD_SDK_ERROR
@@ -226,8 +199,34 @@
     return
         none
     parameter
-        callback function pointer
-        - display information(1st: the number of rows, 2nd: the number of columns)
+        firmware version characters pointer
+    ```
+
+### DOT_PAD_SDK_ERROR DOT_PAD_GET_DEVICE_NAME(void(CALLBACK* cb)(char*));
+* the function that gets the device name
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        function pointer
+    ```
+* callback function
+    ```
+    return
+        none
+    parameter
+        device name charaters pointer
+    ```
+
+### DOT_PAD_SDK_ERROR GetDisplayInfo(int* width, int* height, int* braille);
+* the function that gets the display info
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        1st: the number of pad width cells
+        2nd: the number of pad height cells
+        3rd: the number of pad braille cells
     ```
 
 ### DOT_PAD_SDK_ERROR DOT_PAD_REGISTER_KEY_CALLBACK(void(CALLBACK* cb)(int));

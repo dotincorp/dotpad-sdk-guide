@@ -58,6 +58,6 @@ typedef enum {
 }DOT_PAD_SDK_ERROR;
 
 
-#define IS_DOT_COM_NOT_RSP_ERROR(nError) ((nError & 0x20) ? TRUE : FALSE)
+#define IS_DOT_COM_NOT_RSP_ERROR(nError) ((nError & DOT_ERROR_COM_WRITE_ERROR) ? TRUE : FALSE)
 
 #endif // !DOT_PAD_SDK_ERROR_H_
