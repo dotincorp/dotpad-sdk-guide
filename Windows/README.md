@@ -12,6 +12,7 @@
 ├── DotPadSDK.dll
 ├── TTBEngine.dll
 ├── MeCab.dll
+├── jsoncpp.dll
 ├── dot_pad_sdk.h
 ├── dot_pad_sdk_error.h
 ├── mecabrc
@@ -29,6 +30,7 @@
 ├── DotPadSDK.dll
 ├── TTBEngine.dll
 ├── MeCab.dll
+├── jsoncpp.dll
 ├── dot_pad_sdk.h
 ├── dot_pad_sdk_error.h
 ├── mecabrc
@@ -49,6 +51,7 @@
 * DotPadSDK.dll: the library for control the Dot Pad
 * TTBEngine.dll: the library for braille translation using in DotPadSDK.dll
 * MeCab.dll: the library for braille translation using in MeCab.dll
+* jsoncpp.dll: the library for JSON file parsing
 * dot_pad_sdk.h: the header file that includes information about the APIs
 * dot_pad_sdk_error.h: the header file that defines error values that will be returned after calling APIs
 * mecabrc: the setting file for braille translation
@@ -260,6 +263,15 @@
         none
     parameter
         callback function pointer
+    ```
+
+### DOT_PAD_SDK_ERROR DOT_PAD_GET_DTMS_DATA(const char* url);
+* the function that set DTMS data using URL
+    ```
+    return
+        DOT_PAD_SDK_ERROR
+    parameter
+        DTMS URL
     ```
 
 
