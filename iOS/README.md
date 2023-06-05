@@ -1,4 +1,4 @@
-# dotpad-sdk-guide
+# DotPadSDK iOS
 
 ### Overview
 
@@ -10,7 +10,7 @@
 ### Directory
 
 ```
-DotPadFrameworks.framework
+DotPadSDK-x.x.x.framework
 ├── _CodeSignature
 │   └── CodeResources
 ├── Headers

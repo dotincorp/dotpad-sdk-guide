@@ -1,4 +1,4 @@
-# Windows
+# DotPadSDK Windows
 
 
 ## Overview
@@ -9,7 +9,7 @@
 ## Directory
 ```
 32bit
-├── DotPadSDK.dll
+├── DotPadSDK-x.x.x.dll
 ├── TTBEngine.dll
 ├── MeCab.dll
 ├── jsoncpp.dll
@@ -27,7 +27,7 @@
     ├── right-id.def
     └── sys.dic
 64bit
-├── DotPadSDK.dll
+├── DotPadSDK-x.x.x.dll
 ├── TTBEngine.dll
 ├── MeCab.dll
 ├── jsoncpp.dll
