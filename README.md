@@ -24,7 +24,7 @@ DotPadSDK
 │   │   │   └── DotPadSDK-2.0.0.dll (in development)
 └── Linux
     └── 1.x.x
-        └── DotPadSDK-1.1.0.a (in development)│
+        └── DotPadSDK-1.1.0.a (in development)
 ```
 
 ### DotPadSDK Usage Sample
