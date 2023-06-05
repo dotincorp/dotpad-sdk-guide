@@ -1,10 +1,8 @@
-# DotPadSDK iOS
+# DotPadSDK Linux
 
 ## Overview
-* An iOS Swift library for Dot Incorporation's Dot Pad
-* Available for use as a Framework in Xcode
-* The open source BluetoothKit(https://github.com/rhummelmose/BluetoothKit) was used for Bluetooth Low Energy (BLE)
-* To be used for app development for the Dot Pad
+* A Windows library for Dot Incorporation's Dot Pad
+* To be used for application development for the Dot Pad
 
 ## how to use the Dot Pad SDK for Windows
 * Power on the Dot Pad
