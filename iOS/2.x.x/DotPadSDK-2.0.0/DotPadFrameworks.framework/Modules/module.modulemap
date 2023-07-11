@@ -1,0 +1,11 @@
+framework module DotPadFrameworks {
+  umbrella header "DotPadFrameworks.h"
+
+  export *
+  module * { export * }
+}
+
+module DotPadFrameworks.Swift {
+  header "DotPadFrameworks-Swift.h"
+  requires objc
+}
