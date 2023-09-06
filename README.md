@@ -2,29 +2,24 @@
 ```
 DotPadSDK
 ├── Android
-│   ├── 1.x.x
-│   │   ├── DotPadSDK-1.1.0.aar (release)
-│   ├── 2.x.x
-│   │   └── DotPadSDK-2.0.0.aar (release)
+│   ├── 1.1.0
+│   │   ├── DotPadSDK-1.1.0.aar
+│   ├── 2.0.0
+│   │   └── DotPadSDK-2.0.0.aar
 ├── iOS
-│   ├── 1.x.x
-│   │   ├── DotPadSDK-1.2.0.xcframework (release)
-│   ├── 2.x.x
-│   │   └── DotPadSDK-2.0.0.xcframework (in development)
-├── Window
-│   ├── 1.x.x
-│   │   ├── 32bit
-│   │   │   ├── DotPadSDK-1.0.0.dll (release)
-│   │   ├── 64bit
-│   │   │   └── DotPadSDK-1.0.0.dll (release)
-│   ├── 2.x.x
-│   │   ├── 32bit
-│   │   │   ├── DotPadSDK-2.0.0.dll (in development)
-│   │   ├── 64bit
-│   │   │   └── DotPadSDK-2.0.0.dll (in development)
-└── Linux
-    └── 1.x.x
-        └── DotPadSDK-1.1.0.a (in development)
+│   ├── 1.2.0
+│   │   ├── DotPadSDK-1.2.0.xcframework
+│   ├── 2.0.0
+│   │   └── DotPadSDK-2.0.0
+├── Linux
+│   ├── 1.0.0(in development)
+└── Window
+    ├── 1.0.0
+    │   ├── 32bit
+    │   │   ├── DotPadSDK-1.0.0.dll (release)
+    │   ├── 64bit
+    │   │   └── DotPadSDK-1.0.0.dll (release)
+    └── 2.0.0(in development)
 ```
 
 ### DotPadSDK Usage Sample
