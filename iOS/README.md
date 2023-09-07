@@ -15,5 +15,5 @@
 * Display the data using the functions in an application
 * After using it, de-initialize in an application
 
-### SDK Usage Sample
-[Sample Application](https://github.com/dotincorp/dotpad-sample-code-test)
+## SDK Usage Sample
+* [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/iOS)

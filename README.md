@@ -1,4 +1,6 @@
 # DotPad SDK Guide
+
+### Directory
 ```
 DotPadSDK
 ├── Android
@@ -16,11 +18,11 @@ DotPadSDK
 └── Window
     ├── 1.0.0
     │   ├── 32bit
-    │   │   ├── DotPadSDK-1.0.0.dll (release)
+    │   │   ├── DotPadSDK-1.0.0.dll
     │   ├── 64bit
-    │   │   └── DotPadSDK-1.0.0.dll (release)
+    │   │   └── DotPadSDK-1.0.0.dll
     └── 2.0.0(in development)
 ```
 
-### DotPad SDK Usage Sample
-[Sample Application](https://github.com/dotincorp/dotpad-sample-code)
+## SDK Usage Sample
+* [Sample Application](https://github.com/dotincorp/dotpad-sample-code)

@@ -8,7 +8,6 @@
 * To be used for app development for the Dot Pad
 
 ### Directory
-
 ```
 DotPadSDK-1.x.x.framework
 ├── _CodeSignature
@@ -105,5 +104,4 @@ DotPadSDK-1.x.x.framework
     - DotPadFrameworks is released under the MIT License.
 
 ### SDK Usage Sample
-
-[Sample Application](https://github.com/dotincorp/dotpad-sample-code-test)
+[Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/iOS/1.2.0)

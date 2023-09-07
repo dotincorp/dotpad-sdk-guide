@@ -72,6 +72,5 @@ DotPadSDK-2.x.x.framework
         BrailleString.text = DotPadSDK.shared.dotPadAPI.dotPadProcessData.displayTextData(text: padTextField.text!)
         ~~~
 
-### SDK Usage Sample
-
-[Sample Application](https://github.com/dotincorp/dotpad-sample-code-test)
+## SDK Usage Sample
+* [Sample Application](https://github.com/dotincorp/dotpad-sample-code-test)

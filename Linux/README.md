@@ -5,4 +5,4 @@
 * To be used for application development for the Dot Pad
 
 ### SDK Usage Sample
-[Sample Application](https://github.com/dotincorp/dotpad-sample-code-test)
+[Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Linux)
