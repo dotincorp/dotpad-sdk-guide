@@ -1,4 +1,4 @@
-# DotPadSDK Guide
+# DotPad SDK Guide
 ```
 DotPadSDK
 ├── Android
@@ -22,5 +22,5 @@ DotPadSDK
     └── 2.0.0(in development)
 ```
 
-### DotPadSDK Usage Sample
+### DotPad SDK Usage Sample
 [Sample Application](https://github.com/dotincorp/dotpad-sample-code)

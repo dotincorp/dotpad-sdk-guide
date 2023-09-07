@@ -4,46 +4,6 @@
 * A Windows library for Dot Incorporation's Dot Pad
 * To be used for application development for the Dot Pad
 
-## Directory
-```
-32bit
-├── DotPadSDK-1.0.0.dll
-├── TTBEngine.dll
-├── MeCab.dll
-├── jsoncpp.dll
-├── dot_pad_sdk.h
-├── dot_pad_sdk_error.h
-├── mecabrc
-└── ipadic
-    ├── unk.dic
-    ├── char.bin
-    ├── dicrc
-    ├── left-id.def
-    ├── matrix.bin
-    ├── pos-id.def
-    ├── rewrite.def
-    ├── right-id.def
-    └── sys.dic
-64bit
-├── DotPadSDK-1.0.0.dll
-├── TTBEngine.dll
-├── MeCab.dll
-├── jsoncpp.dll
-├── dot_pad_sdk.h
-├── dot_pad_sdk_error.h
-├── mecabrc
-└── ipadic
-    ├── unk.dic
-    ├── char.bin
-    ├── dicrc
-    ├── left-id.def
-    ├── matrix.bin
-    ├── pos-id.def
-    ├── rewrite.def
-    ├── right-id.def
-    └── sys.dic
-```
-
 ## File description
 * DotPadSDK.dll: the library for control the Dot Pad
 * TTBEngine.dll: the library for braille translation using in DotPadSDK.dll
