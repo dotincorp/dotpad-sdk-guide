@@ -1,4 +1,4 @@
-# DotPadSDK 2.x.x Windows
+# DotPadSDK 2.0.0 for Windows
 
 ## Overview
 * A Windows library for Dot Incorporation's Dot Pad

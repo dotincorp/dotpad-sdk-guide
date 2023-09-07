@@ -1,6 +1,13 @@
-# DotPadSDK Android
+# DotPadSDK 2.0.0 for Android
 
-## Version 2.0.0 Function description
+## Overview
+* A Android library for Dot Incorporation's Dot Pad
+* To be used for application development for the Dot Pad
+
+## SDK Usage Sample Code
+* [Sample Code Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Android/2.0.0)
+
+## SDK Specification
 ### displayGraphicData(data:String)
 * This function outputs graphic data to the Dot Pad
 

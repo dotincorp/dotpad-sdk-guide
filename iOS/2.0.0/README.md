@@ -1,14 +1,15 @@
-# DotPadSDK 2.x.x iOS
+# DotPadSDK 2.0.0 for iOS
 
-### Overview
-
+## Overview
 * An iOS Swift library for Dot Incorporation's Dot Pad
 * Available for use as a Framework in Xcode
 * The open source BluetoothKit(https://github.com/rhummelmose/BluetoothKit) was used for Bluetooth Low Energy (BLE)
 * To be used for app development for the Dot Pad
 
-### Directory
+## SDK Usage Sample Code
+* [Sample Code Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/iOS/2.0.0)
 
+## Directory
 ```
 DotPadSDK-2.x.x.framework
 ├── _CodeSignature
@@ -33,7 +34,6 @@ DotPadSDK-2.x.x.framework
 ```
 
 ### SDK
-
 - Features
     - Communication
         - Searches for and connects to Dot Pad via BLE
@@ -72,5 +72,3 @@ DotPadSDK-2.x.x.framework
         BrailleString.text = DotPadSDK.shared.dotPadAPI.dotPadProcessData.displayTextData(text: padTextField.text!)
         ~~~
 
-## SDK Usage Sample
-* [Sample Application](https://github.com/dotincorp/dotpad-sample-code-test)

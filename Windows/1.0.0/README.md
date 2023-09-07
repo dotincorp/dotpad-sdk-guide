@@ -1,8 +1,11 @@
-# DotPadSDK 1.0.0 Windows
+# DotPadSDK 1.0.0 for Windows
 
 ## Overview
 * A Windows library for Dot Incorporation's Dot Pad
 * To be used for application development for the Dot Pad
+
+## SDK Usage Sample Code
+* [Sample Code Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows/1.0.0)
 
 ## File description
 * DotPadSDK.dll: the library for control the Dot Pad
@@ -14,7 +17,7 @@
 * mecabrc: the setting file for braille translation
 * ipadic: the dictionary folder for braille translation
 
-## Function description
+## SDK Specification
 ### DOT_PAD_SDK_ERROR DOT_PAD_INIT(int port_number);
 * the function that initiates the Dot Pad
 * an app should call this function before using the Dot Pad
@@ -229,13 +232,3 @@
     parameter
         DTMS URL
     ```
-
-
-## how to use the Dot Pad SDK for Windows
-* Power on the Dot Pad
-* Check the battery status.
-* Connect the Dot Pad to your laptop
-* Check which port connected with the Dot Pad (Device Manager -> COM & LPT)
-* Initialize the Dot Pad using *DOT_PAD_INIT* function with the port number in an application
-* Display the data using the functions in an application
-* After using it, de-initialize using *DOT_PAD_DEINIT* function in an application
