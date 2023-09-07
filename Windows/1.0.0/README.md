@@ -4,8 +4,8 @@
 * A Windows library for Dot Incorporation's Dot Pad
 * To be used for application development for the Dot Pad
 
-## SDK Usage Sample Code
-* [Sample Code Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows/1.0.0)
+## SDK Sample Code
+* [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows/1.0.0)
 
 ## File description
 * DotPadSDK.dll: the library for control the Dot Pad
