@@ -11,26 +11,12 @@
 
 ## Directory
 ```
-DotPadSDK-2.x.x.framework
-├── _CodeSignature
-│   └── CodeResources
-├── Headers
-│   ├── DotPadFrameworks-Swift.h
-│   └── DotPadFrameworks.h
-├── Modules
-│   ├── DotPadFrameworks.swiftmodule
-│   │   ├── Project
-│   │   │   ├── arm64-apple-ios.swiftsourceinfo
-│   │   │   └── arm64.swiftsourceinfo
-│   │   ├── arm64-apple-ios.swiftdoc
-│   │   ├── arm64-apple-ios.swiftinterface
-│   │   ├── arm64-apple-ios.swiftmodule
-│   │   ├── arm64.swiftdoc
-│   │   ├── arm64.swiftinterface
-│   │   └── arm64.swiftmodule
-│   └── module.modulemap
-├── DotPadFrameworks
-└── Info.plist
+DotPadSDK-2.0.0
+├── BrailleEngine
+└── DotPadFrameworks.framework
+    ├── Headers
+    ├── Modules
+    └── _CodeSignature
 ```
 
 ### SDK
@@ -69,6 +55,8 @@ DotPadSDK-2.x.x.framework
     - Displaying to DotPad text area
         - Long sentences are printed when the right/left padding keys are pressed
         ~~~
-        BrailleString.text = DotPadSDK.shared.dotPadAPI.dotPadProcessData.displayTextData(text: padTextField.text!)
+        Supported Braille languages : Arabic, Chinese, English, French, German, Italian, Korean, Russian, Spanish, Vietnamese, Czech
+        DotPadSDK.shared.dotPadAPI.dotPadProcessData.setBrailleLanguage(LanguageCode.Korean)
+        String firstBrailleUnicode = DotPadSDK.shared.dotPadAPI.dotPadProcessData.displayTextData(text: String)
         ~~~
 
