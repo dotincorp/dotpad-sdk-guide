@@ -22,12 +22,12 @@ DotPadSDK
 │   ├── 2.0.0
 │   │   └── DotPadSDK-2.0.0
 ├── Linux
-│   ├── 1.0.0(in development)
+│   ├── 1.0.0 (in development)
 └── Window
     ├── 1.0.0
     │   ├── 32bit
     │   │   ├── DotPadSDK-1.0.0.dll
     │   ├── 64bit
     │   │   └── DotPadSDK-1.0.0.dll
-    └── 2.0.0(in development)
+    └── 2.0.0 (in development)
 ```
