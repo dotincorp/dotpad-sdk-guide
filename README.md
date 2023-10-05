@@ -29,5 +29,5 @@ DotPadSDK
     │   │   ├── DotPadSDK-1.0.0.dll
     │   ├── 64bit
     │   │   └── DotPadSDK-1.0.0.dll
-    └── 2.0.0 (in development)
+    └── 2.0.0  (in development)
 ```
