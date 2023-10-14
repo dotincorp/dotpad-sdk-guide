@@ -5,8 +5,7 @@
 * The Dot Pad is divided into an area for printing text and Braille and an area for displaying graphics.
 * Dot Pad is capable of data communication using Bluetooth BLE and USB C.
 * You can develop applications for DotPad through the DotPad SDK.  
-  
-  ![DotPad](images/dotpad.png)
+  <br><br>![DotPad](images/dotpad.png)
 
 ## SDK Sample Code
 * You can test connecting to dotpad and printing by running the sample code.
