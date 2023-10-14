@@ -9,7 +9,6 @@
 
 ## Directory
 ```
-DotPadSDK
 ├── Android
 │   ├── 1.1.0
 │   │   ├── DotPadSDK-1.1.0.aar
@@ -30,6 +29,6 @@ DotPadSDK
     │   │   └── DotPadSDK-1.0.0.dll
     └── 2.0.0  (in development)
 ```
-## Sample Code
+## Sample code using DotPad SDK
 * You can test connecting to dotpad and printing by running the sample code.
 * [Sample Code](https://github.com/dotincorp/dotpad-sample-code)
