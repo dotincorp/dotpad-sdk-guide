@@ -8,52 +8,67 @@
 * [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Android/2.0.0)
 
 ## SDK Specification
+### startScan()
+* This function scans the device.
+    ```
+    import com.dotincorp.sdk.BleRepository
+    bleRepository.startScan()
+    ```
+
+### connect()
+* This function connects to the device.
+    ```
+    import com.dotincorp.sdk.process.DotPadProcess
+    val process = DotPadProcess()
+    process.connect(bluetoothDevice, MyApplication.instance)
+    ```    
+
+### disconnect()
+* This function disconnects from the device.
+    ```
+    import com.dotincorp.sdk.process.DotPadProcess
+    val process = DotPadProcess()
+    process.disconnect()
+    ```    
+
 ### displayGraphicData(data:String)
 * This function outputs graphic data to the Dot Pad
-
     ```
-    return
-        none
-    parameter
-        Graphic Data
+    import com.dotincorp.sdk.process.DotPadProcess
+    val process = DotPadProcess()
+    process.displayGraphicData(data)
     ```
 
 ### displayGraphicData(lineId:Int, startCellIndex:Int, data:String)
 * This function outputs from a specific cell on that line
+* parameter : lineId(0~10), startCellIndex(0~29), data(Graphic Data)
 
     ```
-    return
-        none
-    parameter
-        line Id(ex: 0 ~ 10)
-        Start Cell Index(ex: 0 ~ 29)
-        Graphic Data
+    import com.dotincorp.sdk.process.DotPadProcess
+    val process = DotPadProcess()
+    process.displayGraphicData(2, 3, data)
     ```
 
 ### displayTextData(text:String)
 * the function that displays on the braille of Dot Pad using braille ASCII data
-
     ```
-    return
-        none
-    parameter
-        ASCII Text Data
+    import com.dotincorp.sdk.process.DotPadProcess
+    val process = DotPadProcess()
+    process.displayTextData(data)
     ```
 
 ### setTextToBrailleText(text : String)
 * This function uses Braille ASCII data and sets it to be displayed in Braille of Dot Pad.
     ```
-    return
-        none
-    parameter
-        ASCII Text Data
+    import com.dotincorp.sdk.process.DotPadProcess
+    val process = DotPadProcess()
+    process.setTextToBrailleText(data)
     ```
 
 ### displayBrailleData()
 * If there is a value set to be displayed in Braille of Dot Pad, it is a function that outputs it
     ```
-    return
-        none
-    parameter
-        Braille Hex Data
+    import com.dotincorp.sdk.process.DotPadProcess
+    val process = DotPadProcess()
+    process.displayBrailleData(data)
     ```
