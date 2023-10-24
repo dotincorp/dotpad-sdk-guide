@@ -7,9 +7,12 @@
 ## SDK Sample Code
 * [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Android/2.0.0)
 
+## Dot Pad Line ID and Cell Index
+    <img src="images/dotpad.png">
+    
 ## SDK Specification
 ### startScan()
-* This function scans the device.
+* This function scans the Dot Pad device.
     ```
     import com.dotincorp.sdk.BleRepository
 
