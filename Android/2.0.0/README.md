@@ -57,9 +57,9 @@
 
 ### displayGraphicData(lineId:Int, startCellIndex:Int, data:String)
 * This function is used to output data to a specific line and cell of the Dot Pad.
-* Dot Pad's line ID consists of 10 graphics line (1~10) and 1 text line (0).
-* The Dot Pad cell index consists of 30 numbers(0~29)
-* parameter : lineId(0~10), startCellIndex(0~29), data(Graphic Data)
+* Dot Pad's line ID consists of 10 graphics line (1..10) and 1 text line (0).
+* The Dot Pad cell index consists of 30 numbers(0..29)
+* parameter : lineId(0..10), startCellIndex(0..29), data(Graphic Data)
     ```
     import com.dotincorp.sdk.process.DotPadProcess
     val process = DotPadProcess()
