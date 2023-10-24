@@ -8,7 +8,7 @@
 * [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Android/2.0.0)
 
 ## Dot Pad Line ID and Cell Index
-    <img src="images/dotpad.png">
+   <img src="images/dotpad.png">
     
 ## SDK Specification
 ### startScan()
@@ -20,7 +20,7 @@
     ```
 
 ### connect()
-* This function connects to the device.
+* This function connects to the Dot Pad device.
     ```
     import com.dotincorp.sdk.process.DotPadProcess
 
@@ -29,7 +29,7 @@
     ```    
 
 ### disconnect()
-* This function disconnects from the device.
+* This function disconnects from the Dot Pad device.
     ```
     import com.dotincorp.sdk.process.DotPadProcess
 
@@ -38,7 +38,7 @@
     ```    
 
 ### displayGraphicData(data:String)
-* This function outputs graphic data to the Dot Pad
+* This function print data to the Dot Pad graphic area.
 * Graphic data is data converted from 8 bits to a hex string.
     ```
     import com.dotincorp.sdk.process.DotPadProcess
@@ -59,7 +59,7 @@
     ```
 
 ### displayGraphicData(lineId:Int, startCellIndex:Int, data:String)
-* This function is used to output data to a specific line and cell of the Dot Pad.
+* This function prints data on specific lines and cells in the Dot Pad graphic area.
 * Dot Pad's line ID consists of 10 graphics line (1..10) and 1 text line (0).
 * The Dot Pad cell index consists of 30 numbers(0..29)
 * parameter : lineId(0..10), startCellIndex(0..29), data(Graphic Data)
@@ -71,7 +71,7 @@
     ```
 
 ### displayTextData(text:String)
-* This function transcribes plain text and print it to the Dot Pad text area.
+* This function prints braille data in the Dot Pad text area.
 * The braille language follows the language set in the OS.
     ```
     import com.dotincorp.sdk.process.DotPadProcess
