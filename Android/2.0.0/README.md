@@ -12,6 +12,7 @@
 * This function scans the device.
     ```
     import com.dotincorp.sdk.BleRepository
+
     bleRepository.startScan()
     ```
 
@@ -19,6 +20,7 @@
 * This function connects to the device.
     ```
     import com.dotincorp.sdk.process.DotPadProcess
+
     val process = DotPadProcess()
     process.connect(bluetoothDevice, MyApplication.instance)
     ```    
@@ -27,6 +29,7 @@
 * This function disconnects from the device.
     ```
     import com.dotincorp.sdk.process.DotPadProcess
+
     val process = DotPadProcess()
     process.disconnect()
     ```    
@@ -35,6 +38,7 @@
 * This function outputs graphic data to the Dot Pad
     ```
     import com.dotincorp.sdk.process.DotPadProcess
+
     val process = DotPadProcess()
     process.displayGraphicData(data)
     ```
@@ -53,6 +57,7 @@
 * the function that displays on the braille of Dot Pad using braille ASCII data
     ```
     import com.dotincorp.sdk.process.DotPadProcess
+
     val process = DotPadProcess()
     process.displayTextData(data)
     ```
@@ -69,6 +74,7 @@
 * If there is a value set to be displayed in Braille of Dot Pad, it is a function that outputs it
     ```
     import com.dotincorp.sdk.process.DotPadProcess
+    
     val process = DotPadProcess()
     process.displayBrailleData(data)
     ```
