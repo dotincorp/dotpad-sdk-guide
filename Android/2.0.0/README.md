@@ -56,9 +56,9 @@
     ```
 
 ### displayGraphicData(lineId:Int, startCellIndex:Int, data:String)
-* This function is used to output data to a specific line and cell of the dotpad.
-* DotPad's line ID consists of 10 graphics line (1~10) and 1 text line (0).
-* The dotpad cell index consists of 30 numbers(0~29)
+* This function is used to output data to a specific line and cell of the Dot Pad.
+* Dot Pad's line ID consists of 10 graphics line (1~10) and 1 text line (0).
+* The Dot Pad cell index consists of 30 numbers(0~29)
 * parameter : lineId(0~10), startCellIndex(0~29), data(Graphic Data)
     ```
     import com.dotincorp.sdk.process.DotPadProcess
@@ -68,27 +68,12 @@
     ```
 
 ### displayTextData(text:String)
-* the function that displays on the braille of Dot Pad using braille ASCII data
+* This function transcribes plain text and print it to the Dot Pad text area.
+* The braille language follows the language set in the OS.
     ```
     import com.dotincorp.sdk.process.DotPadProcess
 
     val process = DotPadProcess()
+    var data = "I love the dot pad"
     process.displayTextData(data)
-    ```
-
-### setTextToBrailleText(text : String)
-* This function uses Braille ASCII data and sets it to be displayed in Braille of Dot Pad.
-    ```
-    import com.dotincorp.sdk.process.DotPadProcess
-    val process = DotPadProcess()
-    process.setTextToBrailleText(data)
-    ```
-
-### displayBrailleData()
-* If there is a value set to be displayed in Braille of Dot Pad, it is a function that outputs it
-    ```
-    import com.dotincorp.sdk.process.DotPadProcess
-
-    val process = DotPadProcess()
-    process.displayBrailleData(data)
     ```
