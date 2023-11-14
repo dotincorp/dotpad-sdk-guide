@@ -1,11 +1,13 @@
-# DotPadSDK 1.0.0 for Windows
+# DotPadSDK-1.0.0 for Windows
 
-## Overview
-* A Windows library for Dot Incorporation's Dot Pad
-* To be used for application development for the Dot Pad
+## Change history
+* Add function to process dtms file
 
 ## SDK Sample Code
 * [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows/1.0.0)
+
+## Install
+* Unzip the ipadic.zip compressed file (folder name ipadic)
 
 ## File description
 * DotPadSDK.dll: the library for control the Dot Pad
@@ -15,7 +17,7 @@
 * dot_pad_sdk.h: the header file that includes information about the APIs
 * dot_pad_sdk_error.h: the header file that defines error values that will be returned after calling APIs
 * mecabrc: the setting file for braille translation
-* ipadic: the dictionary folder for braille translation
+* ipadic.zip: dictionary table file used for Japanese by Dotjeom Station
 
 ## SDK Specification
 ### DOT_PAD_SDK_ERROR DOT_PAD_INIT(int port_number);
