@@ -7,6 +7,7 @@
 ## History
 * 1.0.0 : 2023-02-13 / DTMS file processing
 * 1.1.0 : 2023-11-13 / add liblouis translation
+* 1.1.0 : 2023-11-20 / add liblouis wordrap
 
 ## SDK Sample Code
 * [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows)

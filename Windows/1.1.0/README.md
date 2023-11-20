@@ -109,19 +109,28 @@
         1st: string data that will be converted to braille, UTF-16
         2nd: language option
             0x01: Arabic
+            0x02: Chinese Traditional
             0x03: Chinese Mandarin
             0x05: English
             0x06: French
             0x07: German
             0x08: Italian
-            0x0B: Russian
             0x09: Japanese
             0x0A: Korean
+            0x0B: Russian
             0x0C: Spanish
             0x0D: Vietnamese
+            0x0F: Portuguese
             0x10: Czech
             0x11: Polish
             0x12: Norwegian
+            0x13: Kazakh
+            0x14: Danish
+            0x15: Greek
+            0x16: Swedish
+            0x17: Finish
+            0x18: Thai
+            0x19: Uzbek
     ```
 
 ### DOT_PAD_SDK_ERROR DOT_PAD_BRAILLE_ASCII_DISPLAY(const char* brailleASCII);
