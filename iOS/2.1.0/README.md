@@ -1,4 +1,4 @@
-# DotPadSDK 2.0.0 for iOS
+# DotPadSDK 2.1.0 for iOS
 
 ## Overview
 * An iOS Swift library for Dot Incorporation's Dot Pad
@@ -11,8 +11,7 @@
 
 ## Directory
 ```
-DotPadSDK-2.0.0
-├── BrailleEngine
+DotPadSDK-2.1.0
 └── DotPadFrameworks.framework
     ├── Headers
     ├── Modules
