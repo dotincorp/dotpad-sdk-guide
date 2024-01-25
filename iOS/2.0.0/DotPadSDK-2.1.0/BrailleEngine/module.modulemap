@@ -1,6 +1,0 @@
-module BrailleEngine {
-    umbrella header "../../DotPadFrameworks-swift.h"
-    header "../ttb_engine.h"
-    export *
-    module * { export * }
-}
