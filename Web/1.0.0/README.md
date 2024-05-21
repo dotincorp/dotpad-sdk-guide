@@ -11,7 +11,7 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
 </p>
 
 ## Download
-  - DotPadSDK-1.0.0-min.js [<a href="./DotPadSDK-1.0.0-min.js">download</a>]
+  - DotPadSDK-1.0.0.js [<a href="./DotPadSDK-1.0.0.js">download</a>]
 
 ## Class & Method
 
