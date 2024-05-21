@@ -4,16 +4,22 @@
 
 The `DotPadSDK` class provides an interface for managing Bluetooth connections with DotPad devices. It includes methods to request a device, connect to it, disconnect, print data, and listen for device notifications.
 
-## Class Initialization
+<p align="center">
+  <img alt="Graphic Mode" src="../../images/graphic-mode.png" style="display: inline;" />
+  <img alt="Text Mode" src="../../images/text-mode.png" style="display: inline;" />
+</p>
 
-- **Constructor**:
+## Download
+  - DotPadSDK-1.0.0-min.js
+
+## Class & Method
+
+### Constructor
   - Initializes new instances of the DotPad SDK with predefined Bluetooth service and characteristic IDs.
   - Example:
     ```javascript
     const sdk = new DotPadSDK();
     ```
-
-## Methods
 
 ### request()
 
@@ -60,9 +66,9 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
 - Returns: A `Promise` that resolves when the data has been sent to the device.
 - Example:
   ```javascript
-  sdk.print(device, 'data to print', 'text');
+  const printData = "22"; // hex data
+  sdk.print(device, printData, 'text');
   ```
-
 ### addListenerNotification(device, callbackFunction)
 
 - Registers a callback to listen for notifications from the connected Bluetooth device.
