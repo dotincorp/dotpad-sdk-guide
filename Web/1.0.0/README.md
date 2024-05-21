@@ -5,9 +5,9 @@
 The `DotPadSDK` class provides an interface for managing Bluetooth connections with DotPad devices. It includes methods to request a device, connect to it, disconnect, print data, and listen for device notifications.
 
 <p align="center">
-  <img alt="DotPad" src="../../images/dotpad-info.png" style="display: inline; width:600px" />
-  <img alt="Graphic Mode" src="../../images/graphic-mode.png" style="display: inline;" />
-  <img alt="Text Mode" src="../../images/text-mode.png" style="display: inline;" />
+  <img alt="DotPad" src="../../images/dotpad-info.png" style="display: inline; height: 250px" />
+  <img alt="Graphic Mode" src="../../images/graphic-mode.png" style="display: inline; height: 250px" />
+  <img alt="Text Mode" src="../../images/text-mode.png" style="display: inline; height: 250px" />
 </p>
 
 ## Download
