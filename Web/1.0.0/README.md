@@ -23,7 +23,6 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
     ```
 
 ### request()
-
 - Initiates a Bluetooth device request with specific filters and services.
 - Returns: A `Promise` resolving to the Bluetooth device requested.
 - Example:
@@ -32,7 +31,6 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
   ```
 
 ### connect(device)
-
 - Establishes a connection to a specified Bluetooth device.
 - Parameters:
   - `device`: The target device to connect to.
@@ -47,7 +45,6 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
   ```
 
 ### disconnect(device)
-
 - Disconnects a connected Bluetooth device.
 - Parameters:
   - `device`: The device to disconnect.
@@ -57,31 +54,67 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
   sdk.disconnect(device).then(() => console.log('Device disconnected'));
   ```
 
-### print(device, data, mode)
-
-- Sends data to a connected Bluetooth device for printing.
+### displayGraphicData(device, hexData)
+- Sends hexadecimal data to the graphic display area of the connected device, affecting all 300 cells.
 - Parameters:
-  - `device`: The device to print to.
-  - `data`: The data to be printed.
-  - `mode`: The mode of printing (`graphic` or `text`).
-- Returns: A `Promise` that resolves when the data has been sent to the device.
+  - `device`: The connected DotPad device.
+  - `hexData`: Hexadecimal string representing the graphic data.
 - Example:
   ```javascript
-  const printData = "22"; // hex data
-  sdk.print(device, printData, 'text');
+  sdk.displayGraphicData(device, 'hex data here');
   ```
-### addListenerNotification(device, callbackFunction)
 
+### displayGraphicLineData(device, lineId, cellIndex, hexData)
 - Registers a callback to listen for notifications from the connected Bluetooth device.
 - Parameters:
-  - `device`: The device to listen to.
-  - `callbackFunction`: The function to call when a notification is received.
-- Returns: A `Promise` that resolves when the listener has been added.
+  - `device`: The connected DotPad device.
+  - `lineId`: The DotPad line index (1-10).
+  - `cellIndex`: The DotPad cell index (0-29).
+  - `hexData`: Hexadecimal string for the line data.
 - Example:
   ```javascript
-  sdk.addListenerNotification(device, notification => console.log(notification));
+  sdk.displayGraphicLineData(device, 1, 5, 'hex data here');
   ```
 
-## Usage
+### resetGraphicData(device)
+- Resets the entire graphic area of the DotPad to a default state.
+- Parameters:
+  - `device`: The connected DotPad device.
+- Example:
+  ```javascript
+  sdk.resetGraphicData(device);
+  ```
 
-To utilize the `DotPadSDK`, instantiate the class, connect to a device using `connect()`, and then use `print()` to send data to the device or `addListenerNotification()` to listen for device events.
+### displayTextData(device, hexData)
+- Sends Braille hex data to the text area of the DotPad and handles data wrapping.
+- Parameters:
+  - `device`: The connected DotPad device.
+  - `hexData`: Hexadecimal string representing the Braille data.
+- Example:
+  ```javascript
+  sdk.displayTextData(device, 'braille hex data here');
+  ```  
+  
+### resetTextData(device)
+- Clears the text area of the DotPad, resetting it to a blank state.
+- Parameters:
+  - `device`: The connected DotPad device.
+- Example:
+  ```javascript
+  sdk.resetTextData(device);
+  ```  
+
+### addListenerKeyEvent(device, callbackFunction)
+- Registers a callback function to handle key event notifications from the DotPad.
+- Parameters:
+  - `device`: The connected DotPad device.
+  - `callbackFunction`: Function to execute key event notification.
+- keyCode:  
+  - Panning Key : P1, P2
+  - Functio Key : F1, F2, F3, F4
+- Example:
+  ```javascript
+  sdk.addListenerKeyEvent(device, function(keyCode) {
+    console.log('Key code:', keyCode);
+  });
+  ```  
