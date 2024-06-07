@@ -33,6 +33,7 @@ wget https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Linux/1.0.0(in%20de
 
 ### Connecting to a Device
 
+This version only supports 20-cell devices.
 To connect to a Dot device, use the `connect` method with the device address.
 
 ```cpp
