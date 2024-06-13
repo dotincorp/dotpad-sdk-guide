@@ -10,7 +10,7 @@ Welcome to the Dot API SDK repository! This SDK allows developers to interact wi
   - [Connecting to a Device](#connecting-to-a-device)
   - [Setting Braille Language](#setting-braille-language)
   - [Displaying Text Data](#displaying-text-data)
-  - [Send Data Protocol](#send-data-protocol)
+  - [Handling Button Callbacks](#handling-button-callbacks)
 - [API Documentation](#api-documentation)
   - [Classes and Methods](#classes-and-methods)
   - [Enumerations](#enumerations)
