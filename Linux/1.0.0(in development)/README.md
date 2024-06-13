@@ -65,20 +65,22 @@ Display text data on the device using the `displayTextData` method.
 dot.displayTextData("Hello, world!");
 ```
 
-### Send Data Protocol
+### Handling Button Callbacks
 
-Implement the `SendDataProtocol` interface to handle custom data sending.
+The `SendDataProtocol` class is designed to handle button callbacks from a device. You can inherit from this class and override the `sendDataFunc` method to handle these callback events. The `dataCode` parameter represents the callback event type, and the `dataStr` parameter represents the value associated with the event.
+
+#### Usage
+
+To handle button callbacks, create a class that inherits from `SendDataProtocol` and override the `sendDataFunc` method.
 
 ```cpp
 class MySendData : public SendDataProtocol {
 public:
     void sendDataFunc(DataCodes dataCode, const std::string& dataStr) override {
-        // Handle data sending
+        // Handle the callback event
+        std::cout << "Received dataCode: " << dataCode << ", dataStr: " << dataStr << std::endl;
     }
 };
-
-MySendData sendData;
-dot.setSendDataProtocol(&sendData);
 ```
 
 ## API Documentation
