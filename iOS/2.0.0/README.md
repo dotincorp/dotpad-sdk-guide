@@ -11,7 +11,7 @@
 
 ## Directory
 ```
-DotPadSDK-2.0.0
+2.0.0
 ├── BrailleEngine
 └── DotPadFrameworks.framework
     ├── Headers

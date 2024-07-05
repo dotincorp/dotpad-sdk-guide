@@ -1,0 +1,4 @@
+framework module DotPadFrameworks {
+  header "DotPadFrameworks/DotPadFrameworks-swift.h\x03\u2028"
+  requires objc
+}

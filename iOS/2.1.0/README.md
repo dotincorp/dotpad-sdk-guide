@@ -11,7 +11,7 @@
 
 ## Directory
 ```
-DotPadSDK-2.1.0
+2.1.0
 └── DotPadFrameworks.framework
     ├── Headers
     ├── Modules
