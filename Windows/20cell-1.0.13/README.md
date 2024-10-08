@@ -3,6 +3,7 @@
 ## Change history
 * Added 20-cell button key callback function (2024.02.27)
 * Added retry_interval (2024.04.08)
+* Added japanese language (2024.10.08)
 
 ## C++ Sample Source
 * 헤더파일 
@@ -29,4 +30,9 @@ void CALLBACK DisplayDialogBoxByKeyNoti(const int key) {
 ```
 // Cell retry interval time 0.1s
 retry_interval=100
+```
+
+* Japanese language
+```
+The ipadic folder, which contains the necessary subfiles, must be located in the same directory as TTBEngine.dll.
 ```
