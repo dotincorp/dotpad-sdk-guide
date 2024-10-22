@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DotPadFrameworks
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import BrailleEngine
 import CoreBluetooth
 import Foundation
@@ -138,7 +137,6 @@ public protocol BKPeripheralDelegate : AnyObject {
   @objc deinit
 }
 public enum DeviceType {
-  case DotPad300
   case DotPad320
   case DotPad832
   case Default
@@ -432,6 +430,7 @@ public protocol SendDataProtocol {
   public var discoveries_filtered: [DotPadFrameworks.BKDiscovery]
   public var delegate_SDP: (any DotPadFrameworks.SendDataProtocol)?
   public var firmwareInfo: Swift.String
+  public func startCentral()
   @objc override dynamic public init()
   public func scan()
   public func availabilityObserver(_ availabilityObservable: any DotPadFrameworks.BKAvailabilityObservable, availabilityDidChange availability: DotPadFrameworks.BKAvailability)
@@ -450,6 +449,7 @@ public protocol SendDataProtocol {
   public func data(to data: Foundation.Data)
   public func setRefreshType(type: DotPadFrameworks.RefreshType)
   public func stopSendModule()
+  public func stopScan()
   @objc deinit
 }
 public protocol BKCentralDelegate : AnyObject {
