@@ -399,6 +399,41 @@ public enum NumberOfBraillePerLine : Swift.Int32 {
     get
   }
 }
+public class BrailleData {
+  @objc deinit
+  public init(dotPad: DotPadFrameworks.DotPad)
+  public init(dotPad: DotPadFrameworks.DotPad, textString: Swift.String)
+  public init(dotPad: DotPadFrameworks.DotPad, brailleString: Swift.String)
+  public func initBrailleData()
+  public func getBrailleCodeLength() -> Swift.Int
+  public func getBrailleUnicode() -> Swift.String
+  public func setMaxBrailleCodeOffset()
+  public func getMaxBrailleCodeOffset() -> Swift.Int
+  public func setBrailleCodeOffset(offset: Swift.Int)
+  public func getBrailleCodeOffset() -> Swift.Int
+  public func setBrailleLanguage(brailleLanguageCode: Swift.Int32)
+  public func getBrailleLanguage() -> Swift.Int32
+  public func getBrailleHexString(startIndex: Swift.Int, numBraille: Swift.Int) -> Swift.String
+  public func getBrailleHexString() -> Swift.String
+  public func setBrailleLanguageByDeviceLanguage()
+  public func setBrailleLanguageGrade(grade: Swift.Int)
+  public func getBrailleLanguageGrade() -> Swift.Int?
+  public func setTranslateEngine(_ translateEngine: DotPadFrameworks.TranslateEngine)
+  public func getTranslateEngine() -> DotPadFrameworks.TranslateEngine
+  public func getTranslateOption() -> DotPadFrameworks.TranslateOption
+  public func setTranslateOption(_ selectTranslateOption: DotPadFrameworks.TranslateOption)
+  public func getPinOption() -> DotPadFrameworks.PinOption
+  public func setPinOption(_ selectPinOption: DotPadFrameworks.PinOption)
+  public func getTranslateData(originText: Swift.String) -> Swift.String
+  public func setBrailleLines(_ brailleLines: Swift.Int32)
+  public func getBrailleLines() -> Swift.Int32
+  public func setBrailleStyle(_ bailleStyle: Swift.Int32)
+  public func getBrailleStyle() -> Swift.Int32
+  public func setHighlightTagUseSettings(use: Swift.Int)
+  public func setCursorUseSettings(use: Swift.Int)
+  public func setNumberOfSettiongsColumns(columns: Swift.Int)
+  public func getUserOptionPointer() -> Swift.UnsafeMutablePointer<Swift.Int32>
+}
 public protocol SendDataProtocol {
   func sendDataFunc(_ dataCode: DotPadFrameworks.DotPadCommunication.DataCodes, _ dataStr: Swift.String)
 }
@@ -414,8 +449,11 @@ public protocol SendDataProtocol {
     case KeyFunction3
     case KeyFunction4
     case KeyFunction12
+    case KeyFunction13
     case KeyFunction23
+    case KeyFunction24
     case KeyFunction34
+    case KeyElse
     case PanningAll
     case PanningLeft
     case PanningRight
@@ -432,6 +470,7 @@ public protocol SendDataProtocol {
   public var delegate_SDP: (any DotPadFrameworks.SendDataProtocol)?
   public var firmwareInfo: Swift.String
   @objc override dynamic public init()
+  public func startCentral()
   public func scan()
   public func availabilityObserver(_ availabilityObservable: any DotPadFrameworks.BKAvailabilityObservable, availabilityDidChange availability: DotPadFrameworks.BKAvailability)
   public func availabilityObserver(_ availabilityObservable: any DotPadFrameworks.BKAvailabilityObservable, unavailabilityCauseDidChange unavailabilityCause: DotPadFrameworks.BKUnavailabilityCause)
@@ -449,6 +488,7 @@ public protocol SendDataProtocol {
   public func data(to data: Foundation.Data)
   public func setRefreshType(type: DotPadFrameworks.RefreshType)
   public func stopSendModule()
+  public func stopScan()
   @objc deinit
 }
 public protocol BKCentralDelegate : AnyObject {

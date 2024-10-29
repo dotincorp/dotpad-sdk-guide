@@ -10348,6 +10348,812 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BrailleData",
+        "printedName": "BrailleData",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dotPad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrailleData",
+                "printedName": "DotPadFrameworks.BrailleData",
+                "usr": "s:16DotPadFrameworks11BrailleDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DotPad",
+                "printedName": "DotPadFrameworks.DotPad",
+                "usr": "s:16DotPadFrameworks0aB0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03dotB0AcA0aB0C_tcfc",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03dotB0AcA0aB0C_tcfc",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dotPad:textString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrailleData",
+                "printedName": "DotPadFrameworks.BrailleData",
+                "usr": "s:16DotPadFrameworks11BrailleDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DotPad",
+                "printedName": "DotPadFrameworks.DotPad",
+                "usr": "s:16DotPadFrameworks0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03dotB010textStringAcA0aB0C_SStcfc",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03dotB010textStringAcA0aB0C_SStcfc",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dotPad:brailleString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrailleData",
+                "printedName": "DotPadFrameworks.BrailleData",
+                "usr": "s:16DotPadFrameworks11BrailleDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DotPad",
+                "printedName": "DotPadFrameworks.DotPad",
+                "usr": "s:16DotPadFrameworks0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03dotB013brailleStringAcA0aB0C_SStcfc",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03dotB013brailleStringAcA0aB0C_SStcfc",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initBrailleData",
+            "printedName": "initBrailleData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC04initdE0yyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC04initdE0yyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleCodeLength",
+            "printedName": "getBrailleCodeLength()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD10CodeLengthSiyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD10CodeLengthSiyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleUnicode",
+            "printedName": "getBrailleUnicode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD7UnicodeSSyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD7UnicodeSSyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMaxBrailleCodeOffset",
+            "printedName": "setMaxBrailleCodeOffset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC06setMaxD10CodeOffsetyyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC06setMaxD10CodeOffsetyyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMaxBrailleCodeOffset",
+            "printedName": "getMaxBrailleCodeOffset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC06getMaxD10CodeOffsetSiyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC06getMaxD10CodeOffsetSiyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrailleCodeOffset",
+            "printedName": "setBrailleCodeOffset(offset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03setD10CodeOffset6offsetySi_tF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03setD10CodeOffset6offsetySi_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleCodeOffset",
+            "printedName": "getBrailleCodeOffset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD10CodeOffsetSiyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD10CodeOffsetSiyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrailleLanguage",
+            "printedName": "setBrailleLanguage(brailleLanguageCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03setD8Language07brailleG4Codeys5Int32V_tF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03setD8Language07brailleG4Codeys5Int32V_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleLanguage",
+            "printedName": "getBrailleLanguage()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD8Languages5Int32VyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD8Languages5Int32VyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleHexString",
+            "printedName": "getBrailleHexString(startIndex:numBraille:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD9HexString10startIndex03numD0SSSi_SitF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD9HexString10startIndex03numD0SSSi_SitF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleHexString",
+            "printedName": "getBrailleHexString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD9HexStringSSyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD9HexStringSSyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrailleLanguageByDeviceLanguage",
+            "printedName": "setBrailleLanguageByDeviceLanguage()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03setd16LanguageByDeviceG0yyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03setd16LanguageByDeviceG0yyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrailleLanguageGrade",
+            "printedName": "setBrailleLanguageGrade(grade:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03setD13LanguageGrade5gradeySi_tF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03setD13LanguageGrade5gradeySi_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleLanguageGrade",
+            "printedName": "getBrailleLanguageGrade()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD13LanguageGradeSiSgyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD13LanguageGradeSiSgyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTranslateEngine",
+            "printedName": "setTranslateEngine(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TranslateEngine",
+                "printedName": "DotPadFrameworks.TranslateEngine",
+                "usr": "s:16DotPadFrameworks15TranslateEngineO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC18setTranslateEngineyyAA0gH0OF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC18setTranslateEngineyyAA0gH0OF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTranslateEngine",
+            "printedName": "getTranslateEngine()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TranslateEngine",
+                "printedName": "DotPadFrameworks.TranslateEngine",
+                "usr": "s:16DotPadFrameworks15TranslateEngineO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC18getTranslateEngineAA0gH0OyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC18getTranslateEngineAA0gH0OyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTranslateOption",
+            "printedName": "getTranslateOption()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TranslateOption",
+                "printedName": "DotPadFrameworks.TranslateOption",
+                "usr": "s:16DotPadFrameworks15TranslateOptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC18getTranslateOptionAA0gH0OyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC18getTranslateOptionAA0gH0OyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTranslateOption",
+            "printedName": "setTranslateOption(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TranslateOption",
+                "printedName": "DotPadFrameworks.TranslateOption",
+                "usr": "s:16DotPadFrameworks15TranslateOptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC18setTranslateOptionyyAA0gH0OF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC18setTranslateOptionyyAA0gH0OF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPinOption",
+            "printedName": "getPinOption()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PinOption",
+                "printedName": "DotPadFrameworks.PinOption",
+                "usr": "s:16DotPadFrameworks9PinOptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC12getPinOptionAA0gH0OyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC12getPinOptionAA0gH0OyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPinOption",
+            "printedName": "setPinOption(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PinOption",
+                "printedName": "DotPadFrameworks.PinOption",
+                "usr": "s:16DotPadFrameworks9PinOptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC12setPinOptionyyAA0gH0OF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC12setPinOptionyyAA0gH0OF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTranslateData",
+            "printedName": "getTranslateData(originText:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC012getTranslateE010originTextS2S_tF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC012getTranslateE010originTextS2S_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrailleLines",
+            "printedName": "setBrailleLines(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03setD5Linesyys5Int32VF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03setD5Linesyys5Int32VF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleLines",
+            "printedName": "getBrailleLines()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD5Liness5Int32VyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD5Liness5Int32VyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrailleStyle",
+            "printedName": "setBrailleStyle(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03setD5Styleyys5Int32VF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03setD5Styleyys5Int32VF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleStyle",
+            "printedName": "getBrailleStyle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC03getD5Styles5Int32VyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC03getD5Styles5Int32VyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHighlightTagUseSettings",
+            "printedName": "setHighlightTagUseSettings(use:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC26setHighlightTagUseSettings3useySi_tF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC26setHighlightTagUseSettings3useySi_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCursorUseSettings",
+            "printedName": "setCursorUseSettings(use:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC20setCursorUseSettings3useySi_tF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC20setCursorUseSettings3useySi_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNumberOfSettiongsColumns",
+            "printedName": "setNumberOfSettiongsColumns(columns:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC27setNumberOfSettiongsColumns7columnsySi_tF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC27setNumberOfSettiongsColumns7columnsySi_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserOptionPointer",
+            "printedName": "getUserOptionPointer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int32>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC20getUserOptionPointerSpys5Int32VGyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC20getUserOptionPointerSpys5Int32VGyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16DotPadFrameworks11BrailleDataC",
+        "mangledName": "$s16DotPadFrameworks11BrailleDataC",
+        "moduleName": "DotPadFrameworks",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -10800,6 +11606,43 @@
               },
               {
                 "kind": "Var",
+                "name": "KeyFunction13",
+                "printedName": "KeyFunction13",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DotPadFrameworks.DotPadCommunication.DataCodes.Type) -> DotPadFrameworks.DotPadCommunication.DataCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataCodes",
+                        "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes",
+                        "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DataCodes",
+                            "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes",
+                            "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO13KeyFunction13yA2EmF",
+                "mangledName": "$s16DotPadFrameworks0aB13CommunicationC9DataCodesO13KeyFunction13yA2EmF",
+                "moduleName": "DotPadFrameworks"
+              },
+              {
+                "kind": "Var",
                 "name": "KeyFunction23",
                 "printedName": "KeyFunction23",
                 "children": [
@@ -10837,6 +11680,43 @@
               },
               {
                 "kind": "Var",
+                "name": "KeyFunction24",
+                "printedName": "KeyFunction24",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DotPadFrameworks.DotPadCommunication.DataCodes.Type) -> DotPadFrameworks.DotPadCommunication.DataCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataCodes",
+                        "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes",
+                        "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DataCodes",
+                            "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes",
+                            "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO13KeyFunction24yA2EmF",
+                "mangledName": "$s16DotPadFrameworks0aB13CommunicationC9DataCodesO13KeyFunction24yA2EmF",
+                "moduleName": "DotPadFrameworks"
+              },
+              {
+                "kind": "Var",
                 "name": "KeyFunction34",
                 "printedName": "KeyFunction34",
                 "children": [
@@ -10870,6 +11750,43 @@
                 "declKind": "EnumElement",
                 "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO13KeyFunction34yA2EmF",
                 "mangledName": "$s16DotPadFrameworks0aB13CommunicationC9DataCodesO13KeyFunction34yA2EmF",
+                "moduleName": "DotPadFrameworks"
+              },
+              {
+                "kind": "Var",
+                "name": "KeyElse",
+                "printedName": "KeyElse",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DotPadFrameworks.DotPadCommunication.DataCodes.Type) -> DotPadFrameworks.DotPadCommunication.DataCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataCodes",
+                        "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes",
+                        "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DataCodes",
+                            "printedName": "DotPadFrameworks.DotPadCommunication.DataCodes",
+                            "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16DotPadFrameworks0aB13CommunicationC9DataCodesO7KeyElseyA2EmF",
+                "mangledName": "$s16DotPadFrameworks0aB13CommunicationC9DataCodesO7KeyElseyA2EmF",
                 "moduleName": "DotPadFrameworks"
               },
               {
@@ -11622,6 +12539,27 @@
           },
           {
             "kind": "Function",
+            "name": "startCentral",
+            "printedName": "startCentral()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB13CommunicationC12startCentralyyF",
+            "mangledName": "$s16DotPadFrameworks0aB13CommunicationC12startCentralyyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "scan",
             "printedName": "scan()",
             "children": [
@@ -12035,6 +12973,26 @@
             "declKind": "Func",
             "usr": "s:16DotPadFrameworks0aB13CommunicationC14stopSendModuleyyF",
             "mangledName": "$s16DotPadFrameworks0aB13CommunicationC14stopSendModuleyyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScan",
+            "printedName": "stopScan()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB13CommunicationC8stopScanyyF",
+            "mangledName": "$s16DotPadFrameworks0aB13CommunicationC8stopScanyyF",
             "moduleName": "DotPadFrameworks",
             "declAttributes": [
               "AccessControl"
@@ -18892,1988 +19850,2002 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKRemotePeripheral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKRemotePeripheral.swift",
       "kind": "StringLiteral",
       "offset": 2060,
       "length": 18,
       "value": "\"DotPadFrameworks.BKRemotePeripheral\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 151,
       "length": 6,
       "value": "\"AA55\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 231,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 257,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 284,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 310,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 338,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 400,
       "length": 6,
       "value": "\"0000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 462,
       "length": 6,
       "value": "\"0001\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 528,
       "length": 6,
       "value": "\"0010\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 594,
       "length": 6,
       "value": "\"0011\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 659,
       "length": 6,
       "value": "\"0100\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 718,
       "length": 6,
       "value": "\"0101\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 782,
       "length": 6,
       "value": "\"0200\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 6,
       "value": "\"0201\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 910,
       "length": 6,
       "value": "\"0202\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 981,
       "length": 6,
       "value": "\"0312\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1059,
       "length": 6,
       "value": "\"0302\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1135,
       "length": 6,
       "value": "\"0332\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1223,
       "length": 4,
       "value": "\"00\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1250,
       "length": 4,
       "value": "\"80\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1307,
+      "offset": 1304,
       "length": 10,
       "value": "\"00000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1347,
+      "offset": 1344,
       "length": 10,
       "value": "\"00040000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1388,
+      "offset": 1385,
       "length": 10,
       "value": "\"00020000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1424,
       "length": 10,
       "value": "\"00060000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1496,
+      "offset": 1493,
       "length": 10,
       "value": "\"00000002\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1537,
+      "offset": 1534,
       "length": 10,
       "value": "\"00000001\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1598,
+      "offset": 1595,
       "length": 10,
       "value": "\"00000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1636,
+      "offset": 1633,
       "length": 10,
       "value": "\"80000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1674,
+      "offset": 1671,
       "length": 10,
       "value": "\"40000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1712,
+      "offset": 1709,
       "length": 10,
       "value": "\"20000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1750,
+      "offset": 1747,
       "length": 10,
       "value": "\"10000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1789,
+      "offset": 1786,
       "length": 10,
       "value": "\"C0000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 1825,
       "length": 10,
       "value": "\"60000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1867,
+      "offset": 1864,
       "length": 10,
       "value": "\"30000000\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1927,
+      "offset": 1903,
+      "length": 10,
+      "value": "\"A0000000\""
+    },
+    {
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 1942,
+      "length": 10,
+      "value": "\"50000000\""
+    },
+    {
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 2002,
       "length": 4,
       "value": "\"00\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 2029,
       "length": 4,
       "value": "\"01\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2656,
+      "offset": 2731,
       "length": 6,
       "value": "\"0005\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2692,
+      "offset": 2767,
       "length": 4,
       "value": "\"00\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2726,
+      "offset": 2801,
       "length": 4,
       "value": "\"00\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 2774,
+      "offset": 2849,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
       "kind": "IntegerLiteral",
       "offset": 165,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
       "kind": "IntegerLiteral",
       "offset": 197,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
       "kind": "IntegerLiteral",
       "offset": 228,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
       "kind": "Array",
       "offset": 261,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
       "kind": "IntegerLiteral",
       "offset": 320,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadImage.swift",
       "kind": "BooleanLiteral",
       "offset": 358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
       "kind": "Array",
       "offset": 531,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
       "kind": "IntegerLiteral",
       "offset": 584,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
       "kind": "IntegerLiteral",
       "offset": 647,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
       "kind": "IntegerLiteral",
       "offset": 723,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
       "kind": "Array",
       "offset": 848,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
       "kind": "BooleanLiteral",
       "offset": 879,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadSendModule.swift",
       "kind": "BooleanLiteral",
       "offset": 4263,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadTable.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadTable.swift",
       "kind": "StringLiteral",
       "offset": 161,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKContinuousScanner.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKContinuousScanner.swift",
       "kind": "BooleanLiteral",
       "offset": 1793,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKContinuousScanner.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKContinuousScanner.swift",
       "kind": "IntegerLiteral",
       "offset": 2479,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKContinuousScanner.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKContinuousScanner.swift",
       "kind": "IntegerLiteral",
       "offset": 2513,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPad.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPad.swift",
       "kind": "StringLiteral",
       "offset": 582,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKScanner.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKScanner.swift",
       "kind": "BooleanLiteral",
       "offset": 1719,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCBPeripheralDelegateProxy.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCBPeripheralDelegateProxy.swift",
       "kind": "StringLiteral",
       "offset": 1681,
       "length": 27,
       "value": "\"DotPadFrameworks.BKCBPeripheralDelegateProxy\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCBCentralManagerDelegateProxy.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCBCentralManagerDelegateProxy.swift",
       "kind": "StringLiteral",
       "offset": 1991,
       "length": 31,
       "value": "\"DotPadFrameworks.BKCBCentralManagerDelegateProxy\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKPeer.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKPeer.swift",
       "kind": "Array",
       "offset": 1747,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKPeer.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKPeer.swift",
       "kind": "Array",
       "offset": 1807,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DTM\/DTM.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DTM\/DTM.swift",
       "kind": "IntegerLiteral",
       "offset": 157,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DTM\/DTM.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DTM\/DTM.swift",
       "kind": "IntegerLiteral",
       "offset": 186,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DTM\/DTM.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DTM\/DTM.swift",
       "kind": "IntegerLiteral",
       "offset": 221,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKPeripheralConfiguration.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKPeripheralConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1366,
       "length": 25,
       "value": "\"DotPadFrameworks.BKPeripheralConfiguration\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 4,
       "value": "\"00\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "StringLiteral",
       "offset": 490,
       "length": 4,
       "value": "\"00\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "BooleanLiteral",
       "offset": 549,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "BooleanLiteral",
       "offset": 712,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "IntegerLiteral",
       "offset": 808,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadLine.swift",
       "kind": "IntegerLiteral",
       "offset": 892,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKSendDataTask.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKSendDataTask.swift",
       "kind": "IntegerLiteral",
       "offset": 1590,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKRemoteCentral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKRemoteCentral.swift",
       "kind": "StringLiteral",
       "offset": 1297,
       "length": 15,
       "value": "\"DotPadFrameworks.BKRemoteCentral\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 155,
       "length": 4,
       "value": "2048"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 181,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 4,
       "value": "0x03"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 285,
       "length": 4,
       "value": "0x05"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 308,
       "length": 4,
       "value": "0x06"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
       "length": 4,
       "value": "0x07"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 355,
       "length": 4,
       "value": "0x08"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 4,
       "value": "0x0A"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 402,
       "length": 4,
       "value": "0x0B"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 4,
       "value": "0x0C"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 4,
       "value": "0x0D"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 480,
       "length": 4,
       "value": "0x0F"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 505,
       "length": 3,
       "value": "0x9"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 526,
       "length": 4,
       "value": "0x10"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 549,
       "length": 4,
       "value": "0x13"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 572,
       "length": 4,
       "value": "0x14"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 594,
       "length": 4,
       "value": "0x15"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 618,
       "length": 4,
       "value": "0x16"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 642,
       "length": 4,
       "value": "0x17"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 4,
       "value": "0x18"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 687,
       "length": 4,
       "value": "0x19"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 709,
       "length": 4,
       "value": "0x1A"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 732,
       "length": 4,
       "value": "0x1B"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 758,
       "length": 4,
       "value": "0x1C"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 781,
       "length": 4,
       "value": "0x1D"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 806,
       "length": 4,
       "value": "0x1E"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 845,
       "length": 4,
       "value": "0x1F"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 881,
       "length": 4,
       "value": "0x20"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 4,
       "value": "0x21"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 942,
       "length": 4,
       "value": "0x22"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 968,
       "length": 4,
       "value": "0x23"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 4,
       "value": "0x03"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 285,
       "length": 4,
       "value": "0x05"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 308,
       "length": 4,
       "value": "0x06"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
       "length": 4,
       "value": "0x07"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 355,
       "length": 4,
       "value": "0x08"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 4,
       "value": "0x0A"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 402,
       "length": 4,
       "value": "0x0B"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 4,
       "value": "0x0C"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 4,
       "value": "0x0D"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 480,
       "length": 4,
       "value": "0x0F"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 505,
       "length": 3,
       "value": "0x9"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 526,
       "length": 4,
       "value": "0x10"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 549,
       "length": 4,
       "value": "0x13"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 572,
       "length": 4,
       "value": "0x14"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 594,
       "length": 4,
       "value": "0x15"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 618,
       "length": 4,
       "value": "0x16"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 642,
       "length": 4,
       "value": "0x17"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 4,
       "value": "0x18"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 687,
       "length": 4,
       "value": "0x19"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 709,
       "length": 4,
       "value": "0x1A"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 732,
       "length": 4,
       "value": "0x1B"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 758,
       "length": 4,
       "value": "0x1C"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 781,
       "length": 4,
       "value": "0x1D"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 806,
       "length": 4,
       "value": "0x1E"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 845,
       "length": 4,
       "value": "0x1F"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 881,
       "length": 4,
       "value": "0x20"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 4,
       "value": "0x21"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 942,
       "length": 4,
       "value": "0x22"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 968,
       "length": 4,
       "value": "0x23"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 4,
       "value": "0x03"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 285,
       "length": 4,
       "value": "0x05"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 308,
       "length": 4,
       "value": "0x06"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
       "length": 4,
       "value": "0x07"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 355,
       "length": 4,
       "value": "0x08"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 4,
       "value": "0x0A"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 402,
       "length": 4,
       "value": "0x0B"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 4,
       "value": "0x0C"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 4,
       "value": "0x0D"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 480,
       "length": 4,
       "value": "0x0F"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 505,
       "length": 3,
       "value": "0x9"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 526,
       "length": 4,
       "value": "0x10"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 549,
       "length": 4,
       "value": "0x13"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 572,
       "length": 4,
       "value": "0x14"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 594,
       "length": 4,
       "value": "0x15"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 618,
       "length": 4,
       "value": "0x16"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 642,
       "length": 4,
       "value": "0x17"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 4,
       "value": "0x18"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 687,
       "length": 4,
       "value": "0x19"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 709,
       "length": 4,
       "value": "0x1A"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 732,
       "length": 4,
       "value": "0x1B"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 758,
       "length": 4,
       "value": "0x1C"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 781,
       "length": 4,
       "value": "0x1D"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 806,
       "length": 4,
       "value": "0x1E"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 845,
       "length": 4,
       "value": "0x1F"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 881,
       "length": 4,
       "value": "0x20"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 4,
       "value": "0x21"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 942,
       "length": 4,
       "value": "0x22"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 968,
       "length": 4,
       "value": "0x23"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1027,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1050,
       "length": 4,
       "value": "0x02"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1073,
       "length": 4,
       "value": "0x03"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1027,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1050,
       "length": 4,
       "value": "0x02"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1073,
       "length": 4,
       "value": "0x03"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1027,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1050,
       "length": 4,
       "value": "0x02"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1073,
       "length": 4,
       "value": "0x03"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1175,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1175,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1175,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1267,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1267,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1267,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
       "offset": 1339,
       "length": 5,
       "value": "\"DOT\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
       "offset": 1362,
       "length": 7,
       "value": "\"LOUIS\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
       "offset": 1339,
       "length": 5,
       "value": "\"DOT\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
       "offset": 1362,
       "length": 7,
       "value": "\"LOUIS\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1418,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1436,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1418,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1436,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1418,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1436,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1495,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1517,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1495,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1517,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1495,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1517,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1580,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1606,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1580,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1606,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1580,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1606,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1684,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1716,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1684,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1716,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1684,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1716,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1782,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1808,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1782,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1808,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1782,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1808,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1875,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1909,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1875,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1909,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1875,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1909,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1990,
       "length": 4,
       "value": "0x06"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2027,
       "length": 4,
       "value": "0x07"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2064,
       "length": 4,
       "value": "0x08"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1990,
       "length": 4,
       "value": "0x06"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2027,
       "length": 4,
       "value": "0x07"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2064,
       "length": 4,
       "value": "0x08"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 1990,
       "length": 4,
       "value": "0x06"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2027,
       "length": 4,
       "value": "0x07"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2064,
       "length": 4,
       "value": "0x08"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2149,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2149,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2149,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2232,
       "length": 4,
       "value": "0x14"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2232,
       "length": 4,
       "value": "0x14"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
       "offset": 2232,
       "length": 4,
       "value": "0x14"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3588,
+      "offset": 3595,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3703,
+      "offset": 3710,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3746,
+      "offset": 3753,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3785,
+      "offset": 3792,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3828,
+      "offset": 3835,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 4007,
+      "offset": 4014,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 4050,
+      "offset": 4057,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 19825,
+      "offset": 19854,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 19946,
+      "offset": 19975,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20005,
+      "offset": 20034,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20105,
+      "offset": 20134,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20230,
+      "offset": 20259,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20419,
+      "offset": 20448,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20467,
+      "offset": 20496,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20510,
+      "offset": 20539,
       "length": 4,
       "value": "0x07"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20553,
+      "offset": 20582,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20599,
+      "offset": 20628,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 20718,
+      "offset": 20747,
       "length": 21,
       "value": "\"[一-鿿]\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
       "kind": "BooleanLiteral",
-      "offset": 1315,
+      "offset": 1390,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
       "kind": "BooleanLiteral",
-      "offset": 1359,
+      "offset": 1434,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
       "kind": "IntegerLiteral",
-      "offset": 1518,
+      "offset": 1593,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
       "kind": "IntegerLiteral",
-      "offset": 1559,
+      "offset": 1634,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
       "kind": "BooleanLiteral",
-      "offset": 1607,
+      "offset": 1682,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
       "kind": "BooleanLiteral",
-      "offset": 1654,
+      "offset": 1729,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadCommumication.swift",
       "kind": "StringLiteral",
-      "offset": 1703,
+      "offset": 1778,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCBPeripheralManagerDelegateProxy.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCBPeripheralManagerDelegateProxy.swift",
       "kind": "StringLiteral",
       "offset": 2086,
       "length": 34,
       "value": "\"DotPadFrameworks.BKCBPeripheralManagerDelegateProxy\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
       "kind": "IntegerLiteral",
       "offset": 6799,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
       "kind": "BooleanLiteral",
       "offset": 6827,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
       "kind": "IntegerLiteral",
       "offset": 8781,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
       "kind": "IntegerLiteral",
       "offset": 8815,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
       "kind": "BooleanLiteral",
       "offset": 8843,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/BluetoothKit\/BKCentral.swift",
       "kind": "IntegerLiteral",
       "offset": 10202,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadText.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPad\/DotPadText.swift",
       "kind": "StringLiteral",
       "offset": 166,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
       "kind": "Array",
       "offset": 1692,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
       "kind": "IntegerLiteral",
       "offset": 1713,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
       "kind": "IntegerLiteral",
       "offset": 1733,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DTMS\/DTMS.swift",
       "kind": "BooleanLiteral",
       "offset": 1754,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/Documents\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProcessData.swift",
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dotpad-sdk-ios\/DotPadFrameworks\/DotPadSDK\/DotPadProcessData.swift",
       "kind": "StringLiteral",
       "offset": 520,
       "length": 2,

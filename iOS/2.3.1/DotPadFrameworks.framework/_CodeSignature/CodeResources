@@ -22,19 +22,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m7Y3fYieStjRFOa45u58ROmCSHo=
+		gWW6IhJYqGGGL3tAIrwEj6hbnDk=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Lu93Wqbl6FspY4Z7yoPH+BeG2io=
+		oDljDSNfGDB9/QXR/5AK7Zy2h8U=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		AUSOAmW5r+EUjUSiPY9P0nsbEzQ=
+		Jp8nv8uT8MAzOQTdI9lRBlUUQSI=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WaAw+TTBF880DMyQeNcDzvDYxVg=
+		DC+WSO85aUQylnmnmaVJ8p7Mx1M=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WaAw+TTBF880DMyQeNcDzvDYxVg=
+		DC+WSO85aUQylnmnmaVJ8p7Mx1M=
 		</data>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6QR2wQ6JKeUxZRMiBkzYZxmwNUI=
+		TvfJ1qI0hsC30WdA00cX48XhIZw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1775,21 +1775,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XTqOyRMLq+TJgKTeJYlNqhTK4WOla0ds7A2+QeDdfdE=
+			Jn4fvNQUjIs7qa1rwUfX5B1x70na07eq0WnFUh/WeaU=
 			</data>
 		</dict>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I8JGh/r/CKwFG6Xur4DEJxuAWW3l3maOmO3RgGq8Bw0=
+			GpnrNyxCT0WR1wi4luxdEevH7YH5w4iHe+WI6dUHaq0=
 			</data>
 		</dict>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qQBJVw1u/BsG8LuxJ6SyS75ou6uzUT9RMVGmQ2yr4Yw=
+			078RRZbGXrRLDMUzItzEF8yDBCPhOK5Oge+sqsKMow0=
 			</data>
 		</dict>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -1803,14 +1803,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qQBJVw1u/BsG8LuxJ6SyS75ou6uzUT9RMVGmQ2yr4Yw=
+			078RRZbGXrRLDMUzItzEF8yDBCPhOK5Oge+sqsKMow0=
 			</data>
 		</dict>
 		<key>Modules/DotPadFrameworks.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cGzc92vMnSxluEOi2vEJruPMvpjztYb38o8XuR7PHgI=
+			pMuyBLwJSu6ywAnEbRSXvYh1o8gmbLKbIsK/guftAI8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
