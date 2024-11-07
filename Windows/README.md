@@ -10,6 +10,9 @@
 * 2023-11-20 / add liblouis wordrap (1.1.0)
 * 2024-08-09 / add km3-12 ble device (1.2.0)
 
+## SDK Download
+* [DotPadSDK-1.2.0](https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-1.2.0/DotPadSDK-1.2.0.zip)
+
 ## SDK Sample Code
 * [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows)
 
