@@ -11,23 +11,26 @@
 ```
 ├── Android
 │   ├── 1.1.0
-│   │   ├── DotPadSDK-1.1.0.aar
 │   ├── 2.0.0
-│   │   └── DotPadSDK-2.0.0.aar
 ├── iOS
 │   ├── 1.2.0
-│   │   ├── DotPadSDK-1.2.0.xcframework
 │   ├── 2.0.0
-│   │   └── DotPadSDK-2.0.0
+│   ├── 2.1.0
+│   ├── 2.2.0
+│   ├── 2.3.0
+│   ├── 2.3.1
 ├── Linux
-│   ├── 1.0.0 (in development)
-└── Window
-    ├── 1.0.0
-    │   ├── 32bit
-    │   │   ├── DotPadSDK-1.0.0.dll
-    │   ├── 64bit
-    │   │   └── DotPadSDK-1.0.0.dll
-    └── 2.0.0  (in development)
+│   ├── 1.0.0
+├── Web
+│   ├── 1.0.0
+├── Window
+│   ├── 20cell-1.0.12
+│   ├── 20cell-1.0.13
+│   ├── dotpad-1.0.0
+│   ├── dotpad-1.1.0
+│   ├── dotpad-1.2.0
+│   ├── dotpad-1.3.0
+│   ├── dotpad-1.4.0
 ```
 ## Sample code using DotPad SDK
 * You can test connecting to dotpad and printing by running the sample code.
