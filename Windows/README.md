@@ -10,10 +10,12 @@
 * 2023-11-20 / add liblouis wordrap (1.1.0)
 * 2024-08-09 / add km3-12 ble device (1.2.0)
 * 2024-12-23 / add km3-8 device (1.3.0)
+* 2025-05-15 / add multi key callback (1.4.0)
 
 ## SDK Download
 * [DotPadSDK-1.2.0](https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-1.2.0/DotPadSDK-1.2.0.zip)
 * [DotPadSDK-1.3.0](https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-1.3.0/DotPadSDK-1.3.0.zip)
+* [DotPadSDK-1.4.0](https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-1.4.0/DotPadSDK-1.4.0.zip)
 
 ## SDK Sample Code
 * [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows)
