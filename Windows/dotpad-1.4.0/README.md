@@ -1,4 +1,4 @@
-# DotPadSDK-1.3.0 for Windows
+# DotPadSDK-1.4.0 for Windows
 
 ## Change history
 * libluis translation language has been added.
