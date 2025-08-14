@@ -59,8 +59,10 @@
     ```
 
 ### displayGraphicDataLine(lineId:Int, startCellIndex:Int, data:String)
-* This function prints data on specific lines and cells in the Dot Pad graphic area.
-* parameter : lineId(1..10), startCellIndex(0..29), data(Graphic Data)
+* This function prints data on specific lines and cells in the Dot Pad area.
+* The graphic data display is indicated by 8 points (pin1, 2, 3, 4, 5, 6, 7, 8) as below.
+* parameter : lineId(0..10), startCellIndex(0..29), data(Graphic Data)
+    <img src="images/graphicData.png">
     ```
     import com.dotincorp.sdk.process.DotPadProcess
     val process = DotPadProcess()
@@ -69,8 +71,10 @@
     ```
 
 ### displayTextDataLine(lineId:Int, startCellIndex:Int, data:String)
-* This function prints data on specific lines and cells in the Dot Pad graphic area.
-* parameter : lineId(1..10), startCellIndex(0..29), data(Braille Data)
+* This function prints data on specific lines and cells in the Dot Pad area.
+* The braille text display is indicated by 6 points (pin1, 2, 3, 4, 5, 6) as below and pin7 and pin8 are used as cursor.
+* parameter : lineId(0..10), startCellIndex(0..29), data(Braille Data)
+    <img src="images/textData.png">
     ```
     import com.dotincorp.sdk.process.DotPadProcess
     val process = DotPadProcess()
