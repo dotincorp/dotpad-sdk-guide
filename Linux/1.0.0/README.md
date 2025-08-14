@@ -1,4 +1,4 @@
-# Dot API SDK
+# DotPadSDK 1.0.0 for Linux
 
 Welcome to the Dot API SDK repository! This SDK allows developers to interact with Dot devices, providing functions to display Braille text data, set Braille languages, and handle device connections.
 

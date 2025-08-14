@@ -1,4 +1,4 @@
-# 20Cell for Windows (ver 1.0.13)
+# 20Cell SDK 1.0.13 for Windows
 
 ## Change history
 * Added 20-cell button key callback function (2024.02.27)

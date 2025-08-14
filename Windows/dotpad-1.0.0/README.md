@@ -1,4 +1,4 @@
-# DotPadSDK-1.0.0 for Windows
+# DotPadSDK 1.0.0 for Windows
 
 ## Change history
 * Add function to process dtms file

@@ -1,4 +1,4 @@
-# DotPadSDK API Documentation 1.0.0 for WEB
+# DotPadSDK 1.0.0 for WEB
 
 ## Overview
 
