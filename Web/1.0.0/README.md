@@ -2,10 +2,12 @@
 
 ## Overview
 
-The `DotPadSDK` class provides an interface for managing Bluetooth connections with DotPad devices. It includes methods to request a device, connect to it, disconnect, print data, and listen for device notifications.
+- The `DotPadSDK` class provides an interface for managing Bluetooth connections with DotPad devices. It includes methods to request a device, connect to it, disconnect, print data, and listen for device notifications.
+- The Graphic Area consists of 300 cells and the Text Area consists of 20 cells.
+- The GRAPHIC MODE data is used for image output, and TEXT MODE data is used for Braille output.
 
 <p align="center">
-  <img alt="DotPad" src="../../images/dotpad-info.png" style="display: inline; height: 250px" />
+  <img alt="DotPad" src="../../images/dotpad-info2.png" style="display: inline; height: 250px" />
   <img alt="Graphic Mode" src="../../images/graphic-mode.png" style="display: inline; height: 250px" />
   <img alt="Text Mode" src="../../images/text-mode.png" style="display: inline; height: 250px" />
 </p>
@@ -55,29 +57,29 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
   ```
 
 ### displayGraphicData(device, hexData)
-- Sends hexadecimal data to the graphic display area of the connected device, affecting all 300 cells.
+- Sends hexadecimal data to print the graphics area at once.
 - Parameters:
   - `device`: The connected DotPad device.
-  - `hexData`: Hexadecimal string representing the graphic data.
+  - `hexData`: Hexadecimal string representing the GRAPHIC MODE data.
 - Example:
   ```javascript
   sdk.displayGraphicData(device, 'hex data here');
   ```
 
 ### displayGraphicLineData(device, lineId, cellIndex, hexData)
-- Registers a callback to listen for notifications from the connected Bluetooth device.
+- Sends hexadecimal data to print partial the graphic area, starting at a specific line ID and cell index
 - Parameters:
   - `device`: The connected DotPad device.
   - `lineId`: The DotPad line index (1-10).
   - `cellIndex`: The DotPad cell index (0-29).
-  - `hexData`: Hexadecimal string for the line data.
+  - `hexData`: Hexadecimal string representing the partial GRAPHIC MODE data.
 - Example:
   ```javascript
   sdk.displayGraphicLineData(device, 1, 5, 'hex data here');
   ```
 
 ### resetGraphicData(device)
-- Resets the entire graphic area of the DotPad to a default state.
+- Resets the entire graphic area (300 cells) of the DotPad to a default state.
 - Parameters:
   - `device`: The connected DotPad device.
 - Example:
@@ -86,10 +88,10 @@ The `DotPadSDK` class provides an interface for managing Bluetooth connections w
   ```
 
 ### displayTextData(device, hexData)
-- Sends Braille hex data to the text area of the DotPad and handles data wrapping.
+- Sends Braille hex data to the text area (20 cells) of the DotPad and handles data wrapping.
 - Parameters:
   - `device`: The connected DotPad device.
-  - `hexData`: Hexadecimal string representing the Braille data.
+  - `hexData`: Hexadecimal string representing the TEXT MODE data.
 - Example:
   ```javascript
   sdk.displayTextData(device, 'braille hex data here');
