@@ -63,7 +63,7 @@
   - `hexData`: Hexadecimal string representing the GRAPHIC MODE data.
 - Example:
   ```javascript
-  sdk.displayGraphicData(device, 'hex data here');
+  sdk.displayGraphicData(device, 'GRAPHIC MODE hex data');
   ```
 
 ### displayGraphicLineData(device, lineId, cellIndex, hexData)
@@ -75,7 +75,7 @@
   - `hexData`: Hexadecimal string representing the partial GRAPHIC MODE data.
 - Example:
   ```javascript
-  sdk.displayGraphicLineData(device, 1, 5, 'hex data here');
+  sdk.displayGraphicLineData(device, 1, 5, 'GRAPHIC MODE hex data');
   ```
 
 ### resetGraphicData(device)
@@ -94,7 +94,7 @@
   - `hexData`: Hexadecimal string representing the TEXT MODE data.
 - Example:
   ```javascript
-  sdk.displayTextData(device, 'braille hex data here');
+  sdk.displayTextData(device, 'TEXT MODE hex data');
   ```  
   
 ### resetTextData(device)
