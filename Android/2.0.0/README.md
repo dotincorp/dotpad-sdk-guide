@@ -58,7 +58,7 @@
     process.displayGraphicData(data)
     ```
 
-### displayGraphicDataLine(lineId:Int, startCellIndex:Int, data:String)
+### displayGraphicData(lineId:Int, startCellIndex:Int, data:String)
 * This function prints data on specific lines and cells in the Dot Pad area.
 * The graphic data display is indicated by 8 points (pin1, 2, 3, 4, 5, 6, 7, 8) as below.
 * parameter : lineId(0..10), startCellIndex(0..29), data(Graphic Data)
