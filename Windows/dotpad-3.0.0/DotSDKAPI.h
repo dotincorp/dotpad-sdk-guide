@@ -52,15 +52,12 @@ extern "C"
 #endif
 
 	namespace DOT_PAD_SDK_API {
-		// Device Handle: void* 타입, nullptr이면 모든 기기에 적용
-		// 성공 시 device handle 반환, 실패 시 nullptr 반환
-
 		// ========== 연결 관리 ==========
 		// BLE 연결 (deviceName: "DotPad320-xxx" 형식)
-		DOTPADSDK_API void* DOT_PAD_CONNECT_BLE(const wchar_t* deviceName);
+		DOTPADSDK_API void DOT_PAD_CONNECT_BLE(const wchar_t* deviceName);
 		
 		// Serial 연결 (portName: "COM3" 형식)
-		DOTPADSDK_API void* DOT_PAD_CONNECT_SERIAL(const wchar_t* portName);
+		DOTPADSDK_API void DOT_PAD_CONNECT_SERIAL(const wchar_t* portName);
 		
 		// 연결 해제 (deviceHandle이 nullptr이면 모든 기기 해제)
 		DOTPADSDK_API bool DOT_PAD_DISCONNECT(void* deviceHandle);
@@ -138,8 +135,8 @@ extern "C"
 	// Function pointer types for dynamic loading (LoadLibrary)
 	namespace DOT_PAD_SDK_API {
 		// 연결 관리
-		typedef void*(*DOT_PAD_CONNECT_BLE_FUNC)(const wchar_t* deviceName);
-		typedef void*(*DOT_PAD_CONNECT_SERIAL_FUNC)(const wchar_t* portName);
+		typedef void(*DOT_PAD_CONNECT_BLE_FUNC)(const wchar_t* deviceName);
+		typedef void(*DOT_PAD_CONNECT_SERIAL_FUNC)(const wchar_t* portName);
 		typedef bool(*DOT_PAD_DISCONNECT_FUNC)(void* deviceHandle);
 		typedef int(*DOT_PAD_GET_CONNECTED_DEVICE_COUNT_FUNC)();
 		typedef bool(*DOT_PAD_GET_CONNECTED_DEVICE_HANDLE_FUNC)(int index, void** deviceHandle);
