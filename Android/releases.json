@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "platform": "android",
+  "supportedLanguages": "Kotlin, Java",
+  "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Android",
+  "product": {
+    "version": "v3.0.0",
+    "releaseDate": "2026-05-10",
+    "minimumOs": "Android 6.0 (API 23)+",
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.0/download/android-sdk-3.0.0.zip"
+  },
+  "releases": [
+    {
+      "version": "v3.0.0",
+      "date": "2026-05-10",
+      "minimumOs": "Android 6.0 (API 23)+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.0/download/android-sdk-3.0.0.zip",
+      "details": [
+        { "type": "IMPROVE", "text": "Improve BLE connection stability" }
+      ]
+    },
+    {
+      "version": "v2.0.0",
+      "date": "2026-01-20",
+      "minimumOs": "Android 6.0 (API 23)+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/2.0.0/download/android-sdk-2.0.0.zip",
+       "details": [
+        { "type": "IMPROVE", "text": "Keep non-data pins in displayTextDataLine." }
+      ]
+    },
+    {
+      "version": "v1.1.0",
+      "date": "2026-01-07",
+      "minimumOs": "Android 6.0 (API 23)+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/1.1.0/download/android-sdk-1.1.0.zip",
+      "details": [
+        { "type": "NEW", "text": "Initial deployment" }
+      ]
+    }
+  ]
+}

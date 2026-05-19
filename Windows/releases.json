@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "platform": "windows",
+  "supportedLanguages": "C++, C#",
+  "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Windows",
+  "product": {
+    "version": "v3.0.0",
+    "releaseDate": "2026-05-20",
+    "minimumOs": "Windows 10 이상",
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-3.0.0/DotPadSDK-3.0.0.zip",
+  },
+  "releases": [
+    {
+      "version": "v3.0.0",
+      "date": "2026-05-20",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-3.0.0/DotPadSDK-3.0.0.zip",
+      "details": [
+        { "type": "IMPROVE", "text": "Updated RESET_DISPLAY so it properly clears the current display state." },
+        { "type": "IMPROVE", "text": "Return false in DISCONNECT when deviceHandle is not null and device is not ready" }
+      ]
+    },
+    {
+      "version": "v1.4.0",
+      "date": "2025-05-15",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-3.0.0/DotPadSDK-3.0.0.zip",
+      "details": [
+        { "type": "IMPROVE", "text": "Add multi key callback" }
+      ]
+    },
+    {
+      "version": "v1.3.0",
+      "date": "2023-12-23",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-3.0.0/DotPadSDK-3.0.0.zip",
+ 
+      "details": [
+        { "type": "IMPROVE", "text": "Add km3-8 device" }
+      ]
+    },
+    {
+      "version": "v1.2.0",
+      "date": "2023-11-22",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-3.0.0/DotPadSDK-3.0.0.zip",
+      "details": [
+        { "type": "IMPROVE", "text": "Add Windows SDK 1.2.0" }
+      ]
+    },
+    {
+      "version": "v1.1.0",
+      "date": "2023-11-13",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-3.0.0/DotPadSDK-3.0.0.zip",
+      "details": [
+        { "type": "IMPROVE", "text": "Add Windows SDK 1.1.0" }
+      ]
+    },
+    {
+      "version": "v1.0.0",
+      "date": "2023-11-13",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/dotpad-3.0.0/DotPadSDK-3.0.0.zip",
+       "details": [
+        { "type": "NEW", "text": "Initial Windows SDK release" }
+      ]
+    }
+  ]
+}

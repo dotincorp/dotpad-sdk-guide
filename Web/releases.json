@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "platform": "web",
+  "supportedLanguages": "JavaScript, TypeScript",
+  "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Web",
+  "product": {
+    "version": "v3.0.0",
+    "releaseDate": "2026-05-31",
+    "minimumOs": "Chrome 90+",
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.0/download/web-sdk-3.0.0.zip"
+  },
+  "releases": [
+    {
+      "version": "v3.0.0",
+      "date": "2026-01-15",
+      "minimumOs": "Chrome 90+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.0/download/web-sdk-3.0.0.zip",
+      "details": [
+        { "type": "IMPROVE", "text": "Add exception handling for characteristic" }
+      ]
+    },
+    {
+      "version": "v1.0.0",
+      "date": "2026-01-15",
+      "minimumOs": "Chrome 90+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/1.0.0/download/web-sdk-1.0.0.zip",
+      "details": [
+        { "type": "NEW", "text": "Initial Web SDK release" }
+      ]
+    }    
+  ]
+}
