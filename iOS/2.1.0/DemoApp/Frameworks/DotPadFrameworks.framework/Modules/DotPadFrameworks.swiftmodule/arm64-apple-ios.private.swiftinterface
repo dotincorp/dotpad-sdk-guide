@@ -1,0 +1,683 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DotPadFrameworks
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BrailleEngine
+import CoreBluetooth
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol BKRemotePeripheralDelegate : AnyObject {
+  func remotePeripheral(_ remotePeripheral: DotPadFrameworks.BKRemotePeripheral, didUpdateName name: Swift.String)
+  func remotePeripheralIsReady(_ remotePeripheral: DotPadFrameworks.BKRemotePeripheral)
+}
+@_hasMissingDesignatedInitializers public class BKRemotePeripheral : DotPadFrameworks.BKRemotePeer {
+  public enum State {
+    case shallow, disconnected, connecting, connected, disconnecting
+    public static func == (a: DotPadFrameworks.BKRemotePeripheral.State, b: DotPadFrameworks.BKRemotePeripheral.State) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var state: DotPadFrameworks.BKRemotePeripheral.State {
+    get
+  }
+  public var name: Swift.String? {
+    get
+  }
+  weak public var peripheralDelegate: (any DotPadFrameworks.BKRemotePeripheralDelegate)?
+  public init(identifier: Foundation.UUID, peripheral: CoreBluetooth.CBPeripheral?)
+  public func register(Observer: any DotPadFrameworks.Observer)
+  public func unregister(Observer: any DotPadFrameworks.Observer)
+  @objc deinit
+}
+public class DotPadImage {
+  public init()
+  public init(width: Swift.Int, height: Swift.Int, layer: Swift.Int)
+  public func setWidth(width: Swift.Int)
+  public func setHeight(height: Swift.Int)
+  public func setLayer(layer: Swift.Int)
+  public func setObject(array: [Swift.Int])
+  public func setPositionX(posX: Swift.Int)
+  public func setPositionY(posY: Swift.Int)
+  public func setPositionXY(posX: Swift.Int, posY: Swift.Int)
+  public func setTransparency(transparency: Swift.Bool)
+  public func getWidth() -> Swift.Int
+  public func getHeight() -> Swift.Int
+  public func getLayer() -> Swift.Int
+  public func getObject() -> [Swift.Int]
+  public func getPositionX() -> Swift.Int
+  public func getPositionY() -> Swift.Int
+  public func getTransparency() -> Swift.Bool
+  @objc deinit
+}
+public enum RefreshType {
+  case NONE
+  case TYPE_A
+  case TYPE_B
+  case TYPE_C
+  public static func == (a: DotPadFrameworks.RefreshType, b: DotPadFrameworks.RefreshType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum RefreshMode {
+  case NONE
+  case ALL_DISPLAY
+  case GRAPHIC_DISPLAY
+  case TEXT_DISPLAY
+  case LIVE_DISPLAY
+  public static func == (a: DotPadFrameworks.RefreshMode, b: DotPadFrameworks.RefreshMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+open class DotPadAPI {
+  final public let dotPadCommunication: DotPadFrameworks.DotPadCommunication
+  final public let dotPadProcessData: DotPadFrameworks.DotPadProcessData
+  public init()
+  @objc deinit
+}
+public class DotPadTable {
+  public var text: Swift.String
+  public var rowspan: Swift.Int?
+  public var colspan: Swift.Int?
+  public init()
+  @objc deinit
+}
+public protocol BKRemotePeerDelegate : AnyObject {
+  func remotePeer(_ remotePeer: DotPadFrameworks.BKRemotePeer, didSendArbitraryData data: Foundation.Data)
+}
+public func == (lhs: DotPadFrameworks.BKRemotePeer, rhs: DotPadFrameworks.BKRemotePeer) -> Swift.Bool
+@_hasMissingDesignatedInitializers public class BKRemotePeer : Swift.Equatable {
+  final public let identifier: Foundation.UUID
+  weak public var delegate: (any DotPadFrameworks.BKRemotePeerDelegate)?
+  @objc deinit
+}
+public protocol Observer : AnyObject {
+  func bluetoothAvailable(_ available: Swift.Bool)
+  func connected(to remoteperipheral: DotPadFrameworks.BKRemotePeripheral)
+  func getcharacteristic(to service: CoreBluetooth.CBService)
+  func data(to data: Foundation.Data)
+  func disconnected(from peripheral: DotPadFrameworks.BKPeripheral)
+}
+extension DotPadFrameworks.Observer {
+  public func bluetoothAvailable(_ available: Swift.Bool)
+  public func connected(to remoteperipheral: DotPadFrameworks.BKRemotePeripheral)
+  public func getcharacteristic(to service: CoreBluetooth.CBService)
+  public func data(to data: Foundation.Data)
+  public func disconnected(from peripheral: DotPadFrameworks.BKPeripheral)
+}
+public protocol BKPeripheralDelegate : AnyObject {
+  func peripheral(_ peripheral: DotPadFrameworks.BKPeripheral, remoteCentralDidConnect remoteCentral: DotPadFrameworks.BKRemoteCentral)
+  func peripheral(_ peripheral: DotPadFrameworks.BKPeripheral, remoteCentralDidDisconnect remoteCentral: DotPadFrameworks.BKRemoteCentral)
+}
+@_inheritsConvenienceInitializers public class BKPeripheral : DotPadFrameworks.BKPeer, DotPadFrameworks.BKAvailabilityObservable {
+  public var availability: DotPadFrameworks.BKAvailability {
+    get
+  }
+  override public var configuration: DotPadFrameworks.BKPeripheralConfiguration? {
+    get
+  }
+  weak public var delegate: (any DotPadFrameworks.BKPeripheralDelegate)?
+  public var availabilityObservers: [DotPadFrameworks.BKWeakAvailabilityObserver]
+  public var connectedRemoteCentrals: [DotPadFrameworks.BKRemoteCentral] {
+    get
+  }
+  public init()
+  public func register(Observer: any DotPadFrameworks.Observer)
+  public func unregister(Observer: any DotPadFrameworks.Observer)
+  public func startWithConfiguration(_ configuration: DotPadFrameworks.BKPeripheralConfiguration) throws
+  public func stop() throws
+  @objc deinit
+}
+public enum DeviceType {
+  case DotPad320
+  case DotPad832
+  case Default
+  public static func == (a: DotPadFrameworks.DeviceType, b: DotPadFrameworks.DeviceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class DotPad {
+  public init()
+  public init(deviceName: Swift.String)
+  public init(deviceType: DotPadFrameworks.DeviceType)
+  public func getDeviceName() -> Swift.String
+  public func setDeviceType(deviceType: DotPadFrameworks.DeviceType)
+  public func getDeviceType() -> DotPadFrameworks.DeviceType
+  public func setNumBraillePerModule(numBraillePerModule: Swift.Int)
+  public func getNumBraillePerModule() -> Swift.Int
+  public func setNumModule(numModule: Swift.Int)
+  public func getNumModule() -> Swift.Int
+  public func setNumWidthBraille(numWidthBraille: Swift.Int)
+  public func getNumWidthBraille() -> Swift.Int
+  public func setNumHeightBraille(numHeightBraille: Swift.Int)
+  public func getNumHeightBraille() -> Swift.Int
+  public func setNumTotalBraille(numTotalBraille: Swift.Int)
+  public func getNumTotalBraille() -> Swift.Int
+  public func setNumWidthDot(numWidthDot: Swift.Int)
+  public func getNumWidthDot() -> Swift.Int
+  public func setNumHeightDot(numHeightDot: Swift.Int)
+  public func getNumHeightDot() -> Swift.Int
+  public func setNumTextBraille(numTextBraille: Swift.Int)
+  public func getNumTextBraille() -> Swift.Int
+  @objc deinit
+}
+public class BKConfiguration {
+  final public let dataServiceUUID: CoreBluetooth.CBUUID
+  public var dataServiceCharacteristicUUID: CoreBluetooth.CBUUID
+  public var endOfDataMark: Foundation.Data
+  public var dataCancelledMark: Foundation.Data
+  public init(dataServiceUUID: Foundation.UUID, dataServiceCharacteristicUUID: Foundation.UUID)
+  @objc deinit
+}
+extension DotPadFrameworks.DotPadUtils {
+  public static func getMultiLineText(hexString: Swift.String) -> Swift.String
+}
+extension Foundation.Data {
+  public func extract<T>(start: Swift.Int, length: Swift.Int) throws -> T
+}
+public typealias BKSendDataCompletionHandler = ((_ data: Foundation.Data, _ remotePeer: DotPadFrameworks.BKRemotePeer, _ error: DotPadFrameworks.BKError?) -> Swift.Void)
+@_hasMissingDesignatedInitializers public class BKPeer {
+  public var configuration: DotPadFrameworks.BKConfiguration? {
+    get
+  }
+  public func sendData(_ data: Foundation.Data, toRemotePeer remotePeer: DotPadFrameworks.BKRemotePeer, completionHandler: DotPadFrameworks.BKSendDataCompletionHandler?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DTM {
+  public func getDotDataBoolean() -> [[Swift.Bool]]
+  public func getDTMDataString() -> Swift.String
+  public func getDTMFileData() -> [Swift.UInt8]
+  @objc deinit
+}
+public class BKPeripheralConfiguration : DotPadFrameworks.BKConfiguration {
+  final public let localName: Swift.String?
+  public init(dataServiceUUID: Foundation.UUID, dataServiceCharacteristicUUID: Foundation.UUID, localName: Swift.String? = nil)
+  @objc deinit
+}
+public func == (lhs: DotPadFrameworks.BKDiscovery, rhs: DotPadFrameworks.BKDiscovery) -> Swift.Bool
+public struct BKDiscovery : Swift.Equatable {
+  public var localName: Swift.String? {
+    get
+  }
+  public let advertisementData: [Swift.String : Any]
+  public let remotePeripheral: DotPadFrameworks.BKRemotePeripheral
+  public let RSSI: Swift.Int
+  public init(advertisementData: [Swift.String : Any], remotePeripheral: DotPadFrameworks.BKRemotePeripheral, RSSI: Swift.Int)
+}
+public enum SendMode {
+  case BASIC
+  case REFRESH
+  public static func == (a: DotPadFrameworks.SendMode, b: DotPadFrameworks.SendMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func == (lhs: DotPadFrameworks.BKDiscoveriesChange, rhs: DotPadFrameworks.BKDiscoveriesChange) -> Swift.Bool
+public enum BKDiscoveriesChange : Swift.Equatable {
+  case insert(discovery: DotPadFrameworks.BKDiscovery?)
+  case remove(discovery: DotPadFrameworks.BKDiscovery?)
+  public var discovery: DotPadFrameworks.BKDiscovery! {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class BKRemoteCentral : DotPadFrameworks.BKRemotePeer {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class DotPadUtils {
+  @objc deinit
+}
+public enum BKError : Swift.Error {
+  case interruptedByUnavailability(cause: DotPadFrameworks.BKUnavailabilityCause)
+  case failedToConnectDueToTimeout
+  case remotePeerNotConnected
+  case internalError(underlyingError: (any Swift.Error)?)
+}
+public enum LanguageCode : Swift.Int32 {
+  case Arabic
+  case Chinese
+  case English
+  case French
+  case German
+  case Italian
+  case Korean
+  case Russian
+  case Spanish
+  case Vietnamese
+  case Portuguese
+  case Japanese
+  case Czech
+  case Kazakh
+  case Danish
+  case Greek
+  case Swedish
+  case Finnish
+  case Thai
+  case Catalan
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum EnglishGradeOption : Swift.Int32 {
+  case EnglishGrade1
+  case EnglishGrade2
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum EnglishToLowerCaseOption : Swift.Int32 {
+  case OriginCase
+  case LowerCase
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum EnglishToComputerBrailleOption : Swift.Int32 {
+  case OriginBraille
+  case ComputerBraille
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum ChineseOption : Swift.Int32 {
+  case ChineseXianxingShengdiao
+  case ChineseShuangpin
+  case ChineseXianxingNoShengdiao
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum FrenchContractionOption : Swift.Int32 {
+  case FrenchUncontracted
+  case FrenchContracted
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum GermanGradeOption : Swift.Int32 {
+  case GermanGrade1
+  case GermanGrade2
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum VietnameseGradeOption : Swift.Int32 {
+  case VietnameseGrade1
+  case VietnameseGrade2
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum PortugeseGradeOption : Swift.Int32 {
+  case PortugeseGrade1
+  case PortugeseGrade2
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum ArabicGradeOption : Swift.Int32 {
+  case ArbicGrade1
+  case ArbicGrade2
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum KoreanGradeOption : Swift.Int32 {
+  case KoreanGrade1
+  case KoreanGrade2
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public enum TranslateEngine : Swift.String {
+  case Dot
+  case Louis
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PinOption : Swift.Int {
+  case Dot6
+  case Dot8
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum TranslateOption : Swift.Int {
+  case Forward
+  case Backward
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol SendDataProtocol {
+  func sendDataFunc(_ dataCode: DotPadFrameworks.DotPadCommunication.DataCodes, _ dataStr: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers open class DotPadCommunication : ObjectiveC.NSObject, DotPadFrameworks.BKCentralDelegate, DotPadFrameworks.BKAvailabilityObserver, DotPadFrameworks.Observer {
+  public enum DataCodes {
+    case Discovery_List
+    case Connected
+    case Disconnected
+    case DeviceName
+    case FirmwareInfo
+    case KeyFunction1
+    case KeyFunction2
+    case KeyFunction3
+    case KeyFunction4
+    case KeyFunction12
+    case KeyFunction23
+    case KeyFunction34
+    case PanningAll
+    case PanningLeft
+    case PanningRight
+    case LPF1
+    case RPF4
+    public static func == (a: DotPadFrameworks.DotPadCommunication.DataCodes, b: DotPadFrameworks.DotPadCommunication.DataCodes) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var discoveries: [DotPadFrameworks.BKDiscovery]
+  public var discoveries_filtered: [DotPadFrameworks.BKDiscovery]
+  public var delegate_SDP: (any DotPadFrameworks.SendDataProtocol)?
+  public var firmwareInfo: Swift.String
+  @objc override dynamic public init()
+  public func scan()
+  public func availabilityObserver(_ availabilityObservable: any DotPadFrameworks.BKAvailabilityObservable, availabilityDidChange availability: DotPadFrameworks.BKAvailability)
+  public func availabilityObserver(_ availabilityObservable: any DotPadFrameworks.BKAvailabilityObservable, unavailabilityCauseDidChange unavailabilityCause: DotPadFrameworks.BKUnavailabilityCause)
+  public func connected(to remoteperipheral: DotPadFrameworks.BKRemotePeripheral)
+  public func disconnected()
+  public func central(_ central: DotPadFrameworks.BKCentral, remotePeripheralDidDisconnect remotePeripheral: DotPadFrameworks.BKRemotePeripheral)
+  public func connect(_ remotePeripheral: DotPadFrameworks.BKRemotePeripheral)
+  public func disconnect()
+  public func setDotPadProcessData(dotPadProcessData: DotPadFrameworks.DotPadProcessData)
+  public func isConnect() -> Swift.Bool
+  public func getcharacteristic(to service: CoreBluetooth.CBService)
+  public func write(msg: Foundation.Data)
+  public func requestFirmwareVersion()
+  public func getFirmwareVersion() -> Swift.String
+  public func data(to data: Foundation.Data)
+  public func setRefreshType(type: DotPadFrameworks.RefreshType)
+  @objc deinit
+}
+public protocol BKCentralDelegate : AnyObject {
+  func central(_ central: DotPadFrameworks.BKCentral, remotePeripheralDidDisconnect remotePeripheral: DotPadFrameworks.BKRemotePeripheral)
+}
+@_inheritsConvenienceInitializers public class BKCentral : DotPadFrameworks.BKPeer, DotPadFrameworks.BKAvailabilityObservable {
+  public typealias ScanProgressHandler = ((_ newDiscoveries: [DotPadFrameworks.BKDiscovery]) -> Swift.Void)
+  public typealias ScanCompletionHandler = ((_ result: [DotPadFrameworks.BKDiscovery]?, _ error: DotPadFrameworks.BKError?) -> Swift.Void)
+  public typealias ContinuousScanChangeHandler = ((_ changes: [DotPadFrameworks.BKDiscoveriesChange], _ discoveries: [DotPadFrameworks.BKDiscovery]) -> Swift.Void)
+  public typealias ContinuousScanStateHandler = ((_ newState: DotPadFrameworks.BKCentral.ContinuousScanState) -> Swift.Void)
+  public typealias ContinuousScanErrorHandler = ((_ error: DotPadFrameworks.BKError) -> Swift.Void)
+  public typealias ConnectCompletionHandler = ((_ remotePeripheral: DotPadFrameworks.BKRemotePeripheral, _ error: DotPadFrameworks.BKError?) -> Swift.Void)
+  public enum ContinuousScanState {
+    case stopped
+    case scanning
+    case waiting
+    public static func == (a: DotPadFrameworks.BKCentral.ContinuousScanState, b: DotPadFrameworks.BKCentral.ContinuousScanState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var availability: DotPadFrameworks.BKAvailability? {
+    get
+  }
+  public var connectedRemotePeripherals: [DotPadFrameworks.BKRemotePeripheral] {
+    get
+  }
+  override public var configuration: DotPadFrameworks.BKConfiguration? {
+    get
+  }
+  weak public var delegate: (any DotPadFrameworks.BKCentralDelegate)?
+  public var availabilityObservers: [DotPadFrameworks.BKWeakAvailabilityObserver]
+  public init()
+  public func startWithConfiguration(_ configuration: DotPadFrameworks.BKConfiguration) throws
+  public func scanWithDuration(_ duration: Foundation.TimeInterval = 3, updateDuplicates: Swift.Bool = false, progressHandler: DotPadFrameworks.BKCentral.ScanProgressHandler?, completionHandler: DotPadFrameworks.BKCentral.ScanCompletionHandler?)
+  public func scanContinuouslyWithChangeHandler(_ changeHandler: @escaping DotPadFrameworks.BKCentral.ContinuousScanChangeHandler, stateHandler: DotPadFrameworks.BKCentral.ContinuousScanStateHandler?, duration: Foundation.TimeInterval = 3, inBetweenDelay: Foundation.TimeInterval = 3, updateDuplicates: Swift.Bool = false, errorHandler: DotPadFrameworks.BKCentral.ContinuousScanErrorHandler?)
+  public func interruptScan()
+  public func connect(_ timeout: Foundation.TimeInterval = 3, remotePeripheral: DotPadFrameworks.BKRemotePeripheral, completionHandler: @escaping DotPadFrameworks.BKCentral.ConnectCompletionHandler)
+  public func disconnectRemotePeripheral(_ remotePeripheral: DotPadFrameworks.BKRemotePeripheral) throws
+  public func stop() throws
+  public func retrieveRemotePeripheralWithUUID(remoteUUID: Foundation.UUID) -> DotPadFrameworks.BKRemotePeripheral?
+  public func retrieveRemotePeripheralsWithUUIDs(remoteUUIDs: [Foundation.UUID]) -> [DotPadFrameworks.BKRemotePeripheral]?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class DotPadText : DotPadFrameworks.DotPadImage {
+  public func setText(dotPad: DotPadFrameworks.DotPad, textData: Swift.String)
+  override public init()
+  override public init(width: Swift.Int, height: Swift.Int, layer: Swift.Int)
+  @objc deinit
+}
+public class DTMSItemsGraphicData : Swift.Codable {
+  public init(graphicData: [Swift.String : Swift.String])
+  public func getData() -> Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class DTMSItemsTextData : Swift.Codable {
+  public init(textData: [Swift.String : Swift.String])
+  public func getData() -> Swift.String?
+  public func getPlain() -> Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class DTMSItemsData : Swift.Codable {
+  public init(dtmsItemsData: [Swift.String : Any])
+  public func getGraphicData() -> DotPadFrameworks.DTMSItemsGraphicData?
+  public func getText() -> DotPadFrameworks.DTMSItemsTextData?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class DTMS : Swift.Codable {
+  public init(dtmsData: [Swift.String : Any])
+  public func getTitle() -> Swift.String?
+  public func getItems() -> [DotPadFrameworks.DTMSItemsData]
+  public func setDtmsGraphicData(data: Swift.String)
+  public func setDtmsTextData(dotPad: DotPadFrameworks.DotPad, data: Swift.String)
+  public func setDtmsTextDataHex(dotPad: DotPadFrameworks.DotPad, text: Swift.String)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers open class DotPadProcessData {
+  public func initializer(deviceName: Swift.String)
+  public func getDeviceName() -> Swift.String
+  public func getDeviceType() -> DotPadFrameworks.DeviceType
+  public func requestDeviceName()
+  public func displayGraphicData(data: Swift.String)
+  public func displayGraphicToBrailleData(data: Swift.String)
+  public func setDtmsGraphicData(data: Swift.String)
+  public func setDtmsTextData(data: Swift.String)
+  public func setDtmsTextHexData(data: Swift.String)
+  public func addNextPage()
+  public func deleteCurrentPage()
+  public func getItemIdx() -> Swift.Int
+  public func getNumItem() -> Swift.Int
+  public func resetGraphicDisplay()
+  public func getDTMSDotDataBoolean(dtmsDataByte: Swift.Array<Swift.UInt8>) -> [[Swift.Bool]]
+  public func resetBrailleDisplay()
+  public func getBrailleLanguage() -> Swift.Int32
+  public func setBrailleLanguage(_ brailleLanguage: Swift.Int32)
+  public func setBrailleLanguageGrade(grade: Swift.Int)
+  public func getBrailleLanguageGrade() -> Swift.Int?
+  public func setTranslateEngine(_ translateEngine: DotPadFrameworks.TranslateEngine)
+  public func setTranslateOption(_ translateOption: DotPadFrameworks.TranslateOption)
+  public func setPinOption(_ pinOption: DotPadFrameworks.PinOption)
+  public func displayTextData(text: Swift.String) -> Swift.String
+  public func displayTextData(brailleString: Swift.String)
+  public func getTextBrailleCodeOffset() -> Swift.Int
+  public func getTextBrailleCodeMaxOffset() -> Swift.Int
+  public func displayTextBrailleDataByNextKeyInput()
+  public func displayTextBrailleDataByPreviousKeyInput()
+  public func getDotDataBoolean(dtmDataByte: [Swift.UInt8]) -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func getDotDataBoolean(dtmFileData: [Swift.UInt8]) -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func displayGraphicData(dotDataBoolean: [[Swift.Bool]])
+  public func refreshGraphicData(dotDataBoolean: [[Swift.Bool]])
+  public func refreshGraphicData(dotDataHexString: Swift.String)
+  public func refreshGraphicToTextData(dotDataHexString: Swift.String)
+  public func setGraphicData(dotDataBoolean: [[Swift.Bool]])
+  public func getDTMFileData() -> [Swift.UInt8]
+  public func getDTMSData(urlString: Swift.String) -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func initDTMSData()
+  public func getNumDTMSItems() -> Swift.Int
+  public func getDotDataBooleanCurrentDTMSItem() -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func getDTMSDataByNextKeyFromApp() -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func getDTMSDataByPreviousKeyFromApp() -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func displayDTMSGraphicDataByNextKeyFromApp() -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func displayDTMSGraphicDataByPreviousKeyFromApp() -> Swift.Array<Swift.Array<Swift.Bool>>
+  public func getDTMSItemIdxInfo() -> (current: Swift.Int, total: Swift.Int)
+  public func getDTMSTextData() -> Swift.String
+  public func getDTMSNextPageTextData() -> Swift.String?
+  public func getDTMSPreviousPageTextData() -> Swift.String?
+  public func getDTMSItemsData() -> [DotPadFrameworks.DTMSItemsData]
+  public func setDTMSdata(dtmsObject: DotPadFrameworks.DTMS)
+  public func setDotDataBooleanToHex(dtmsDatBoolean: [[Swift.Bool]]) -> Swift.String
+  public func displayDotPadImage(object: DotPadFrameworks.DotPadImage)
+  public func displayDotPadImage(objectList: [DotPadFrameworks.DotPadImage])
+  public func getMultiLineData(param: Swift.String) -> Swift.String
+  public func getTableData(tableData: [[DotPadFrameworks.DotPadTable]], currentSentenceIndex: Swift.Int) -> (hexString: Swift.String, r: Swift.Int, c: Swift.Int)
+  public func getDataMachingTableData(tableData: [[DotPadFrameworks.DotPadTable]]) -> [[Swift.Int]]
+  @objc deinit
+}
+extension Swift.Array where Element == Swift.UInt8 {
+  public func bytesToHex(spacing: Swift.String) -> Swift.String
+}
+extension Swift.String {
+  public func substring(from: Swift.Int, to: Swift.Int) -> Swift.String
+}
+public func == (lhs: DotPadFrameworks.BKAvailability, rhs: DotPadFrameworks.BKAvailability) -> Swift.Bool
+public enum BKAvailability : Swift.Equatable {
+  case available
+  case unavailable(cause: DotPadFrameworks.BKUnavailabilityCause)
+}
+public enum BKUnavailabilityCause : Swift.ExpressibleByNilLiteral {
+  case any
+  case resetting
+  case unsupported
+  case unauthorized
+  case poweredOff
+  public init(nilLiteral: Swift.Void)
+  public static func == (a: DotPadFrameworks.BKUnavailabilityCause, b: DotPadFrameworks.BKUnavailabilityCause) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol BKAvailabilityObservable : AnyObject {
+  var availabilityObservers: [DotPadFrameworks.BKWeakAvailabilityObserver] { get set }
+  func addAvailabilityObserver(_ availabilityObserver: any DotPadFrameworks.BKAvailabilityObserver)
+  func removeAvailabilityObserver(_ availabilityObserver: any DotPadFrameworks.BKAvailabilityObserver)
+}
+@_hasMissingDesignatedInitializers public class BKWeakAvailabilityObserver {
+  @objc deinit
+}
+extension DotPadFrameworks.BKAvailabilityObservable {
+  public func addAvailabilityObserver(_ availabilityObserver: any DotPadFrameworks.BKAvailabilityObserver)
+  public func removeAvailabilityObserver(_ availabilityObserver: any DotPadFrameworks.BKAvailabilityObserver)
+}
+public protocol BKAvailabilityObserver : AnyObject {
+  func availabilityObserver(_ availabilityObservable: any DotPadFrameworks.BKAvailabilityObservable, availabilityDidChange availability: DotPadFrameworks.BKAvailability)
+  func availabilityObserver(_ availabilityObservable: any DotPadFrameworks.BKAvailabilityObservable, unavailabilityCauseDidChange unavailabilityCause: DotPadFrameworks.BKUnavailabilityCause)
+}
+extension DotPadFrameworks.BKRemotePeripheral.State : Swift.Equatable {}
+extension DotPadFrameworks.BKRemotePeripheral.State : Swift.Hashable {}
+extension DotPadFrameworks.RefreshType : Swift.Equatable {}
+extension DotPadFrameworks.RefreshType : Swift.Hashable {}
+extension DotPadFrameworks.RefreshMode : Swift.Equatable {}
+extension DotPadFrameworks.RefreshMode : Swift.Hashable {}
+extension DotPadFrameworks.DeviceType : Swift.Equatable {}
+extension DotPadFrameworks.DeviceType : Swift.Hashable {}
+extension DotPadFrameworks.SendMode : Swift.Equatable {}
+extension DotPadFrameworks.SendMode : Swift.Hashable {}
+extension DotPadFrameworks.LanguageCode : Swift.Equatable {}
+extension DotPadFrameworks.LanguageCode : Swift.Hashable {}
+extension DotPadFrameworks.LanguageCode : Swift.RawRepresentable {}
+extension DotPadFrameworks.EnglishGradeOption : Swift.Equatable {}
+extension DotPadFrameworks.EnglishGradeOption : Swift.Hashable {}
+extension DotPadFrameworks.EnglishGradeOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.EnglishToLowerCaseOption : Swift.Equatable {}
+extension DotPadFrameworks.EnglishToLowerCaseOption : Swift.Hashable {}
+extension DotPadFrameworks.EnglishToLowerCaseOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.EnglishToComputerBrailleOption : Swift.Equatable {}
+extension DotPadFrameworks.EnglishToComputerBrailleOption : Swift.Hashable {}
+extension DotPadFrameworks.EnglishToComputerBrailleOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.ChineseOption : Swift.Equatable {}
+extension DotPadFrameworks.ChineseOption : Swift.Hashable {}
+extension DotPadFrameworks.ChineseOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.FrenchContractionOption : Swift.Equatable {}
+extension DotPadFrameworks.FrenchContractionOption : Swift.Hashable {}
+extension DotPadFrameworks.FrenchContractionOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.GermanGradeOption : Swift.Equatable {}
+extension DotPadFrameworks.GermanGradeOption : Swift.Hashable {}
+extension DotPadFrameworks.GermanGradeOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.VietnameseGradeOption : Swift.Equatable {}
+extension DotPadFrameworks.VietnameseGradeOption : Swift.Hashable {}
+extension DotPadFrameworks.VietnameseGradeOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.PortugeseGradeOption : Swift.Equatable {}
+extension DotPadFrameworks.PortugeseGradeOption : Swift.Hashable {}
+extension DotPadFrameworks.PortugeseGradeOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.ArabicGradeOption : Swift.Equatable {}
+extension DotPadFrameworks.ArabicGradeOption : Swift.Hashable {}
+extension DotPadFrameworks.ArabicGradeOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.KoreanGradeOption : Swift.Equatable {}
+extension DotPadFrameworks.KoreanGradeOption : Swift.Hashable {}
+extension DotPadFrameworks.KoreanGradeOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.TranslateEngine : Swift.Equatable {}
+extension DotPadFrameworks.TranslateEngine : Swift.Hashable {}
+extension DotPadFrameworks.TranslateEngine : Swift.RawRepresentable {}
+extension DotPadFrameworks.PinOption : Swift.Equatable {}
+extension DotPadFrameworks.PinOption : Swift.Hashable {}
+extension DotPadFrameworks.PinOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.TranslateOption : Swift.Equatable {}
+extension DotPadFrameworks.TranslateOption : Swift.Hashable {}
+extension DotPadFrameworks.TranslateOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.DotPadCommunication.DataCodes : Swift.Equatable {}
+extension DotPadFrameworks.DotPadCommunication.DataCodes : Swift.Hashable {}
+extension DotPadFrameworks.BKCentral.ContinuousScanState : Swift.Equatable {}
+extension DotPadFrameworks.BKCentral.ContinuousScanState : Swift.Hashable {}
+extension DotPadFrameworks.BKUnavailabilityCause : Swift.Equatable {}
+extension DotPadFrameworks.BKUnavailabilityCause : Swift.Hashable {}

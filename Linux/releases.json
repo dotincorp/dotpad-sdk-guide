@@ -5,15 +5,15 @@
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Linux",
   "product": {
     "version": "v1.0.0",
-    "releaseDate": "2026-05-10",
-    "minimumOs": "Ubuntu 20.04 이상",
+    "releaseDate": "2025-09-14",
+    "minimumOs": "Ubuntu 18.04 이상",
     "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Linux/1.0.0/download/linux-sdk-1.0.0.zip"
   },
   "releases": [
     {
       "version": "v1.0.0",
-      "date": "2026-01-15",
-      "minimumOs": "Ubuntu 20.04 이상",
+      "date": "2025-09-14",
+      "minimumOs": "Ubuntu 18.04 이상",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Linux/1.0.0/download/linux-sdk-1.0.0.zip",
       "details": [
         { "type": "NEW", "text": "Initial Linux SDK release" }

@@ -5,15 +5,15 @@
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/iOS",
   "product": {
     "version": "v2.3.1",
-    "releaseDate": "2026-01-15",
-    "minimumOs": "iOS 13.0+",
+    "releaseDate": "2024-10-22",
+    "minimumOs": "iOS 15.0+",
     "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.3.1/download/ios-sdk-2.3.1.zip"
   },
   "releases": [
     {
       "version": "v2.3.1",
-      "date": "2026-01-15",
-      "minimumOs": "iOS 13.0+",
+      "date": "2024-10-22",
+      "minimumOs": "iOS 15.0+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.3.1/download/ios-sdk-2.3.1.zip",
       "details": [
         { "type": "IMPROVE", "text": "Fixed Swift 5.10 version compile" }
@@ -21,8 +21,8 @@
     },
     {
       "version": "v2.3.0",
-      "date": "2026-01-15",
-      "minimumOs": "iOS 13.0+",
+      "date": "2024-09-25",
+      "minimumOs": "iOS 15.0+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.3.0/download/ios-sdk-2.3.0.zip",
       "details": [
         { "type": "IMPROVE", "text": "Add IOS SDK 2.3.0" }
@@ -30,8 +30,8 @@
     },
     {
       "version": "v2.2.0",
-      "date": "2026-01-14",
-      "minimumOs": "iOS 13.0+",
+      "date": "2024-08-07",
+      "minimumOs": "iOS 15.0+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.2.0/download/ios-sdk-2.2.0.zip",
       "details": [
         { "type": "IMPROVE", "text": "Add km2-20 BLE device" }
@@ -39,8 +39,8 @@
     },
     {
       "version": "v2.1.0",
-      "date": "2026-01-14",
-      "minimumOs": "iOS 13.0+",
+      "date": "2024-08-07",
+      "minimumOs": "iOS 15.0+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.1.0/download/ios-sdk-2.1.0.zip",
       "details": [
         { "type": "IMPROVE", "text": "Fixed IOS SDK 2.1.0 Info" }
@@ -48,8 +48,8 @@
     },
     {
       "version": "v2.0.0",
-      "date": "2024-07-05",
-      "minimumOs": "iOS 13.0+",
+      "date": "2023-10-13",
+      "minimumOs": "iOS 15.0+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.0.0/download/ios-sdk-2.0.0.zip",
       "details": [
         { "type": "IMPROVE", "text": "Add IOS SDK 2.0.0" }
@@ -58,7 +58,7 @@
     {
       "version": "v1.2.0",
       "date": "2023-09-07",
-      "minimumOs": "iOS 13.0+",
+      "minimumOs": "iOS 15.0+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/1.2.0/download/ios-sdk-1.2.0.zip",
       "details": [
         { "type": "IMPROVE", "text": "Add IOS SDK 1.2.0" }

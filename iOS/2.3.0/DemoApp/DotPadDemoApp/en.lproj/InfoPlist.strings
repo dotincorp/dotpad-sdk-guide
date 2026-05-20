@@ -1,0 +1,2 @@
+NSBluetoothAlwaysUsageDescription = "Bluetooth permission is required to connect to DotPad devices.";
+NSBluetoothPeripheralUsageDescription = "Bluetooth permission is required to connect to DotPad devices.";

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DotPadDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW1-tX-smc">
+                                <rect key="frame" x="157" y="63" width="101" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Scan"/>
+                                <connections>
+                                    <action selector="startScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVc-MD-fPX"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XwF-9r-5sk">
+                                <rect key="frame" x="20" y="121.5" width="374" height="265.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="aDj-sZ-Eu5" customClass="BLEPeripheralCell" customModule="DotPadDemoApp">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aDj-sZ-Eu5" id="PPO-ih-o16">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9H-tF-Bho">
+                                                    <rect key="frame" x="11" y="11" width="250" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="JYP-JN-jW7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbF-Z2-4ct">
+                                                    <rect key="frame" x="301" y="11" width="63" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="D9H-tF-Bho" firstAttribute="baseline" secondItem="jbF-Z2-4ct" secondAttribute="baseline" id="FHU-Ev-Zu0"/>
+                                                <constraint firstItem="D9H-tF-Bho" firstAttribute="leading" secondItem="PPO-ih-o16" secondAttribute="leadingMargin" constant="-9" id="NCS-HT-yNQ"/>
+                                                <constraint firstItem="D9H-tF-Bho" firstAttribute="firstBaseline" secondItem="jbF-Z2-4ct" secondAttribute="firstBaseline" id="Nkj-yz-oPm"/>
+                                                <constraint firstItem="jbF-Z2-4ct" firstAttribute="leading" secondItem="D9H-tF-Bho" secondAttribute="trailing" constant="40" id="Npa-xa-Rbk"/>
+                                                <constraint firstItem="D9H-tF-Bho" firstAttribute="top" secondItem="PPO-ih-o16" secondAttribute="topMargin" id="c5l-jk-9U8"/>
+                                                <constraint firstItem="D9H-tF-Bho" firstAttribute="centerY" secondItem="PPO-ih-o16" secondAttribute="centerY" id="h4Z-0x-wGR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="DeviceName" destination="D9H-tF-Bho" id="AwM-ja-Sez"/>
+                                            <outlet property="RSSI" destination="jbF-Z2-4ct" id="xSJ-Zl-pWk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjh-Dn-Zc9">
+                                <rect key="frame" x="36" y="417" width="86" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pad Info"/>
+                                <connections>
+                                    <action selector="getDeviceInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8V-3e-dL2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-Qv-32M">
+                                <rect key="frame" x="71" y="613" width="82" height="48"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="All UP"/>
+                                <connections>
+                                    <action selector="allUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ft2-8T-Z9E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKz-Zf-Mso">
+                                <rect key="frame" x="244" y="606" width="91" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="All Down"/>
+                                <connections>
+                                    <action selector="allDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ER-uA-Pzm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQk-n3-6Wm">
+                                <rect key="frame" x="126" y="735" width="163" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Send Sample DTM"/>
+                                <connections>
+                                    <action selector="sendSampleDTM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8l-wp-Sxo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUB-tg-eO4">
+                                <rect key="frame" x="41" y="464.5" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ca1-iF-W7i">
+                                <rect key="frame" x="41" y="493.5" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ene-Rs-32e">
+                                <rect key="frame" x="124" y="417.5" width="270" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-SK-Slj" userLabel="Braille String">
+                                <rect key="frame" x="45" y="559" width="349" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GML-0Q-nQq" userLabel="Text Display Button">
+                                <rect key="frame" x="164" y="436" width="85" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Display"/>
+                                <connections>
+                                    <action selector="DisplayText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kf8-6P-piv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yUB-tg-eO4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="4sK-Qy-THu"/>
+                            <constraint firstItem="fMg-Qv-32M" firstAttribute="baseline" secondItem="eKz-Zf-Mso" secondAttribute="baseline" id="6bk-k1-okg"/>
+                            <constraint firstItem="XwF-9r-5sk" firstAttribute="centerX" secondItem="dQk-n3-6Wm" secondAttribute="centerX" id="7Sj-tS-eUD"/>
+                            <constraint firstItem="dQk-n3-6Wm" firstAttribute="top" secondItem="ca1-iF-W7i" secondAttribute="bottom" constant="194" id="8rd-y8-4eG"/>
+                            <constraint firstItem="gjh-Dn-Zc9" firstAttribute="bottom" secondItem="ene-Rs-32e" secondAttribute="bottom" id="9uP-qn-sgl"/>
+                            <constraint firstItem="BW1-tX-smc" firstAttribute="centerX" secondItem="dQk-n3-6Wm" secondAttribute="centerX" id="ApV-9g-XdW"/>
+                            <constraint firstItem="XwF-9r-5sk" firstAttribute="top" secondItem="BW1-tX-smc" secondAttribute="bottom" id="Hgw-wy-Gjo"/>
+                            <constraint firstItem="XwF-9r-5sk" firstAttribute="trailing" secondItem="ene-Rs-32e" secondAttribute="trailing" id="LNA-8D-Q59"/>
+                            <constraint firstItem="LeX-SK-Slj" firstAttribute="leading" secondItem="gjh-Dn-Zc9" secondAttribute="leading" id="Plb-Tz-tRp"/>
+                            <constraint firstItem="BW1-tX-smc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RrO-aR-bJT"/>
+                            <constraint firstItem="BW1-tX-smc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="VOi-2O-hvl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUB-tg-eO4" secondAttribute="trailing" constant="275" id="WYm-pz-Gol"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQk-n3-6Wm" secondAttribute="bottom" constant="96" id="Xvs-Bh-Chf"/>
+                            <constraint firstItem="yUB-tg-eO4" firstAttribute="top" secondItem="fMg-Qv-32M" secondAttribute="bottom" constant="-183" id="bdg-KJ-3R3"/>
+                            <constraint firstItem="dQk-n3-6Wm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="cpE-Mu-NCw"/>
+                            <constraint firstItem="ene-Rs-32e" firstAttribute="trailing" secondItem="eKz-Zf-Mso" secondAttribute="trailing" constant="59" id="eST-V4-HXd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ca1-iF-W7i" secondAttribute="trailing" constant="20" id="hJ5-z2-qKk"/>
+                            <constraint firstItem="fMg-Qv-32M" firstAttribute="top" secondItem="LeX-SK-Slj" secondAttribute="bottom" constant="33" id="hTs-A3-17H"/>
+                            <constraint firstItem="ene-Rs-32e" firstAttribute="leading" secondItem="dQk-n3-6Wm" secondAttribute="leading" constant="-2" id="l3C-DL-Zut"/>
+                            <constraint firstItem="gjh-Dn-Zc9" firstAttribute="top" secondItem="XwF-9r-5sk" secondAttribute="bottom" constant="30" id="lsL-j5-yF7"/>
+                            <constraint firstItem="ca1-iF-W7i" firstAttribute="trailing" secondItem="eKz-Zf-Mso" secondAttribute="trailing" constant="59" id="myP-lz-EYz"/>
+                            <constraint firstItem="fMg-Qv-32M" firstAttribute="leading" secondItem="yUB-tg-eO4" secondAttribute="leading" constant="30" id="o0K-e2-GVm"/>
+                            <constraint firstItem="BW1-tX-smc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="s0u-sE-xFh"/>
+                            <constraint firstItem="yUB-tg-eO4" firstAttribute="top" secondItem="gjh-Dn-Zc9" secondAttribute="bottom" constant="13" id="t8C-Qi-4RF"/>
+                            <constraint firstAttribute="bottom" secondItem="LeX-SK-Slj" secondAttribute="bottom" constant="316" id="u3S-ri-mL8"/>
+                            <constraint firstItem="ca1-iF-W7i" firstAttribute="top" secondItem="yUB-tg-eO4" secondAttribute="bottom" constant="8" id="vi8-mr-Xx0"/>
+                            <constraint firstItem="ca1-iF-W7i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="w2l-ll-BWe"/>
+                            <constraint firstItem="ene-Rs-32e" firstAttribute="leading" secondItem="gjh-Dn-Zc9" secondAttribute="trailing" constant="2" id="yv2-Fi-xdl"/>
+                            <constraint firstItem="LeX-SK-Slj" firstAttribute="top" secondItem="ca1-iF-W7i" secondAttribute="bottom" constant="18" id="zGT-oU-FEx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BLEButton" destination="BW1-tX-smc" id="0pj-ab-RuL"/>
+                        <outlet property="BrailleString" destination="LeX-SK-Slj" id="Oca-bb-e9V"/>
+                        <outlet property="TextDisplayButton" destination="GML-0Q-nQq" id="PLy-ft-tr3"/>
+                        <outlet property="padInfoTextField" destination="ene-Rs-32e" id="sse-g1-8Ty"/>
+                        <outlet property="padTextField" destination="ca1-iF-W7i" id="C94-8n-NcV"/>
+                        <outlet property="tableView" destination="XwF-9r-5sk" id="MZY-fh-VRW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="22.767857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

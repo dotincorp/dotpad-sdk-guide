@@ -1,0 +1,73 @@
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 1000px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc; /* 경계선 추가 */
+  background-color: #f9f9f9; /* 배경색 추가 */
+}
+
+.labelContainer {
+  padding-right: 20px; /* 라벨과 버튼 사이에 공간 추가 */
+}
+
+.labelContainer label {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px; /* 버튼 사이의 간격 */
+}
+
+.selectButton, .printButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5px 0px;
+}
+
+.header {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.row {
+  border-bottom: 1px solid #ccc;
+}
+
+.cell {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
