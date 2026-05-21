@@ -82,7 +82,7 @@ Sample application demonstrating the DotPad SDK for Android. The app connects to
 
 ### 1. Add the AAR
 
-Copy `DotPadFrameworks-x.x.x.aar` into your module's `libs/` folder, then add to `build.gradle.kts`:
+Copy `android-sdk-x.x.x.aar` into your module's `libs/` folder, then add to `build.gradle.kts`:
 
 ```kotlin
 dependencies {

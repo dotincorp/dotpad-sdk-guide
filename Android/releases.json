@@ -7,14 +7,14 @@
     "version": "v3.0.1",
     "releaseDate": "2026-04-27",
     "minimumOs": "Android 8.0 (API 26)+",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.1/download/android-sdk-3.0.1.aar"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.1/download/android-sdk-3.0.1.zip"
   },
   "releases": [
     {
       "version": "v3.0.1",
       "date": "2026-04-27",
       "minimumOs": "Android 8.0 (API 26)+",
-      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.1/download/android-sdk-3.0.1.aar",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.1/download/android-sdk-3.0.1.zip",
       "details": [
         { "type": "IMPROVE", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" },
         { "type": "IMPROVE", "text": "Added DotPadKey enum for individual key identification" },
@@ -25,7 +25,7 @@
       "version": "v3.0.0",
       "date": "2026-03-10",
       "minimumOs": "Android 8.0 (API 26)+",
-      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.0/download/android-sdk-3.0.0.aar",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.0/download/android-sdk-3.0.0.zip",
       "details": [
         { "type": "IMPROVE", "text": "Improve BLE connection stability" }
       ]
@@ -34,7 +34,7 @@
       "version": "v2.0.0",
       "date": "2025-09-24",
       "minimumOs": "Android 5.0 (API 21)+",
-      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/2.0.0/download/android-sdk-2.0.0.aar",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/2.0.0/download/android-sdk-2.0.0.zip",
        "details": [
         { "type": "IMPROVE", "text": "Keep non-data pins in displayTextDataLine." }
       ]
@@ -43,7 +43,7 @@
       "version": "v1.1.0",
       "date": "2023-09-07",
       "minimumOs": "Android 5.0 (API 21)+",
-      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/1.1.0/download/android-sdk-1.1.0.aar",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/1.1.0/download/android-sdk-1.1.0.zip",
       "details": [
         { "type": "NEW", "text": "Initial deployment" }
       ]

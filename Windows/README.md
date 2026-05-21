@@ -4,17 +4,6 @@
 * A Windows library for Dot Incorporation's Dot Pad
 * To be used for application development for the Dot Pad
 
-## History
-* 2023-02-13 / DTMS file processing (1.0.0)
-* 2023-11-13 / add liblouis translation (1.1.0)
-* 2023-11-20 / add liblouis wordrap (1.1.0)
-* 2024-08-09 / add km3-12 ble device (1.2.0)
-* 2024-12-23 / add km3-8 device (1.3.0)
-* 2025-05-15 / add multi key callback (1.4.0)
-
-## SDK Sample Code
-* [Sample Application](https://github.com/dotincorp/dotpad-sample-code/tree/main/Windows)
-
 ## how to use the DotPadSDK for Windows
 * Power on the Dot Pad
 * Check the battery status.

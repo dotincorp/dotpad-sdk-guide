@@ -1,0 +1,58 @@
+name: DotPadDemoApp
+options:
+  bundleIdPrefix: com.dotincorp
+  deploymentTarget:
+    iOS: "15.0"
+  xcodeVersion: "15.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+    DEVELOPMENT_TEAM: ""
+    EXCLUDED_ARCHS[sdk=iphonesimulator*]: "x86_64"
+    SUPPORTS_MACCATALYST: NO
+
+targets:
+  DotPadDemoApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: "DotPadDemoApp"
+        type: group
+    dependencies:
+      - framework: "Frameworks/DotPadFrameworks.xcframework"
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dotincorp.DotPadDemoApp
+        PRODUCT_NAME: "DotPad Demo App"
+        PRODUCT_MODULE_NAME: DotPadDemoApp
+        INFOPLIST_FILE: "DotPadDemoApp/Info.plist"
+        GENERATE_INFOPLIST_FILE: YES
+        MARKETING_VERSION: "2.2.0"
+        CURRENT_PROJECT_VERSION: 1
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_KEY_UILaunchStoryboardName: LaunchScreen
+        INFOPLIST_KEY_UIMainStoryboardFile: Main
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/Frameworks"
+        FRAMEWORK_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(SRCROOT)/Frameworks"
+
+schemes:
+  DotPadDemoApp:
+    build:
+      targets:
+        DotPadDemoApp: all
+    run:
+      config: Debug
+    archive:
+      config: Release
