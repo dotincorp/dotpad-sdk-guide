@@ -108,6 +108,38 @@ sdk.dotPadAPI.requestVibrator(onMs: 100, offMs: 50, repeatCount: 3)
 | `offMs` | Duration of each pause between pulses (ms). Default `50`. |
 | `repeatCount` | Number of vibration pulses, `1`~`5`. Default `2`. |
 
+### 7. Text-to-Braille Translation (No Device Required)
+
+`translateText(_:completion:)` converts input text to braille hex data via a callback, using the SDK's translation engine directly — it works even without a connected device.
+
+```swift
+sdk.dotPadAPI.translateText("Hello") { hexString in
+    // hexString: translated braille data as a hex string (e.g. "0102...")
+}
+```
+
+The translation result depends on the currently configured language, grade, and word-wrap cell count, so set those beforehand:
+
+```swift
+// Language (e.g. Korean) and translate engine
+sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: nil, brailleLanguage: LanguageCode.Korean.rawValue)
+
+// Grade (e.g. Grade 2)
+sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: Int(GradeOption.Grade2.rawValue))
+
+// Number of braille cells per line (word-wrap width)
+sdk.dotPadAPI.setNumberOfBraillePerLine(20)
+
+sdk.dotPadAPI.translateText("Hello") { hexString in
+    // ...
+}
+```
+
+| Method | Description |
+|--------|-------------|
+| `translateText(_ text: String, completion: @escaping (String) -> Void)` | Translates `text` to braille and returns the result as a hex string via `completion`. Does not require a device connection. |
+| `setNumberOfBraillePerLine(_ count: Int32)` | Sets the number of braille cells displayed per line (word-wrap character count) used by translation. |
+
 ---
 
 ## Features
@@ -121,6 +153,7 @@ sdk.dotPadAPI.requestVibrator(onMs: 100, offMs: 50, repeatCount: 3)
 | All Up / All Down | Raise all pins or reset displays |
 | Manual Braille Navigation | Disable auto next/prev on panning key input and trigger it manually |
 | Key Press / Release Events | Receive `onKeyDown` / `onKeyUp` callbacks for hardware key state changes |
+| Text-to-Braille Translation | Convert text to braille hex data via `translateText`, without a device connection |
 
 ---
 
@@ -226,6 +259,14 @@ sdk.dotPadAPI.displayBrailleDataPrev()
 
 // 6. Disconnect
 sdk.dotPadAPI.dotPadDisconnect()
+
+// 7. Text-to-braille translation (optional, no device required)
+sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: nil, brailleLanguage: LanguageCode.Korean.rawValue)
+sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: Int(GradeOption.Grade2.rawValue))
+sdk.dotPadAPI.setNumberOfBraillePerLine(20)
+sdk.dotPadAPI.translateText("Hello") { hexString in
+    // hexString: translated braille data
+}
 ```
 
 ---

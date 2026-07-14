@@ -10140,6 +10140,54 @@
           },
           {
             "kind": "Function",
+            "name": "setNumberOfBraillePerLine",
+            "printedName": "setNumberOfBraillePerLine(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC011setNumberOfD7PerLineyys5Int32VF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC011setNumberOfD7PerLineyys5Int32VF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNumberOfBraillePerLine",
+            "printedName": "getNumberOfBraillePerLine()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC011getNumberOfD7PerLines5Int32VyF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC011getNumberOfD7PerLines5Int32VyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getUserOptionPointer",
             "printedName": "getUserOptionPointer()",
             "children": [
@@ -13925,6 +13973,34 @@
           },
           {
             "kind": "Function",
+            "name": "setNumberOfBraillePerLine",
+            "printedName": "setNumberOfBraillePerLine(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB3APIC25setNumberOfBraillePerLineyys5Int32VF",
+            "mangledName": "$s16DotPadFrameworks0aB3APIC25setNumberOfBraillePerLineyys5Int32VF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getBrailleLanguageGrade",
             "printedName": "getBrailleLanguageGrade()",
             "children": [
@@ -13969,6 +14045,52 @@
             "declKind": "Func",
             "usr": "s:16DotPadFrameworks0aB3APIC18getBrailleLanguages5Int32VyF",
             "mangledName": "$s16DotPadFrameworks0aB3APIC18getBrailleLanguages5Int32VyF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "translateText",
+            "printedName": "translateText(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB3APIC13translateText_10completionySS_ySSctF",
+            "mangledName": "$s16DotPadFrameworks0aB3APIC13translateText_10completionySS_ySSctF",
             "moduleName": "DotPadFrameworks",
             "declAttributes": [
               "AccessControl",
@@ -14634,6 +14756,33 @@
             "declKind": "Func",
             "usr": "s:16DotPadFrameworks0aB3APIC26setWordWrappingUseSettingsyySbF",
             "mangledName": "$s16DotPadFrameworks0aB3APIC26setWordWrappingUseSettingsyySbF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNumberOfBraillePerLine",
+            "printedName": "setNumberOfBraillePerLine(count:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB3APIC25setNumberOfBraillePerLine5countys5Int32V_tF",
+            "mangledName": "$s16DotPadFrameworks0aB3APIC25setNumberOfBraillePerLine5countys5Int32V_tF",
             "moduleName": "DotPadFrameworks",
             "declAttributes": [
               "AccessControl"
@@ -23264,6 +23413,34 @@
           },
           {
             "kind": "Function",
+            "name": "setNumberOfBraillePerLine",
+            "printedName": "setNumberOfBraillePerLine(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks03NewaB11ProcessDataC25setNumberOfBraillePerLineyys5Int32VF",
+            "mangledName": "$s16DotPadFrameworks03NewaB11ProcessDataC25setNumberOfBraillePerLineyys5Int32VF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getBrailleLanguage",
             "printedName": "getBrailleLanguage()",
             "children": [
@@ -26534,42 +26711,42 @@
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 16235,
+      "offset": 16528,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 16670,
+      "offset": 16963,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 16782,
+      "offset": 17075,
       "length": 4,
       "value": "0x07"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 16825,
+      "offset": 17118,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 16871,
+      "offset": 17164,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 16985,
+      "offset": 17278,
       "length": 21,
       "value": "\"[一-鿿]\""
     },

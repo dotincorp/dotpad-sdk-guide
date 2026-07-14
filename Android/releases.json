@@ -16,9 +16,8 @@
       "minimumOs": "Android 8.0 (API 26)+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.1/download/android-sdk-3.0.1.zip",
       "details": [
-        { "type": "IMPROVE", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" },
-        { "type": "IMPROVE", "text": "Added DotPadKey enum for individual key identification" },
-        { "type": "IMPROVE", "text": "Panning Key and Function Key provide separate dotKeyBinary values" }
+        { "type": "NEW", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" },
+        { "type": "NEW", "text": "Added DotPadKey enum for individual key identification" }
       ]
     },
     {

@@ -16,9 +16,11 @@
       "minimumOs": "iOS 15.0+",
       "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.3.2/download/ios-sdk-2.3.2.zip",
       "details": [
-        { "type": "NEW", "text": "Added manual braille data navigation APIs: setUseAutoBrailleNextPrev, displayBrailleDataNext, displayBrailleDataPrev" },
+        { "type": "IMPROVE", "text": "Added manual braille data navigation APIs: setUseAutoBrailleNextPrev, displayBrailleDataNext, displayBrailleDataPrev" },
         { "type": "NEW", "text": "Added requestVibrator API for triggering device vibration feedback" },
-        { "type": "NEW", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" }
+        { "type": "NEW", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" },
+        { "type": "NEW", "text": "Added translateText API for converting text to braille hex data without requiring a device connection" },
+        { "type": "NEW", "text": "Added setNumberOfBraillePerLine API for configuring the word-wrap cell count used by braille translation" }
       ]
     },
     {

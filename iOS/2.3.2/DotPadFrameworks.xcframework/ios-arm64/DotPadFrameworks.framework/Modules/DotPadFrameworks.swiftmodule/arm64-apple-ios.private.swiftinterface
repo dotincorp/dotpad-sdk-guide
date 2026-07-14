@@ -365,6 +365,8 @@ public class BrailleData {
   public func setNumberOfSettiongsColumns(columns: Swift.Int)
   public func setWordWrappingUseSettings(use: Swift.Bool)
   public func getWordWrappingUseSettings() -> Swift.Bool
+  public func setNumberOfBraillePerLine(_ count: Swift.Int32)
+  public func getNumberOfBraillePerLine() -> Swift.Int32
   public func getUserOptionPointer() -> Swift.UnsafeMutablePointer<Swift.Int32>
 }
 @_hasMissingDesignatedInitializers public class DTM {
@@ -516,8 +518,10 @@ extension DotPadFrameworks.DotPadAPI {
   public func displayBrailleDataNext()
   public func displayBrailleDataPrev()
   public func setWordWrapping(_ use: Swift.Bool)
+  public func setNumberOfBraillePerLine(_ count: Swift.Int32)
   public func getBrailleLanguageGrade() -> Swift.Int?
   public func getBrailleLanguage() -> Swift.Int32
+  public func translateText(_ text: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
 }
 extension DotPadFrameworks.DotPadAPI {
   public func initDTMSData()
@@ -541,6 +545,7 @@ extension DotPadFrameworks.DotPadAPI {
   public func getDataMachingTableData(tableData: [[DotPadFrameworks.DotPadTable]]) -> [[Swift.Int]]
   public func setBrailleLines(_ brailleLines: Swift.Int32)
   public func setWordWrappingUseSettings(_ use: Swift.Bool)
+  public func setNumberOfBraillePerLine(count: Swift.Int32)
   public func setBrailleStyle(_ brailleStyle: Swift.Int32)
   public func getMultiLineData(param: Swift.String) -> Swift.String
   public func generateJsonString(param: Swift.String) -> Swift.String
@@ -831,6 +836,7 @@ extension DotPadFrameworks.NewDotPadProcessData {
   public func setBrailleLines(_ brailleLines: Swift.Int32)
   public func setBrailleStyle(_ brailleStyle: Swift.Int32)
   public func setWordWrapping(_ use: Swift.Bool)
+  public func setNumberOfBraillePerLine(_ count: Swift.Int32)
   public func getBrailleLanguage() -> Swift.Int32
   public func setBrailleLanguage(_ brailleLanguage: Swift.Int32)
   public func setBrailleLanguageGrade(grade: Swift.Int)
