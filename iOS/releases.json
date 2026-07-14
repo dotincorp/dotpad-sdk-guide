@@ -4,12 +4,23 @@
   "supportedLanguages": "Swift, Object-C",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/iOS",
   "product": {
-    "version": "v2.3.1",
-    "releaseDate": "2024-10-22",
+    "version": "v2.3.2",
+    "releaseDate": "2026-07-14",
     "minimumOs": "iOS 15.0+",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.3.1/download/ios-sdk-2.3.1.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.3.2/download/ios-sdk-2.3.2.zip"
   },
   "releases": [
+    {
+      "version": "v2.3.2",
+      "date": "2026-07-14",
+      "minimumOs": "iOS 15.0+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/iOS/2.3.2/download/ios-sdk-2.3.2.zip",
+      "details": [
+        { "type": "NEW", "text": "Added manual braille data navigation APIs: setUseAutoBrailleNextPrev, displayBrailleDataNext, displayBrailleDataPrev" },
+        { "type": "NEW", "text": "Added requestVibrator API for triggering device vibration feedback" },
+        { "type": "NEW", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" }
+      ]
+    },
     {
       "version": "v2.3.1",
       "date": "2024-10-22",

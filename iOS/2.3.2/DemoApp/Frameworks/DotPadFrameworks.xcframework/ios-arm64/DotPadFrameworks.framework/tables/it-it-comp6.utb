@@ -1,0 +1,210 @@
+# liblouis: Italiano
+#
+#  Copyright (C) 2004-2008 ViewPlus Technologies, Inc. www.viewplus.com
+#  Copyright (C) 2004-2006 JJB Software, Inc. www.jjb-software.com
+#  Copyright (C) 2012 Mesar Hameed <mesar.hameed@gmail.com>
+#  Copyright (C) 2026 Vision Dept SRL. <info@visiondept.it>
+#
+#  This file is part of liblouis.
+#
+#  liblouis is free software: you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as
+#  published by the Free Software Foundation, either version 2.1 of the
+#  License, or (at your option) any later version.
+#
+#  liblouis is distributed in the hope that it will be useful, but
+#  WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+#  Lesser General Public License for more details.
+#
+#  You should have received a copy of the GNU Lesser General Public
+#  License along with liblouis. If not, see
+#  <http://www.gnu.org/licenses/>.
+
+#-index-name: Italian
+#-display-name: Italian braille
+
+#+language: it
+#+type: literary
+#+contraction: no
+#+dots: 6
+#+direction: both
+
+# The standard that this table follows is the one published by the Monza library
+# (Biblioteca di Monza):
+# https://www.bibliotecaciechi.it/wp-content/uploads/2022/03/Codice_Braille.pdf
+#+system: monza
+
+include latinLetterDef6Dots.uti
+include braille-patterns.cti
+space \t 9 tab
+space \x001B 1b      # escape
+space \x00A0 a       # no-break space
+space \x007f 0
+undefined 0
+display \s 0
+include spaces.uti
+display @ 345
+display ó 346
+
+# --- Wovels and accents ---
+lowercase \x00e7  12346 # c cediglia
+noback lowercase \x00E6 345 # dittongo æ
+lowercase \x00E3 5-26-1 # a con tilde
+noback lowercase \x00f1 12456 # n con tilde
+lowercase \x00e0  12356 # à
+lowercase \x00e8   2346 # è
+lowercase \x00f9  23456 # ù
+lowercase \x00ec  34    # ì
+lowercase \x00f2 346    # ò
+
+# Circumflex
+lowercase \x00e2      16 # â
+lowercase \x00ea     126 # ê
+lowercase \x00ee     146 # î
+lowercase \x00f4    1456 # ô
+lowercase \x00fb     156 # û
+
+# Acutes and diaereses
+noback lowercase \x00e1  12356
+lowercase \x00e9 123456 # é
+noback lowercase \x00f3   346
+noback lowercase \x00fa  23456
+noback lowercase \x00ed 34
+noback lowercase \x00e4   345 # ä
+lowercase \x00eb   1246 # ë
+lowercase \x00ef  12456 # ï
+lowercase \x00f6   246  # ö
+lowercase \x00fc   1256 # ü
+lowercase \x00e5 5-1    # a con cerchio
+lowercase \x00f8 36-135 # o barrata
+
+# --- Numbers ---
+numsign 3456
+nonumsign 456
+numericnocontchars abcdefghij
+include digits6Dots.uti
+include litdigits6Dots.uti
+
+# --- Punctuation and parentheses ---
+punctuation , 2
+punctuation ; 23
+punctuation : 25
+punctuation . 256
+punctuation ? 26
+punctuation ! 235
+punctuation " 236
+prepunc " 236
+punctuation ( 26
+punctuation ) 35
+prepunc ( 26
+postpunc " 356
+postpunc ) 35
+punctuation ' 3
+punctuation [ 4-12356
+prepunc [ 4-12356
+punctuation ] 4-23456
+postpunc ] 4-23456
+punctuation { 4-12346
+punctuation } 4-13456
+
+# --- Math and operators ---
+math + 235
+math - 36
+math * 236
+math / 256
+math = 2356
+math ( 26
+math ) 35
+math \x00F7 25
+math \x003c 5-126
+math \x003e 5-345
+decpoint , 2
+
+# --- Other signs ---
+#Some of these were ported from the old Italian table
+sign ~ 2346
+sign ¢ 4-14
+sign § 234-234
+sign ² 4-6-126
+sign ³ 4-6-146
+sign ¹ 4-6-16
+punctuation » 356
+noback sign \x201E 56
+noback sign \x200e 0
+noback sign \x200f 0
+sign ¸ 456
+sign \x2010 36
+sign \x2015 36-36
+sign \xFE58 36
+word — 456-36
+word – 36-36
+sign \x2022 246-135
+sign \x2026 3-3-3
+sign \x25cf 35
+sign \\ 5-34
+sign @ 345
+sign \x0023 5-3456
+sign % 3456-356
+sign ‰ 3456-356-356
+sign * 35
+sign _ 36
+sign \x0060 6
+sign \x007C 456
+sign \x0083 124
+sign \x2122 5-2345
+sign © 5-14
+sign ° 356
+sign & 5-12346
+sign € 45-15
+sign $ 45-234
+sign ^ 4
+sign \x007E 5-26
+
+# --- Greek letters ---
+noback lowercase \x03b1 45-1
+noback lowercase \x03b2 45-12
+noback lowercase \x03b3 45-1245
+noback lowercase \x03b4 45-145
+noback lowercase \x03B5 45-15
+noback lowercase \x03B6 45-1356
+noback lowercase \x03B7 45-125
+noback lowercase \x03B8 45-245
+noback lowercase \x03B9 45-24
+noback lowercase \x03BA 45-13
+noback lowercase \x03BB 45-123
+noback lowercase \x03BC 45-134
+noback lowercase \x03BD 45-1345
+noback lowercase \x03BE 45-1346
+noback lowercase \x03BF 45-135
+noback lowercase \x03C0 45-1234
+noback lowercase \x03C1 45-1235
+noback lowercase \x03C3 45-234
+noback lowercase \x03C4 45-2345
+noback lowercase \x03C5 45-136
+noback lowercase \x03C6 45-124
+noback lowercase \x03C7 45-12345
+noback lowercase \x03C8 45-13456
+noback lowercase \x03C9 45-2456
+
+# ---Caps and base ---
+capsletter 46
+begcapsword 46-46
+endcapsword 6-3
+
+# --- Emphasis ---
+emphclass italic
+emphclass underline
+emphclass bold
+begemph bold 2356-456
+endemph bold 456-2356
+begemph italic 25-456
+endemph italic 456-25
+begemph underline 36-456
+endemph underline 456-36
+
+#Currency
+sign ¢ 4-14						cent sign																	x00A2
+sign £ 45-123					pound sign																x00A3
+sign ¤ 45-15					currency sign															x00A4
+sign ¥ 45-13456				yen	sign																	x00A5
