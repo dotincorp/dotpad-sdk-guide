@@ -140,6 +140,90 @@ sdk.dotPadAPI.translateText("Hello") { hexString in
 | `translateText(_ text: String, completion: @escaping (String) -> Void)` | Translates `text` to braille and returns the result as a hex string via `completion`. Does not require a device connection. |
 | `setNumberOfBraillePerLine(_ count: Int32)` | Sets the number of braille cells displayed per line (word-wrap character count) used by translation. |
 
+> `setupBrailleLanguage(...)` / `setBrailleLanguageGrade(...)` can be called either before or after connecting a device — the language/grade currently configured always applies to the next `translateText(...)` call, whether or not a device is connected.
+
+#### Language Codes (`brailleLanguage: Int32`)
+
+Each language is translated by one of two engines, selected via the `translateEngine` parameter:
+
+- **`.Dot`** — DotPad's own built-in braille translation engine, bundled directly in the framework (no external table files needed).
+- **`.Louis`** — wraps the open-source [Liblouis](http://liblouis.io/) braille translation library, using the per-language table files bundled with the framework.
+
+The framework's own `LanguageCode` enum only defines two convenience cases (`.English = 0x05`, `.Korean = 0x0A`). To select any other language, pass the raw `Int32` code directly. The table below is the full set of currently supported language codes:
+
+| Language | Code (hex) | `translateEngine` | `pinOption` |
+|---|---|---|---|
+| Arabic | `0x01` | `.Dot` | `.Dot6` |
+| Chinese (Simplified) | `0x03` | `.Dot` | `.Dot6` |
+| Dutch | `0x04` | `.Louis` | `.Dot6` |
+| English | `0x05` | `.Louis` | `.Dot6` |
+| French | `0x06` | `.Louis` | `.Dot6` |
+| German | `0x07` | `.Louis` | `.Dot6` |
+| Italian | `0x08` | `.Louis` | `.Dot6` |
+| Japanese | `0x09` | `.Louis` | `.Dot8` |
+| Korean | `0x0A` | `.Dot` | `.Dot6` |
+| Russian | `0x0B` | `.Dot` | `.Dot6` |
+| Spanish | `0x0C` | `.Louis` | `.Dot6` |
+| Vietnamese | `0x0D` | `.Louis` | `.Dot6` |
+| Portuguese | `0x0F` | `.Louis` | `.Dot6` |
+| Czech | `0x10` | `.Louis` | `.Dot6` |
+| Polish | `0x11` | `.Louis` | `.Dot6` |
+| Norwegian | `0x12` | `.Louis` | `.Dot6` |
+| Kazakh | `0x13` | `.Louis` | `.Dot6` |
+| Danish | `0x14` | `.Louis` | `.Dot6` |
+| Greek | `0x15` | `.Louis` | `.Dot6` |
+| Swedish | `0x16` | `.Louis` | `.Dot6` |
+| Finnish | `0x17` | `.Louis` | `.Dot6` |
+| Thai | `0x18` | `.Louis` | `.Dot6` |
+| Catalan | `0x19` | `.Louis` | `.Dot6` |
+| Khmer | `0x1A` | `.Louis` | `.Dot6` |
+| Chinese (Traditional, TW) | `0x1D` | `.Louis` | `.Dot6` |
+| Uzbek | `0x22` | `.Louis` | `.Dot6` |
+| Mongolian | `0x23` | `.Louis` | `.Dot6` |
+| Romanian | `0x25` | `.Louis` | `.Dot6` |
+| Hungarian | `0x26` | `.Louis` | `.Dot6` |
+| Welsh | `0x27` | `.Louis` | `.Dot6` |
+| Serbian | `0x28` | `.Louis` | `.Dot6` |
+| Croatian | `0x2A` | `.Louis` | `.Dot6` |
+
+> `translateEngine` and `pinOption` are language-specific — pass the matching pair from the table together with the language code. `pinOption` determines the cell format used by translation/paging (`.Dot6` = standard 6-dot braille, `.Dot8` = 8-dot braille, used for Japanese).
+
+```swift
+// Example: Japanese uses the Louis engine and 8-dot cells
+sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Louis, pinOption: .Dot8, brailleLanguage: 0x09)
+```
+
+#### Braille Grade (`gradeValue: Int`)
+
+`setBrailleLanguageGrade(gradeValue:)` takes a plain `Int` (1–3), which the SDK maps internally to `GradeOption`:
+
+| Grade | `GradeOption` raw value |
+|---|---|
+| 1 | `0x01` |
+| 2 | `0x02` |
+| 3 | `0x03` |
+
+Grade generally distinguishes how much text abbreviation/contraction is applied during translation (Grade 1 = uncontracted, letter-for-letter braille; Grade 2 = contracted braille using standard abbreviation rules). Not every language exposes all three grades — most languages that support grade selection only use **Grade 1 / Grade 2**. The one exception is **Chinese (Simplified)**, whose three variants map to grade values differently:
+
+| Chinese (Simplified) option | `gradeValue` |
+|---|---|
+| Xianxing (Shengdiao) — tonal, letter-for-letter | 1 |
+| Shuang Pin — Pinyin shorthand | 2 |
+| Xianxing (No Shengdiao) — non-tonal, letter-for-letter | 3 |
+
+Languages without a documented default below either don't support grade selection, or should be left at the SDK's default (`Grade2`).
+
+| Default grade | Languages |
+|---|---|
+| Grade 2 | English, Korean, Arabic, Vietnamese, German, Mongolian |
+| Grade 1 | French, Portuguese, Danish, Swedish, Uzbek |
+| Xianxing (Shengdiao) | Chinese (Simplified) |
+
+```swift
+// Example: English, Grade 2 (contracted)
+sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: 2)
+```
+
 ---
 
 ## Features

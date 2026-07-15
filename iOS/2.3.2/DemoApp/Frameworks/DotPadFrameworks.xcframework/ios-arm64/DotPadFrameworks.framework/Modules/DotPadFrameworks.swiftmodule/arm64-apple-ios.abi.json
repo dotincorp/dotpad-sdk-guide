@@ -26711,42 +26711,42 @@
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 16528,
+      "offset": 16504,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 16963,
+      "offset": 16939,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 17075,
+      "offset": 17051,
       "length": 4,
       "value": "0x07"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 17118,
+      "offset": 17094,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 17164,
+      "offset": 17140,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 17278,
+      "offset": 17254,
       "length": 21,
       "value": "\"[一-鿿]\""
     },
