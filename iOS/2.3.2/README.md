@@ -118,14 +118,11 @@ sdk.dotPadAPI.translateText("Hello") { hexString in
 }
 ```
 
-The translation result depends on the currently configured language, grade, and word-wrap cell count, so set those beforehand:
+The translation result depends on the currently configured language, grade, and word-wrap cell count, so set those beforehand. Use `setBrailleLanguage(_:)` with a `BrailleLanguage` — it sets the language and its default grade in one call:
 
 ```swift
-// Language (e.g. Korean) and translate engine
-sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: nil, brailleLanguage: LanguageCode.Korean.rawValue)
-
-// Grade (e.g. Grade 2)
-sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: Int(GradeOption.Grade2.rawValue))
+// Language (e.g. Korean) — configures the SDK for that language, including its default grade
+sdk.dotPadAPI.setBrailleLanguage(.korean)
 
 // Number of braille cells per line (word-wrap width)
 sdk.dotPadAPI.setNumberOfBraillePerLine(20)
@@ -140,9 +137,49 @@ sdk.dotPadAPI.translateText("Hello") { hexString in
 | `translateText(_ text: String, completion: @escaping (String) -> Void)` | Translates `text` to braille and returns the result as a hex string via `completion`. Does not require a device connection. |
 | `setNumberOfBraillePerLine(_ count: Int32)` | Sets the number of braille cells displayed per line (word-wrap character count) used by translation. |
 
-> `setupBrailleLanguage(...)` / `setBrailleLanguageGrade(...)` can be called either before or after connecting a device — the language/grade currently configured always applies to the next `translateText(...)` call, whether or not a device is connected.
+> `setBrailleLanguage(...)` / `setBrailleLanguageGrade(...)` can be called either before or after connecting a device — the language/grade currently configured always applies to the next `translateText(...)` call, whether or not a device is connected.
 
-#### Language Codes (`brailleLanguage: Int32`)
+#### Selecting a Language: `BrailleLanguage`
+
+`BrailleLanguage` is the list of every language the SDK supports. Pick one and call `setBrailleLanguage(_:)` — that's all you need to configure translation for that language.
+
+```swift
+// Discover every language the SDK supports
+let languages = sdk.dotPadAPI.getBrailleLanguages()   // [BrailleLanguage]
+for language in languages {
+    print(language.displayName, language.englishDescription, language.languageCode)
+}
+
+// Select one — everything the SDK needs is set automatically,
+// and grade defaults to that language's defaultGradeValue (skipped if the language has no grade concept)
+sdk.dotPadAPI.setBrailleLanguage(.korean)
+
+// Or specify the grade explicitly
+sdk.dotPadAPI.setBrailleLanguage(.english, grade: 1)
+
+// Look a language up by its raw code, e.g. to reflect the currently active language in a picker
+if let current = BrailleLanguage.from(languageCode: sdk.dotPadAPI.getBrailleLanguage()) {
+    print(current.displayName)
+}
+
+// Or by display name, e.g. if you persisted the selection as a string
+if let selected = BrailleLanguage.fromDisplayName("한국어") {
+    sdk.dotPadAPI.setBrailleLanguage(selected)
+}
+```
+
+| Method | Description |
+|--------|-------------|
+| `getBrailleLanguages() -> [BrailleLanguage]` | Returns every language the SDK supports, with its display name, English description, and grade options. |
+| `setBrailleLanguage(_ language: BrailleLanguage, grade: Int? = nil)` | Configures the SDK for the given language in one call. If `grade` is omitted, applies that language's `defaultGradeValue` (languages with no grade concept, e.g. Japanese, are left untouched). |
+| `BrailleLanguage.fromDisplayName(_ name: String) -> BrailleLanguage?` | Looks up a language by its display name. |
+| `BrailleLanguage.from(languageCode: Int32) -> BrailleLanguage?` | Looks up a language by its raw code — e.g. the value returned by `getBrailleLanguage()`. |
+
+> `defaultGrade` (`String?`) is the human-readable label (e.g. `"Grade2"`, or `"Xianxing (Shengdiao)"` for Chinese); `defaultGradeValue` (`Int?`) is the numeric value actually passed to `setBrailleLanguageGrade(gradeValue:)`. These don't always line up by simple `1`/`2`/`3` — Chinese's three options in particular don't map to `gradeValue` in list order — so use `defaultGradeValue`, not the index of `defaultGrade` within `grades`, if you need the number yourself.
+
+> **Japanese:** `BrailleLanguage.japanese` is translated via a remote API call rather than on-device, so it requires a network connection — see [Japanese Remote Translation](#japanese-remote-translation) below.
+
+#### Advanced: Manual Language Codes (`brailleLanguage: Int32`)
 
 Each language is translated by one of two engines, selected via the `translateEngine` parameter:
 
@@ -200,6 +237,8 @@ sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: .Dot8, brai
 
 #### Braille Grade (`gradeValue: Int`)
 
+> If you're using `setBrailleLanguage(_:)` (recommended, see above), you don't need this table for the default case — it already applies the language's default grade for you. Use `setBrailleLanguageGrade(gradeValue:)` directly (or `setBrailleLanguage(_:grade:)`) only when you want a **non-default** grade, or need the raw value for some other reason.
+
 `setBrailleLanguageGrade(gradeValue:)` takes a plain `Int` (1–3), which the SDK maps internally to `GradeOption`:
 
 | Grade | `GradeOption` raw value |
@@ -252,8 +291,11 @@ translateEngine == .Dot && brailleLanguage == 0x09  // Japanese
 Every other `.Dot` language still translates fully locally, and Japanese with `.Louis` still translates fully locally via liblouis — this remote routing applies to `.Dot` + Japanese only.
 
 ```swift
-sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: nil, brailleLanguage: 0x09)
-sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: 2)          // sent as the request's translation grade
+sdk.dotPadAPI.setBrailleLanguage(.japanese)                   // configures the SDK for Japanese in one call
+
+// Japanese has no Grade1/Grade2 concept locally, so BrailleLanguage.japanese has no defaultGradeValue and
+// setBrailleLanguage(.japanese) leaves the grade untouched — set it explicitly, it's sent as the request's OPTION value
+sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: 2)
 sdk.dotPadAPI.setNumberOfBraillePerLine(20)                   // sent as the request's word-wrap cell count
 
 sdk.dotPadAPI.translateText("こんにちは") { hexString in
@@ -285,7 +327,8 @@ sdk.dotPadAPI.displayTextData(text: "こんにちは") { brailleUnicode in
 | Key Press / Release Events | Receive `onKeyDown` / `onKeyUp` callbacks for hardware key state changes |
 | Text-to-Braille Translation | Convert text to braille hex data via `translateText`, without a device connection |
 | Async Braille Text Output | Translate text (or fetch via the remote API for Japanese) and send it to the connected device via `displayTextData(text:completion:)` |
-| Japanese Remote Translation | With `translateEngine == .Dot`, Japanese text is translated via the remote translation API instead of the local engine (the only `.Dot` language handled this way) |
+| Japanese Remote Translation | `BrailleLanguage.japanese` translates Japanese text via a remote API call instead of on-device |
+| Language List | Discover every supported language via `getBrailleLanguages()` and configure one in a single call via `setBrailleLanguage(_:)` |
 
 ---
 
@@ -393,14 +436,15 @@ sdk.dotPadAPI.displayBrailleDataPrev()
 sdk.dotPadAPI.dotPadDisconnect()
 
 // 7. Text-to-braille translation (optional, no device required)
-sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: nil, brailleLanguage: LanguageCode.Korean.rawValue)
-sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: Int(GradeOption.Grade2.rawValue))
+// Discover supported languages and select one — the SDK configures itself for that language, including its default grade
+let languages = sdk.dotPadAPI.getBrailleLanguages()
+sdk.dotPadAPI.setBrailleLanguage(.korean)
 sdk.dotPadAPI.setNumberOfBraillePerLine(20)
 sdk.dotPadAPI.translateText("Hello") { hexString in
     // hexString: translated braille data
 }
 
-// 8. Async translate + display in one call (Japanese routes to the remote API when translateEngine == .Dot)
+// 8. Async translate + display in one call (Japanese is translated via a remote API call)
 sdk.dotPadAPI.displayTextData(text: "Hello") { brailleUnicode in
     // brailleUnicode: readable braille string for the first display-width chunk
 }

@@ -22,7 +22,7 @@
         { "type": "NEW", "text": "Added translateText API for converting text to braille hex data without requiring a device connection" },
         { "type": "NEW", "text": "Added setNumberOfBraillePerLine API for configuring the word-wrap cell count used by braille translation" },
         { "type": "NEW", "text": "Added displayTextData(text:completion:) API for translating text and sending it to the connected device asynchronously" },
-        { "type": "NEW", "text": "Added Japanese remote braille translation — translateText and displayTextData(text:completion:) route Japanese text through remote translation API when using the .Dot engine" }
+        { "type": "NEW", "text": "Added Japanese remote braille translation — translateText and displayTextData(text:completion:) translate Japanese text via a remote API call instead of on-device" }
       ]
     },
     {

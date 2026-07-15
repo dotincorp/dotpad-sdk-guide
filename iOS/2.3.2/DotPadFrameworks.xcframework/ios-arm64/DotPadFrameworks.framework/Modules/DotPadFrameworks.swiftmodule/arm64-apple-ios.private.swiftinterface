@@ -371,6 +371,38 @@ public class BrailleData {
   public func getNumberOfBraillePerLine() -> Swift.Int32
   public func getUserOptionPointer() -> Swift.UnsafeMutablePointer<Swift.Int32>
 }
+public enum BrailleLanguage : Swift.CaseIterable {
+  case english, korean, japanese, chineseSimplified, chineseTraditionalTW, french, german, spanish, catalan, russian, italian, czech, vietnamese, arabic, portuguese, kazakh, danish, greek, swedish, finnish, thai, polish, norwegian, khmer, mongolian, uzbek, dutch, romanian, hungarian, welsh, serbian, croatian
+  public var languageCode: Swift.Int32 {
+    get
+  }
+  public var displayName: Swift.String {
+    get
+  }
+  public var englishDescription: Swift.String {
+    get
+  }
+  public var grades: [Swift.String] {
+    get
+  }
+  public var defaultGrade: Swift.String? {
+    get
+  }
+  public var defaultGradeValue: Swift.Int? {
+    get
+  }
+  public static func fromDisplayName(_ name: Swift.String) -> DotPadFrameworks.BrailleLanguage?
+  public static func from(languageCode: Swift.Int32) -> DotPadFrameworks.BrailleLanguage?
+  public static func == (a: DotPadFrameworks.BrailleLanguage, b: DotPadFrameworks.BrailleLanguage) -> Swift.Bool
+  public typealias AllCases = [DotPadFrameworks.BrailleLanguage]
+  nonisolated public static var allCases: [DotPadFrameworks.BrailleLanguage] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class DTM {
   public func getDotDataBoolean() -> [[Swift.Bool]]
   public func getDTMDataString() -> Swift.String
@@ -515,6 +547,8 @@ extension DotPadFrameworks.DotPadAPI {
 extension DotPadFrameworks.DotPadAPI {
   public func resetBrailleDisplay()
   public func setupBrailleLanguage(translateEngine: DotPadFrameworks.TranslateEngine, pinOption: DotPadFrameworks.PinOption? = nil, brailleLanguage: Swift.Int32)
+  public func setBrailleLanguage(_ language: DotPadFrameworks.BrailleLanguage, grade: Swift.Int? = nil)
+  public func getBrailleLanguages() -> [DotPadFrameworks.BrailleLanguage]
   public func setBrailleLanguageGrade(gradeValue: Swift.Int)
   public func setUseAutoBrailleNextPrev(_ use: Swift.Bool)
   public func displayBrailleDataNext()
@@ -942,6 +976,8 @@ extension DotPadFrameworks.NumberOfBraillePerLine : Swift.RawRepresentable {}
 extension DotPadFrameworks.WordWrapOption : Swift.Equatable {}
 extension DotPadFrameworks.WordWrapOption : Swift.Hashable {}
 extension DotPadFrameworks.WordWrapOption : Swift.RawRepresentable {}
+extension DotPadFrameworks.BrailleLanguage : Swift.Equatable {}
+extension DotPadFrameworks.BrailleLanguage : Swift.Hashable {}
 extension DotPadFrameworks.DeviceType : Swift.Equatable {}
 extension DotPadFrameworks.DeviceType : Swift.Hashable {}
 extension DotPadFrameworks.DataCodes : Swift.Equatable {}

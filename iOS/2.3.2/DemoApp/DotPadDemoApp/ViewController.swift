@@ -41,14 +41,18 @@ class ViewController: UIViewController, DotPadFrameworks.DotDeviceMessage {
     private var translateOnlyResultLabel: UILabel?
     /// translateText 테스트용 입력 필드 (팝업 내부, 스토리보드 미사용)
     private var translateOnlyTextField: UITextField?
-    /// translateText 언어 설정 테스트용 세그먼트 (English/Korean/Japanese)
-    private var languageSegmentedControl: UISegmentedControl?
+    /// translateText 언어 설정 테스트용, getBrailleLanguages() 목록에서 선택된 현재 언어
+    private var selectedBrailleLanguage: BrailleLanguage = .english
+    /// 언어 선택 버튼 (탭하면 getBrailleLanguages() 결과를 리스트로 보여주는 팝업이 뜬다)
+    private var languageButton: UIButton?
     /// translateText 등급 설정 테스트용 세그먼트 (Grade1/Grade2)
     private var gradeSegmentedControl: UISegmentedControl?
     /// translateText 워드랩 셀 개수 설정 테스트용 세그먼트 (10/20/30)
     private var cellCountSegmentedControl: UISegmentedControl?
     /// translateText 팝업의 카드 뷰 (바깥 영역 탭 감지 시 카드 영역 판별용)
     private weak var translateCardView: UIView?
+    /// 언어 목록 팝업을 그 위에 present하기 위한, 현재 떠 있는 번역 팝업 참조
+    private weak var translatePopupViewController: UIViewController?
 
     // MARK: - Lifecycle
 
@@ -90,6 +94,7 @@ class ViewController: UIViewController, DotPadFrameworks.DotDeviceMessage {
         popup.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         popup.modalPresentationStyle = .overFullScreen
         popup.modalTransitionStyle = .crossDissolve
+        translatePopupViewController = popup
 
         let cardView = UIView()
         cardView.translatesAutoresizingMaskIntoConstraints = false
@@ -122,10 +127,13 @@ class ViewController: UIViewController, DotPadFrameworks.DotDeviceMessage {
         textField.placeholder = "Text to translate"
         textField.text = translateOnlyTextField?.text
 
-        let languageSegment = UISegmentedControl(items: ["English", "Korean", "Japanese"])
-        languageSegment.translatesAutoresizingMaskIntoConstraints = false
-        languageSegment.selectedSegmentIndex = languageSegmentedControl?.selectedSegmentIndex ?? 0
-        languageSegment.addTarget(self, action: #selector(translateSettingChanged(_:)), for: .valueChanged)
+        let languageButton = UIButton(type: .system)
+        languageButton.translatesAutoresizingMaskIntoConstraints = false
+        var languageButtonConfig = UIButton.Configuration.plain()
+        languageButtonConfig.title = "Language: \(selectedBrailleLanguage.displayName)"
+        languageButtonConfig.background.backgroundColor = .secondarySystemBackground
+        languageButton.configuration = languageButtonConfig
+        languageButton.addTarget(self, action: #selector(presentLanguageList), for: .touchUpInside)
 
         let gradeSegment = UISegmentedControl(items: ["Grade1", "Grade2"])
         gradeSegment.translatesAutoresizingMaskIntoConstraints = false
@@ -151,7 +159,7 @@ class ViewController: UIViewController, DotPadFrameworks.DotDeviceMessage {
         resultLabel.font = .systemFont(ofSize: 14)
         resultLabel.text = translateOnlyResultLabel?.text ?? ""
 
-        let stackView = UIStackView(arrangedSubviews: [closeButton, titleLabel, textField, languageSegment, gradeSegment, cellCountSegment, translateButton, resultLabel])
+        let stackView = UIStackView(arrangedSubviews: [closeButton, titleLabel, textField, languageButton, gradeSegment, cellCountSegment, translateButton, resultLabel])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 12
@@ -179,7 +187,7 @@ class ViewController: UIViewController, DotPadFrameworks.DotDeviceMessage {
         // translateSettingChanged/translateTextOnly가 팝업 내부의 컨트롤을 참조하도록 갱신
         translateOnlyTextField = textField
         translateOnlyResultLabel = resultLabel
-        languageSegmentedControl = languageSegment
+        self.languageButton = languageButton
         gradeSegmentedControl = gradeSegment
         cellCountSegmentedControl = cellCountSegment
 
@@ -198,6 +206,24 @@ class ViewController: UIViewController, DotPadFrameworks.DotDeviceMessage {
         if !cardView.frame.contains(location) {
             dismiss(animated: true)
         }
+    }
+
+    /// "Language" 버튼 탭 시 `getBrailleLanguages()` 결과를 리스트로 보여준다.
+    @objc private func presentLanguageList() {
+        let languages = sdk.dotPadAPI.getBrailleLanguages()
+        let listViewController = BrailleLanguageListViewController(languages: languages) { [weak self] language in
+            self?.languageSelected(language)
+        }
+        let nav = UINavigationController(rootViewController: listViewController)
+        (translatePopupViewController ?? self).present(nav, animated: true)
+    }
+
+    /// 언어 목록에서 언어를 골랐을 때: `setBrailleLanguage(_:)`로 engine/pinOption/언어 코드를 자동 세팅하고,
+    /// 버튼 라벨을 갱신한 뒤 현재 등급/셀개수 설정으로 번역을 재실행한다.
+    private func languageSelected(_ language: BrailleLanguage) {
+        selectedBrailleLanguage = language
+        languageButton?.configuration?.title = "Language: \(language.displayName)"
+        applyTranslateSettingsAndRun()
     }
 
     // MARK: - Logging
@@ -372,26 +398,25 @@ class ViewController: UIViewController, DotPadFrameworks.DotDeviceMessage {
         }
     }
 
-    /// 언어/등급/워드랩 셀 개수 세그먼트 변경 시 SDK 설정을 반영하고, 결과 비교를 위해 translateText를 재실행
-    /// 언어를 Japanese로 선택하면(.Dot 엔진 고정) translateText/displayTextData(text:completion:)가
-    /// 로컬 변환 대신 원격 점역 API(JapaneseTranslateAPI)를 사용하는 것을 확인할 수 있다.
+    /// 등급/워드랩 셀 개수 세그먼트 변경 시 호출 — 현재 선택된 언어/등급/셀개수를 SDK에 반영하고 번역 재실행
     @objc func translateSettingChanged(_ sender: Any) {
-        let language: LanguageCode
-        switch languageSegmentedControl?.selectedSegmentIndex {
-        case 1: language = .Korean
-        case 2: language = .Japanese
-        default: language = .English
-        }
+        applyTranslateSettingsAndRun()
+    }
+
+    /// 현재 선택된 언어(selectedBrailleLanguage)/등급/셀개수를 SDK에 반영하고, 결과 비교를 위해 translateText를 재실행.
+    /// 언어 목록에서 Japanese를 선택하면(setBrailleLanguage(_:)가 .Dot 엔진으로 자동 세팅) translateText/
+    /// displayTextData(text:completion:)가 로컬 변환 대신 원격 점역 API(JapaneseTranslateAPI)를 사용하는 것을 확인할 수 있다.
+    private func applyTranslateSettingsAndRun() {
         let grade: GradeOption = gradeSegmentedControl?.selectedSegmentIndex == 0 ? .Grade1 : .Grade2
         let cellCounts: [Int32] = [10, 20, 30]
         let cellCount = cellCounts[cellCountSegmentedControl?.selectedSegmentIndex ?? 1]
 
-        sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: nil, brailleLanguage: language.rawValue)
+        sdk.dotPadAPI.setBrailleLanguage(selectedBrailleLanguage)
         sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: Int(grade.rawValue))
         sdk.dotPadAPI.setNumberOfBraillePerLine(cellCount)
-        LogMessage(functionName: "translateSettingChanged", "language: \(language), grade: \(grade), cellCount: \(cellCount)")
+        LogMessage(functionName: "applyTranslateSettingsAndRun", "language: \(selectedBrailleLanguage.displayName), grade: \(grade), cellCount: \(cellCount)")
 
-        translateTextOnly(sender)
+        translateTextOnly(self as Any)
     }
 
     /// 기기 연결 없이 텍스트 입력 → 점자 hex 변환 결과만 콜백으로 확인
@@ -427,5 +452,56 @@ extension ViewController: UITableViewDataSource {
         cell.DeviceName.text = discoveries[indexPath.row].localName ?? "No Name"
         cell.RSSI.text = String(discoveries[indexPath.row].RSSI)
         return cell
+    }
+}
+
+// MARK: - BrailleLanguageListViewController
+
+/// `DotPadAPI.getBrailleLanguages()` 결과를 리스트로 보여주고 고르게 하는 간단한 화면.
+private class BrailleLanguageListViewController: UITableViewController {
+    private let languages: [BrailleLanguage]
+    private let onSelect: (BrailleLanguage) -> Void
+
+    init(languages: [BrailleLanguage], onSelect: @escaping (BrailleLanguage) -> Void) {
+        self.languages = languages
+        self.onSelect = onSelect
+        super.init(style: .plain)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Select Language"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(close))
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "languageCell")
+    }
+
+    @objc private func close() {
+        dismiss(animated: true)
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        languages.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "languageCell", for: indexPath)
+        let language = languages[indexPath.row]
+        var config = cell.defaultContentConfiguration()
+        config.text = language.displayName
+        config.secondaryText = language.englishDescription
+        cell.contentConfiguration = config
+        return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let language = languages[indexPath.row]
+        dismiss(animated: true) { [weak self] in
+            self?.onSelect(language)
+        }
     }
 }

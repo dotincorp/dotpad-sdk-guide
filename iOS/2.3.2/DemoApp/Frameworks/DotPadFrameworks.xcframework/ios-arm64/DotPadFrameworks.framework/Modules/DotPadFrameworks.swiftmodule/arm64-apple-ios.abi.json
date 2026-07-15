@@ -10334,6 +10334,1793 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BrailleLanguage",
+        "printedName": "BrailleLanguage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "english",
+            "printedName": "english",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7englishyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7englishyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "korean",
+            "printedName": "korean",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6koreanyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6koreanyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "japanese",
+            "printedName": "japanese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO8japaneseyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO8japaneseyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "chineseSimplified",
+            "printedName": "chineseSimplified",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO17chineseSimplifiedyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO17chineseSimplifiedyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "chineseTraditionalTW",
+            "printedName": "chineseTraditionalTW",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO20chineseTraditionalTWyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO20chineseTraditionalTWyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "french",
+            "printedName": "french",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6frenchyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6frenchyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "german",
+            "printedName": "german",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6germanyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6germanyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "spanish",
+            "printedName": "spanish",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7spanishyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7spanishyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "catalan",
+            "printedName": "catalan",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7catalanyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7catalanyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "russian",
+            "printedName": "russian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7russianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7russianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "italian",
+            "printedName": "italian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7italianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7italianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "czech",
+            "printedName": "czech",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO5czechyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO5czechyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "vietnamese",
+            "printedName": "vietnamese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO10vietnameseyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO10vietnameseyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "arabic",
+            "printedName": "arabic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6arabicyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6arabicyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "portuguese",
+            "printedName": "portuguese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO10portugueseyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO10portugueseyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "kazakh",
+            "printedName": "kazakh",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6kazakhyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6kazakhyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "danish",
+            "printedName": "danish",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6danishyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6danishyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "greek",
+            "printedName": "greek",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO5greekyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO5greekyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "swedish",
+            "printedName": "swedish",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7swedishyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7swedishyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "finnish",
+            "printedName": "finnish",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7finnishyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7finnishyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "thai",
+            "printedName": "thai",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO4thaiyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO4thaiyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "polish",
+            "printedName": "polish",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6polishyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6polishyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "norwegian",
+            "printedName": "norwegian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO9norwegianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO9norwegianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "khmer",
+            "printedName": "khmer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO5khmeryA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO5khmeryA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "mongolian",
+            "printedName": "mongolian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO9mongolianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO9mongolianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "uzbek",
+            "printedName": "uzbek",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO5uzbekyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO5uzbekyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "dutch",
+            "printedName": "dutch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO5dutchyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO5dutchyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "romanian",
+            "printedName": "romanian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO8romanianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO8romanianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "hungarian",
+            "printedName": "hungarian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO9hungarianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO9hungarianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "welsh",
+            "printedName": "welsh",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO5welshyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO5welshyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "serbian",
+            "printedName": "serbian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO7serbianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO7serbianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "croatian",
+            "printedName": "croatian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.BrailleLanguage.Type) -> DotPadFrameworks.BrailleLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.BrailleLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO8croatianyA2CmF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO8croatianyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
+            "kind": "Var",
+            "name": "languageCode",
+            "printedName": "languageCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO12languageCodes5Int32Vvp",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO12languageCodes5Int32Vvp",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO12languageCodes5Int32Vvg",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO12languageCodes5Int32Vvg",
+                "moduleName": "DotPadFrameworks",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO11displayNameSSvp",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO11displayNameSSvp",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO11displayNameSSvg",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO11displayNameSSvg",
+                "moduleName": "DotPadFrameworks",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "englishDescription",
+            "printedName": "englishDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO18englishDescriptionSSvp",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO18englishDescriptionSSvp",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO18englishDescriptionSSvg",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO18englishDescriptionSSvg",
+                "moduleName": "DotPadFrameworks",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "grades",
+            "printedName": "grades",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO6gradesSaySSGvp",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6gradesSaySSGvp",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO6gradesSaySSGvg",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO6gradesSaySSGvg",
+                "moduleName": "DotPadFrameworks",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultGrade",
+            "printedName": "defaultGrade",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO12defaultGradeSSSgvp",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO12defaultGradeSSSgvp",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO12defaultGradeSSSgvg",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO12defaultGradeSSSgvg",
+                "moduleName": "DotPadFrameworks",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultGradeValue",
+            "printedName": "defaultGradeValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO17defaultGradeValueSiSgvp",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO17defaultGradeValueSiSgvp",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO17defaultGradeValueSiSgvg",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO17defaultGradeValueSiSgvg",
+                "moduleName": "DotPadFrameworks",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fromDisplayName",
+            "printedName": "fromDisplayName(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DotPadFrameworks.BrailleLanguage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO15fromDisplayNameyACSgSSFZ",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO15fromDisplayNameyACSgSSFZ",
+            "moduleName": "DotPadFrameworks",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(languageCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DotPadFrameworks.BrailleLanguage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO4from12languageCodeACSgs5Int32V_tFZ",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO4from12languageCodeACSgs5Int32V_tFZ",
+            "moduleName": "DotPadFrameworks",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrailleLanguage",
+                "printedName": "DotPadFrameworks.BrailleLanguage",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrailleLanguage",
+                "printedName": "DotPadFrameworks.BrailleLanguage",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO2eeoiySbAC_ACtFZ",
+            "moduleName": "DotPadFrameworks",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO9hashValueSivp",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO9hashValueSivp",
+            "moduleName": "DotPadFrameworks",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO9hashValueSivg",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO9hashValueSivg",
+                "moduleName": "DotPadFrameworks",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO4hash4intoys6HasherVz_tF",
+            "moduleName": "DotPadFrameworks",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DotPadFrameworks.BrailleLanguage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16DotPadFrameworks15BrailleLanguageO8allCasesSayACGvpZ",
+            "mangledName": "$s16DotPadFrameworks15BrailleLanguageO8allCasesSayACGvpZ",
+            "moduleName": "DotPadFrameworks",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DotPadFrameworks.BrailleLanguage]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO8allCasesSayACGvgZ",
+                "mangledName": "$s16DotPadFrameworks15BrailleLanguageO8allCasesSayACGvgZ",
+                "moduleName": "DotPadFrameworks",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16DotPadFrameworks15BrailleLanguageO",
+        "mangledName": "$s16DotPadFrameworks15BrailleLanguageO",
+        "moduleName": "DotPadFrameworks",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DotPadFrameworks.BrailleLanguage]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrailleLanguage",
+                        "printedName": "DotPadFrameworks.BrailleLanguage",
+                        "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DotPadFrameworks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DTM",
         "printedName": "DTM",
         "children": [
@@ -13918,6 +15705,80 @@
             "declKind": "Func",
             "usr": "s:16DotPadFrameworks0aB3APIC20setupBrailleLanguage15translateEngine9pinOption07brailleG0yAA09TranslateI0O_AA03PinK0OSgs5Int32VtF",
             "mangledName": "$s16DotPadFrameworks0aB3APIC20setupBrailleLanguage15translateEngine9pinOption07brailleG0yAA09TranslateI0O_AA03PinK0OSgs5Int32VtF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBrailleLanguage",
+            "printedName": "setBrailleLanguage(_:grade:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrailleLanguage",
+                "printedName": "DotPadFrameworks.BrailleLanguage",
+                "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB3APIC18setBrailleLanguage_5gradeyAA0fG0O_SiSgtF",
+            "mangledName": "$s16DotPadFrameworks0aB3APIC18setBrailleLanguage_5gradeyAA0fG0O_SiSgtF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrailleLanguages",
+            "printedName": "getBrailleLanguages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DotPadFrameworks.BrailleLanguage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrailleLanguage",
+                    "printedName": "DotPadFrameworks.BrailleLanguage",
+                    "usr": "s:16DotPadFrameworks15BrailleLanguageO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB3APIC19getBrailleLanguagesSayAA0F8LanguageOGyF",
+            "mangledName": "$s16DotPadFrameworks0aB3APIC19getBrailleLanguagesSayAA0F8LanguageOGyF",
             "moduleName": "DotPadFrameworks",
             "declAttributes": [
               "AccessControl",
@@ -26850,105 +28711,105 @@
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 2992,
       "length": 51,
       "value": "\"https:\/\/saas.dotincorp.com\/braille-app\/v1\/braille\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3226,
+      "offset": 3084,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3237,
+      "offset": 3095,
       "length": 1,
       "value": "\"\/translation-console\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 5051,
+      "offset": 4909,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 5213,
+      "offset": 5071,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5252,
+      "offset": 5110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 5295,
+      "offset": 5153,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5474,
+      "offset": 5332,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5517,
+      "offset": 5375,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 19466,
+      "offset": 19324,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 19901,
+      "offset": 19759,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20013,
+      "offset": 19871,
       "length": 4,
       "value": "0x07"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20056,
+      "offset": 19914,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 20102,
+      "offset": 19960,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 20216,
+      "offset": 20074,
       "length": 21,
       "value": "\"[一-鿿]\""
     },
