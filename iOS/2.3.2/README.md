@@ -268,6 +268,48 @@ Languages without a documented default below either don't support grade selectio
 sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: 2)
 ```
 
+#### Full Reference: Language / Engine / Grade
+
+Combines the language, grade, and engine tables above into a single lookup — every language the SDK currently supports (via `BrailleLanguage`), its available grades, default grade, and translation engine:
+
+| Language | Code (hex) | Grades | Default Grade | `defaultGradeValue` | Engine |
+|---|---|---|---|---|---|
+| Arabic | `0x01` | Grade1, Grade2 | Grade2 | 2 | `.Dot` |
+| Chinese (Simplified) | `0x03` | Xianxing (Shengdiao), Xianxing (No Shengdiao), Shuang Pin | Xianxing (Shengdiao) | 1 | `.Dot` |
+| Dutch | `0x04` | Grade1, Grade2 | — | — | `.Louis` |
+| English | `0x05` | Grade1, Grade2 | Grade2 | 2 | `.Louis` |
+| French | `0x06` | Grade1, Grade2 | Grade1 | 1 | `.Louis` |
+| German | `0x07` | Grade1, Grade2 | Grade2 | 2 | `.Louis` |
+| Italian | `0x08` | — | — | — | `.Louis` |
+| Japanese | `0x09` | — | — | — | `.Louis` or `.Dot`* |
+| Korean | `0x0A` | Grade1, Grade2 | Grade2 | 2 | `.Dot` |
+| Russian | `0x0B` | — | — | — | `.Dot` |
+| Spanish | `0x0C` | — | — | — | `.Louis` |
+| Vietnamese | `0x0D` | Grade1, Grade2 | Grade2 | 2 | `.Louis` |
+| Portuguese | `0x0F` | Grade1, Grade2 | Grade1 | 1 | `.Louis` |
+| Czech | `0x10` | — | — | — | `.Louis` |
+| Polish | `0x11` | — | — | — | `.Louis` |
+| Norwegian | `0x12` | — | — | — | `.Louis` |
+| Kazakh | `0x13` | — | — | — | `.Louis` |
+| Danish | `0x14` | Grade1, Grade2 | Grade1 | 1 | `.Louis` |
+| Greek | `0x15` | — | — | — | `.Louis` |
+| Swedish | `0x16` | Grade1, Grade2 | Grade1 | 1 | `.Louis` |
+| Finnish | `0x17` | — | — | — | `.Louis` |
+| Thai | `0x18` | — | — | — | `.Louis` |
+| Catalan | `0x19` | — | — | — | `.Louis` |
+| Khmer | `0x1A` | — | — | — | `.Louis` |
+| Chinese (Traditional, TW) | `0x1D` | — | — | — | `.Louis` |
+| Uzbek | `0x22` | — | Grade1 | 1 | `.Louis` |
+| Mongolian | `0x23` | Grade1, Grade2 | Grade2 | 2 | `.Louis` |
+| Romanian | `0x25` | — | — | — | `.Louis` |
+| Hungarian | `0x26` | Grade1, Grade2 | — | — | `.Louis` |
+| Welsh | `0x27` | Grade1, Grade2 | — | — | `.Louis` |
+| Serbian | `0x28` | — | — | — | `.Louis` |
+| Croatian | `0x2A` | — | — | — | `.Louis` |
+
+> \* Japanese: see [Japanese Remote Translation](#japanese-remote-translation) — `.Dot` routes through the remote translation API rather than a local table.
+> Languages listing "—" for Grades/Default Grade don't expose grade selection; leave `setBrailleLanguageGrade(...)` untouched (SDK default `Grade2`) for those. Uzbek is a source quirk: it has no enumerated `grades` list but does report a `defaultGradeValue` of 1.
+
 ### 8. Braille Text Output with Async Translation (`displayTextData(text:completion:)`)
 
 In addition to the synchronous `displayTextData(text:) -> String` used in [section 3](#3-braille-text-output), the SDK provides an async, completion-based variant that translates the text and sends it directly to the connected device, returning the resulting braille string via a callback:

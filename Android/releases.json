@@ -4,12 +4,22 @@
   "supportedLanguages": "Kotlin, Java",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Android",
   "product": {
-    "version": "v3.0.1",
-    "releaseDate": "2026-04-27",
+    "version": "v3.0.2",
+    "releaseDate": "2026-07-15",
     "minimumOs": "Android 8.0 (API 26)+",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.1/download/android-sdk-3.0.1.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.2/download/android-sdk-3.0.2.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.2",
+      "date": "2026-07-15",
+      "minimumOs": "Android 8.0 (API 26)+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.2/download/android-sdk-3.0.2.zip",
+      "details": [
+        { "type": "NEW", "text": "Added vibrator control API: requestVibrator() (REQ_VIBRATOR 0x0530), with configurable onMs/offMs/repeatCount and default parameters via VibratorDefault; sends to all connected devices when no device is specified" },
+        { "type": "NEW", "text": "Added displayBrailleDown() / displayGraphicDown() to reset the braille (text) and graphic display areas independently without affecting the other" }
+      ]
+    },
     {
       "version": "v3.0.1",
       "date": "2026-04-27",
