@@ -197,6 +197,7 @@ public protocol BKRemotePeripheralDelegate : AnyObject {
 public enum LanguageCode : Swift.Int32 {
   case English
   case Korean
+  case Japanese
   public init?(rawValue: Swift.Int32)
   public typealias RawValue = Swift.Int32
   public var rawValue: Swift.Int32 {
@@ -356,6 +357,7 @@ public class BrailleData {
   public func getPinOption() -> DotPadFrameworks.PinOption
   public func setPinOption(_ selectPinOption: DotPadFrameworks.PinOption)
   public func getTranslateData(originText: Swift.String) -> Swift.String
+  public func translateTextToHexString(_ text: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
   public func setBrailleLines(_ brailleLines: Swift.Int32)
   public func getBrailleLines() -> Swift.Int32
   public func setBrailleStyle(_ bailleStyle: Swift.Int32)
@@ -530,6 +532,7 @@ extension DotPadFrameworks.DotPadAPI {
   public func displayGraphicData(data: [[Swift.Bool]])
   public func getDotDataBooleanToHex(dtmsDatBoolean: [[Swift.Bool]]) -> Swift.String
   public func displayTextData(text: Swift.String) -> Swift.String
+  public func displayTextData(text: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
   public func displayTextData(brailleString: Swift.String)
   public func getDTMSDotDataBoolean(dtmsDataByte: Swift.Array<Swift.UInt8>) -> [[Swift.Bool]]
 }
@@ -846,6 +849,7 @@ extension DotPadFrameworks.NewDotPadProcessData {
   public func setPinOption(_ pinOption: DotPadFrameworks.PinOption)
   public func displayTextData(text: Swift.String) -> Swift.String
   public func displayTextData(brailleString: Swift.String)
+  public func displayTextData(text: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
   public func getTextBrailleCodeOffset() -> Swift.Int
   public func getTextBrailleCodeMaxOffset() -> Swift.Int
   public func displayTextBrailleDataByNextKeyInput()

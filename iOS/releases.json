@@ -20,7 +20,9 @@
         { "type": "NEW", "text": "Added requestVibrator API for triggering device vibration feedback" },
         { "type": "NEW", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" },
         { "type": "NEW", "text": "Added translateText API for converting text to braille hex data without requiring a device connection" },
-        { "type": "NEW", "text": "Added setNumberOfBraillePerLine API for configuring the word-wrap cell count used by braille translation" }
+        { "type": "NEW", "text": "Added setNumberOfBraillePerLine API for configuring the word-wrap cell count used by braille translation" },
+        { "type": "NEW", "text": "Added displayTextData(text:completion:) API for translating text and sending it to the connected device asynchronously" },
+        { "type": "NEW", "text": "Added Japanese remote braille translation — translateText and displayTextData(text:completion:) route Japanese text through remote translation API when using the .Dot engine" }
       ]
     },
     {

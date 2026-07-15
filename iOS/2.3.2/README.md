@@ -146,7 +146,7 @@ sdk.dotPadAPI.translateText("Hello") { hexString in
 
 Each language is translated by one of two engines, selected via the `translateEngine` parameter:
 
-- **`.Dot`** — DotPad's own built-in braille translation engine, bundled directly in the framework (no external table files needed).
+- **`.Dot`** — the SDK's own built-in braille translation engine, bundled directly in the framework (no external table files needed).
 - **`.Louis`** — wraps the open-source [Liblouis](http://liblouis.io/) braille translation library, using the per-language table files bundled with the framework.
 
 The framework's own `LanguageCode` enum only defines two convenience cases (`.English = 0x05`, `.Korean = 0x0A`). To select any other language, pass the raw `Int32` code directly. The table below is the full set of currently supported language codes:
@@ -160,7 +160,7 @@ The framework's own `LanguageCode` enum only defines two convenience cases (`.En
 | French | `0x06` | `.Louis` | `.Dot6` |
 | German | `0x07` | `.Louis` | `.Dot6` |
 | Italian | `0x08` | `.Louis` | `.Dot6` |
-| Japanese | `0x09` | `.Louis` | `.Dot8` |
+| Japanese | `0x09` | `.Louis` or `.Dot`* | `.Dot8` |
 | Korean | `0x0A` | `.Dot` | `.Dot6` |
 | Russian | `0x0B` | `.Dot` | `.Dot6` |
 | Spanish | `0x0C` | `.Louis` | `.Dot6` |
@@ -188,9 +188,14 @@ The framework's own `LanguageCode` enum only defines two convenience cases (`.En
 
 > `translateEngine` and `pinOption` are language-specific — pass the matching pair from the table together with the language code. `pinOption` determines the cell format used by translation/paging (`.Dot6` = standard 6-dot braille, `.Dot8` = 8-dot braille, used for Japanese).
 
+> \* **Japanese** supports two engines. `.Louis` translates locally via liblouis, same as any other `.Louis` language. `.Dot` has no local Japanese table, so for Japanese specifically (and only Japanese — every other `.Dot` language still translates fully locally) it instead routes translation through the remote translation API — see [Japanese Remote Translation](#japanese-remote-translation) below for the requirements this adds.
+
 ```swift
-// Example: Japanese uses the Louis engine and 8-dot cells
+// Example A: Japanese via the local Louis engine and 8-dot cells
 sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Louis, pinOption: .Dot8, brailleLanguage: 0x09)
+
+// Example B: Japanese via the remote translation API (requires translateText/displayTextData(text:completion:) — see below)
+sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: .Dot8, brailleLanguage: 0x09)
 ```
 
 #### Braille Grade (`gradeValue: Int`)
@@ -224,6 +229,47 @@ Languages without a documented default below either don't support grade selectio
 sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: 2)
 ```
 
+### 8. Braille Text Output with Async Translation (`displayTextData(text:completion:)`)
+
+In addition to the synchronous `displayTextData(text:) -> String` used in [section 3](#3-braille-text-output), the SDK provides an async, completion-based variant that translates the text and sends it directly to the connected device, returning the resulting braille string via a callback:
+
+```swift
+sdk.dotPadAPI.displayTextData(text: "Hello") { brailleUnicode in
+    // brailleUnicode: readable braille unicode string for the first display-width chunk
+}
+```
+
+Internally this shares the same translation path as `translateText(_:completion:)` — the result is identical to the synchronous `displayTextData(text:)` for every language/engine combination, except **Japanese with the `.Dot` engine** (see below), where it awaits a network response before sending to the device.
+
+#### Japanese Remote Translation
+
+`.Dot`'s local translator has no Japanese table, so `translateText(_:completion:)` and `displayTextData(text:completion:)` route Japanese text to the remote translation API instead of translating locally — but **only** for this one specific engine/language combination:
+
+```swift
+translateEngine == .Dot && brailleLanguage == 0x09  // Japanese
+```
+
+Every other `.Dot` language still translates fully locally, and Japanese with `.Louis` still translates fully locally via liblouis — this remote routing applies to `.Dot` + Japanese only.
+
+```swift
+sdk.dotPadAPI.setupBrailleLanguage(translateEngine: .Dot, pinOption: nil, brailleLanguage: 0x09)
+sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: 2)          // sent as the request's translation grade
+sdk.dotPadAPI.setNumberOfBraillePerLine(20)                   // sent as the request's word-wrap cell count
+
+sdk.dotPadAPI.translateText("こんにちは") { hexString in
+    // hexString returned by the remote API
+}
+sdk.dotPadAPI.displayTextData(text: "こんにちは") { brailleUnicode in
+    // translated remotely, then sent to the connected device
+}
+```
+
+> **Important:** the remote API is only reached through `translateText(_:completion:)` and `displayTextData(text:completion:)`. Other APIs that translate text — the synchronous `displayTextData(text:) -> String`, or any local-translation path — always translate locally (via the SDK's built-in `.Dot` engine or liblouis for `.Louis`) regardless of language, and **do not** call the remote API even when `brailleLanguage == 0x09`. If your app selects Japanese with `.Dot`, make sure every text-to-braille call site uses one of these two async APIs — otherwise Japanese text is silently passed to the SDK's built-in `.Dot` engine, which has no Japanese table and will not produce correct output.
+
+| Method | Description |
+|--------|-------------|
+| `displayTextData(text: String, completion: @escaping (String) -> Void)` | Translates `text` (locally, or via the remote API for Japanese) and sends the result to the connected device. Returns the braille unicode string for the first display-width chunk via `completion`. |
+
 ---
 
 ## Features
@@ -238,6 +284,8 @@ sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: 2)
 | Manual Braille Navigation | Disable auto next/prev on panning key input and trigger it manually |
 | Key Press / Release Events | Receive `onKeyDown` / `onKeyUp` callbacks for hardware key state changes |
 | Text-to-Braille Translation | Convert text to braille hex data via `translateText`, without a device connection |
+| Async Braille Text Output | Translate text (or fetch via the remote API for Japanese) and send it to the connected device via `displayTextData(text:completion:)` |
+| Japanese Remote Translation | With `translateEngine == .Dot`, Japanese text is translated via the remote translation API instead of the local engine (the only `.Dot` language handled this way) |
 
 ---
 
@@ -350,6 +398,11 @@ sdk.dotPadAPI.setBrailleLanguageGrade(gradeValue: Int(GradeOption.Grade2.rawValu
 sdk.dotPadAPI.setNumberOfBraillePerLine(20)
 sdk.dotPadAPI.translateText("Hello") { hexString in
     // hexString: translated braille data
+}
+
+// 8. Async translate + display in one call (Japanese routes to the remote API when translateEngine == .Dot)
+sdk.dotPadAPI.displayTextData(text: "Hello") { brailleUnicode in
+    // brailleUnicode: readable braille string for the first display-width chunk
 }
 ```
 

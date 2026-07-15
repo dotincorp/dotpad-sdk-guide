@@ -271,6 +271,7 @@
                     <connections>
                         <outlet property="BLEButton" destination="BW1-tX-smc" id="0pj-ab-RuL"/>
                         <outlet property="BrailleString" destination="LeX-SK-Slj" id="Oca-bb-e9V"/>
+                        <outlet property="allDownButton" destination="eKz-Zf-Mso" id="a1B-c2-D3e"/>
                         <outlet property="padInfoTextField" destination="ene-Rs-32e" id="sse-g1-8Ty"/>
                         <outlet property="padTextField" destination="ca1-iF-W7i" id="C94-8n-NcV"/>
                         <outlet property="tableView" destination="XwF-9r-5sk" id="MZY-fh-VRW"/>

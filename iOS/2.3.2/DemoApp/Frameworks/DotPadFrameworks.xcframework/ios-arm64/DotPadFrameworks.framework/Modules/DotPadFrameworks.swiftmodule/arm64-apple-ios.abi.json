@@ -6171,6 +6171,43 @@
             "moduleName": "DotPadFrameworks"
           },
           {
+            "kind": "Var",
+            "name": "Japanese",
+            "printedName": "Japanese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DotPadFrameworks.LanguageCode.Type) -> DotPadFrameworks.LanguageCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LanguageCode",
+                    "printedName": "DotPadFrameworks.LanguageCode",
+                    "usr": "s:16DotPadFrameworks12LanguageCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DotPadFrameworks.LanguageCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LanguageCode",
+                        "printedName": "DotPadFrameworks.LanguageCode",
+                        "usr": "s:16DotPadFrameworks12LanguageCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16DotPadFrameworks12LanguageCodeO8JapaneseyA2CmF",
+            "mangledName": "$s16DotPadFrameworks12LanguageCodeO8JapaneseyA2CmF",
+            "moduleName": "DotPadFrameworks"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -9916,6 +9953,51 @@
             "moduleName": "DotPadFrameworks",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "translateTextToHexString",
+            "printedName": "translateTextToHexString(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks11BrailleDataC24translateTextToHexString_10completionySS_ySSctF",
+            "mangledName": "$s16DotPadFrameworks11BrailleDataC24translateTextToHexString_10completionySS_ySSctF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14297,6 +14379,52 @@
             "declKind": "Func",
             "usr": "s:16DotPadFrameworks0aB3APIC15displayTextData4textS2S_tF",
             "mangledName": "$s16DotPadFrameworks0aB3APIC15displayTextData4textS2S_tF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayTextData",
+            "printedName": "displayTextData(text:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks0aB3APIC15displayTextData4text10completionySS_ySSctF",
+            "mangledName": "$s16DotPadFrameworks0aB3APIC15displayTextData4text10completionySS_ySSctF",
             "moduleName": "DotPadFrameworks",
             "declAttributes": [
               "AccessControl",
@@ -23683,6 +23811,52 @@
           },
           {
             "kind": "Function",
+            "name": "displayTextData",
+            "printedName": "displayTextData(text:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16DotPadFrameworks03NewaB11ProcessDataC011displayTextF04text10completionySS_ySSctF",
+            "mangledName": "$s16DotPadFrameworks03NewaB11ProcessDataC011displayTextF04text10completionySS_ySSctF",
+            "moduleName": "DotPadFrameworks",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getTextBrailleCodeOffset",
             "printedName": "getTextBrailleCodeOffset()",
             "children": [
@@ -26473,280 +26647,308 @@
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 468,
+      "offset": 434,
+      "length": 4,
+      "value": "0x09"
+    },
+    {
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 493,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 491,
+      "offset": 516,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 514,
+      "offset": 539,
       "length": 4,
       "value": "0x03"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 590,
+      "offset": 615,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 616,
+      "offset": 641,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 708,
+      "offset": 733,
       "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 780,
+      "offset": 805,
       "length": 5,
       "value": "\"DOT\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 803,
+      "offset": 828,
       "length": 7,
       "value": "\"LOUIS\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 859,
+      "offset": 884,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 877,
+      "offset": 902,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 936,
+      "offset": 961,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 958,
+      "offset": 983,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1021,
+      "offset": 1046,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1047,
+      "offset": 1072,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1125,
+      "offset": 1150,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1157,
+      "offset": 1182,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1223,
+      "offset": 1248,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1249,
+      "offset": 1274,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1316,
+      "offset": 1341,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1350,
+      "offset": 1375,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1431,
+      "offset": 1456,
       "length": 4,
       "value": "0x06"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1468,
+      "offset": 1493,
       "length": 4,
       "value": "0x07"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1505,
+      "offset": 1530,
       "length": 4,
       "value": "0x08"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1540,
+      "offset": 1565,
       "length": 4,
       "value": "0x0A"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1625,
+      "offset": 1650,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1708,
+      "offset": 1733,
       "length": 4,
       "value": "0x14"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1778,
+      "offset": 1803,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1806,
+      "offset": 1831,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 2938,
+      "offset": 3111,
+      "length": 51,
+      "value": "\"https:\/\/saas.dotincorp.com\/braille-app\/v1\/braille\""
+    },
+    {
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "kind": "StringLiteral",
+      "offset": 3226,
+      "length": 32,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "kind": "StringLiteral",
+      "offset": 3237,
+      "length": 1,
+      "value": "\"\/translation-console\""
+    },
+    {
+      "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
+      "kind": "StringLiteral",
+      "offset": 5051,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3100,
+      "offset": 5213,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3139,
+      "offset": 5252,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 3182,
+      "offset": 5295,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3361,
+      "offset": 5474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3404,
+      "offset": 5517,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 16504,
+      "offset": 19466,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 16939,
+      "offset": 19901,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 17051,
+      "offset": 20013,
       "length": 4,
       "value": "0x07"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 17094,
+      "offset": 20056,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "IntegerLiteral",
-      "offset": 17140,
+      "offset": 20102,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/decancel\/Projects\/IOS\/dot-apps-ios\/DotPadFrameworks\/BrailleEngine\/BrailleData.swift",
       "kind": "StringLiteral",
-      "offset": 17254,
+      "offset": 20216,
       "length": 21,
       "value": "\"[一-鿿]\""
     },
