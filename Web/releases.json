@@ -4,12 +4,24 @@
   "supportedLanguages": "JavaScript, TypeScript",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Web",
   "product": {
-    "version": "v3.0.0",
-    "releaseDate": "2026-03-31",
+    "version": "v3.0.1",
+    "releaseDate": "2026-07-27",
     "minimumOs": "Chrome 89+",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.0/download/web-sdk-3.0.0.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.1/download/web-sdk-3.0.1.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.1",
+      "date": "2026-07-27",
+      "minimumOs": "Chrome 89+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.1/download/web-sdk-3.0.1.zip",
+      "details": [
+        { "type": "NEW", "text": "Added requestVibrator API for vibration pulse control (Run/Stop pattern)" },
+        { "type": "NEW", "text": "Added single-key state callbacks: onKeyDown / onKeyUp" },
+        { "type": "NEW", "text": "Added DotPadKey enum for individual key identification" },
+        { "type": "IMPROVE", "text": "Fixed to keep working properly when the browser tab is in the background" }
+      ]
+    },
     {
       "version": "v3.0.0",
       "date": "2026-03-31",
