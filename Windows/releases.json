@@ -4,12 +4,28 @@
   "supportedLanguages": "C++, C#",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Windows",
   "product": {
-    "version": "v3.0.0",
-    "releaseDate": "2026-05-20",
+    "version": "v3.0.1",
+    "releaseDate": "2026-07-30",
     "minimumOs": "Windows 10 이상",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.0/download/DotPadSDK-3.0.0.zip",
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.1/download/DotPadSDK-3.0.1.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.1",
+      "date": "2026-07-30",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.1/download/DotPadSDK-3.0.1.zip",
+      "details": [
+        { "type": "NEW", "text": "Added DOT_PAD_TRANSLATE_TEXT API for converting text to braille cell data without requiring a device connection" },
+        { "type": "NEW", "text": "Added single-key state callbacks: DOT_PAD_REGISTER_KEY_DOWN_CALLBACK / DOT_PAD_REGISTER_KEY_UP_CALLBACK" },
+        { "type": "NEW", "text": "Added DOT_PAD_KEY enum for individual key identification" },
+        { "type": "NEW", "text": "Added vibrator control API: DOT_PAD_REQUEST_VIBRATOR, with configurable onMs/offMs/repeatCount parameters; sends to all connected devices when deviceHandle is null" },
+        { "type": "NEW", "text": "Added DOT_PAD_LANGUAGE enum with named constants for all supported braille languages" },
+        { "type": "IMPROVE", "text": "Added Japanese remote braille translation — DOT_PAD_BRAILLE_DISPLAY and DOT_PAD_TRANSLATE_TEXT translate Japanese text via a remote API call instead of on-device" },
+        { "type": "FIX", "text": "DOT_PAD_BRAILLE_DISPLAY / DOT_PAD_TRANSLATE_TEXT now return false when translation fails instead of silently displaying blank data" },
+        { "type": "FIX", "text": "Fixed a crash that could occur when translating very short or empty text" }
+      ]
+    },
     {
       "version": "v3.0.0",
       "date": "2026-05-20",
