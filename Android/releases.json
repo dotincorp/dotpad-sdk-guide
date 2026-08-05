@@ -4,12 +4,25 @@
   "supportedLanguages": "Kotlin, Java",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Android",
   "product": {
-    "version": "v3.0.2",
-    "releaseDate": "2026-07-15",
+    "version": "v3.0.3",
+    "releaseDate": "2026-08-05",
     "minimumOs": "Android 8.0 (API 26)+",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.2/download/android-sdk-3.0.2.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.3/download/android-sdk-3.0.3.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.3",
+      "date": "2026-08-05",
+      "minimumOs": "Android 8.0 (API 26)+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Android/3.0.3/download/android-sdk-3.0.3.zip",
+      "details": [
+        { "type": "FIX", "text": "Fixed several braille languages (English, Russian, Arabic, Catalan, Polish, Norwegian) using the wrong translation engine — Russian and Arabic in particular were silently translated using the English table" },
+        { "type": "NEW", "text": "Added 6 braille languages to match iOS: Dutch, Romanian, Hungarian, Welsh, Serbian, Croatian" },
+        { "type": "FIX", "text": "Fixed the Chinese (Simplified) grade option not being applied correctly" },
+        { "type": "FIX", "text": "Fixed English text embedded in Korean sentences always translating as Grade2 regardless of the selected Korean grade" },
+        { "type": "IMPROVE", "text": "liblouis translation failures now return empty cell data instead of crashing" }
+      ]
+    },
     {
       "version": "v3.0.2",
       "date": "2026-07-15",
