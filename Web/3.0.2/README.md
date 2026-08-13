@@ -13,6 +13,7 @@ JavaScript/TypeScript SDK for controlling DotPad braille display devices from a 
 | `DotPadSDK-3.0.2.js` | SDK library (ES module) |
 | `DotPadSDK-3.0.2.d.ts` | TypeScript type definitions |
 | `lib/liblouis.js`, `lib/liblouis.wasm`, `lib/liblouis.data` | liblouis (wasm) braille translation engine — required only if you use braille translation (see [Braille Translation](#braille-translation) below) |
+| `lib/LICENSES/liblouis-LGPL-2.1.txt`, `lib/liblouis-web/` | liblouis license text and WebAssembly wrapper source/build script — see [License Notice](#license-notice) below |
 
 ---
 
@@ -352,6 +353,16 @@ Hook this up to `PanningLeft`/`PanningRight` in your key callback to make the ha
 
 `backTranslateText` round-trips reliably for plain, unaccented Latin-alphabet text (confirmed: English, Danish, Welsh). Languages with diacritics/accents (French, German, Portuguese, etc.), non-Latin scripts (Korean, Japanese, Arabic, Thai, etc.), or heavily-contracted grades may not reconstruct the original text exactly — this reflects the completeness of each liblouis table's own backward-translation rules, not a bug specific to this SDK. `translateText` (forward) is not affected and works correctly across all listed languages.
 
+### License Notice
+
+This distribution includes liblouis v3.38.0 (WebAssembly build) and a subset of its translation tables, under `lib/` and `DemoApp/public/liblouis/`. liblouis and the included table subset are distributed under the GNU Lesser General Public License, version 2.1 or later (LGPL-2.1-or-later); the full license text is at `lib/LICENSES/liblouis-LGPL-2.1.txt`.
+
+Per the LGPL's relinking requirement, the source for the WebAssembly wrapper and the reproducible build script used to produce `liblouis.wasm`/`liblouis.js`/`liblouis.data` are included at `lib/liblouis-web/` so recipients can rebuild the module against a modified liblouis library. Source for upstream liblouis itself is available at [github.com/liblouis/liblouis (tag v3.38.0)](https://github.com/liblouis/liblouis/tree/v3.38.0).
+
+This distribution intentionally excludes the known LGPLv3+ upstream tables and dependent aliases: `sr-g1.ctb`, `sr-Cyrl.ctb`, `sr-common.cti`, `sr-cyrletters.cti`, `sr-latletters.cti`, `pt-pt-g2.ctb`, `pt.tbl`, `Es-Es-G0.utb`, `grc-international-es.utb`, `et-g0.utb`, `is-chardefs6.cti`, `is-chardefs8.cti`, `is.tbl`.
+
+> **If you redistribute this SDK**, keep `lib/LICENSES/` and `lib/liblouis-web/` (and their `DemoApp/public/liblouis/` counterparts) alongside `liblouis.js`/`.wasm`/`.data` to stay compliant with the LGPL.
+
 ---
 
 ## Project Structure
@@ -363,7 +374,13 @@ Hook this up to `PanningLeft`/`PanningRight` in your key callback to make the ha
 ├── lib/                        ← liblouis (wasm) braille engine — ship alongside the SDK file
 │   ├── liblouis.js
 │   ├── liblouis.wasm
-│   └── liblouis.data
+│   ├── liblouis.data
+│   ├── LICENSES/
+│   │   └── liblouis-LGPL-2.1.txt   ← keep with the runtime files (see License Notice)
+│   └── liblouis-web/               ← wasm wrapper source + build script (LGPL relinking)
+│       ├── liblouis_web.c
+│       ├── liblouis.post.js
+│       └── build_liblouis_web.sh
 ├── download/
 │   └── web-sdk-3.0.2.zip
 └── DemoApp/                   ← React demo application
@@ -372,7 +389,13 @@ Hook this up to `PanningLeft`/`PanningRight` in your key callback to make the ha
     │   └── liblouis/           ← liblouis assets served statically (see Braille Translation setup)
     │       ├── liblouis.js
     │       ├── liblouis.wasm
-    │       └── liblouis.data
+    │       ├── liblouis.data
+    │       ├── LICENSES/
+    │       │   └── liblouis-LGPL-2.1.txt
+    │       └── liblouis-web/
+    │           ├── liblouis_web.c
+    │           ├── liblouis.post.js
+    │           └── build_liblouis_web.sh
     └── src/
         ├── App.tsx             ← Main UI (scan, connect, display, translation controls)
         ├── index.tsx
