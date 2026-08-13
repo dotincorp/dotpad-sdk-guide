@@ -4,12 +4,23 @@
   "supportedLanguages": "JavaScript, TypeScript",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Web",
   "product": {
-    "version": "v3.0.1",
-    "releaseDate": "2026-07-27",
+    "version": "v3.0.2",
+    "releaseDate": "2026-08-13",
     "minimumOs": "Chrome 89+",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.1/download/web-sdk-3.0.1.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.2/download/web-sdk-3.0.2.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.2",
+      "date": "2026-08-13",
+      "minimumOs": "Chrome 89+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.2/download/web-sdk-3.0.2.zip",
+      "details": [
+        { "type": "NEW", "text": "Added braille translation API powered by liblouis: translateText, backTranslateText, buildMultiLineData, setBrailleLanguage, setBrailleGrade, setNumberOfBraillePerLine" },
+        { "type": "NEW", "text": "Added BrailleLanguage support for 32 languages, with configurable grade (GradeOption) and word-wrap width (NumberOfBraillePerLine)" },
+        { "type": "NEW", "text": "displayTextData now accepts plain text via needsTranslation, auto-translating and word-wrapping to the device's text width" }
+      ]
+    },
     {
       "version": "v3.0.1",
       "date": "2026-07-27",
