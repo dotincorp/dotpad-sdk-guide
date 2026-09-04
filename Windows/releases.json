@@ -4,12 +4,22 @@
   "supportedLanguages": "C++, C#",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Windows",
   "product": {
-    "version": "v3.0.1",
-    "releaseDate": "2026-07-30",
+    "version": "v3.0.2",
+    "releaseDate": "2026-09-04",
     "minimumOs": "Windows 10 이상",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.1/download/DotPadSDK-3.0.1.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.2/download/DotPadSDK-3.0.2.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.2",
+      "date": "2026-09-04",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.2/download/DotPadSDK-3.0.2.zip",
+      "details": [
+        { "type": "IMPROVE", "text": "Added a safeguard against redundant/concurrent BLE connection attempts, including devices already connected elsewhere" },
+        { "type": "FIX", "text": "Added exception handling around the BLE connection process to prevent crashes" }
+      ]
+    },
     {
       "version": "v3.0.1",
       "date": "2026-07-30",
