@@ -4,12 +4,24 @@
   "supportedLanguages": "JavaScript, TypeScript",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Web",
   "product": {
-    "version": "v3.0.3",
-    "releaseDate": "2026-09-09",
+    "version": "v3.0.4",
+    "releaseDate": "2026-10-22",
     "minimumOs": "Chrome 89+",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.3/download/web-sdk-3.0.3.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.4/download/web-sdk-3.0.4.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.4",
+      "date": "2026-10-22",
+      "minimumOs": "Chrome 89+",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Web/3.0.4/download/web-sdk-3.0.4.zip",
+      "details": [
+        { "type": "NEW", "text": "Switched braille translation to Dot's own translation engine (ttb-engine, with built-in liblouis)" },
+        { "type": "NEW", "text": "Added math translation API: DotBrailleModule.translateMath (MathML to braille; Nemeth, UEB, Korean, Korean science, CMU, Marburg, Czech rules)" },
+        { "type": "IMPROVE", "text": "Replaced LiblouisManager.setAssetBaseUrl with DotBrailleModule.setEngineAssetBaseUrl (now required before translation)" },
+        { "type": "IMPROVE", "text": "Fixed an issue where repeated display requests could send the next packet while the device was still outputting, causing lost output" }
+      ]
+    },
     {
       "version": "v3.0.3",
       "date": "2026-09-09",

@@ -6,3 +6,7 @@ sys.dic filter=lfs diff=lfs merge=lfs -text
 # offset; CRLF normalization silently corrupts them, so force binary.
 *.data binary
 *.wasm binary
+
+# Braille engine (ttb-engine) files are checksummed in build-manifest.json and
+# some ship with CRLF line endings; keep them byte-identical.
+Web/*/DemoApp/public/braille/** -text
