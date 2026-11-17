@@ -364,11 +364,11 @@ Hook this up to `PanningLeft`/`PanningRight` in your key callback to make the ha
 
 ### License Notice
 
-This distribution includes liblouis v3.38.0 (WebAssembly build) and a subset of its translation tables, under `lib/` and `DemoApp/public/liblouis/`. liblouis and the included table subset are distributed under the GNU Lesser General Public License, version 2.1 or later (LGPL-2.1-or-later); the full license text is at `lib/LICENSES/liblouis-LGPL-2.1.txt`.
+This distribution includes liblouis v3.38.0 (WebAssembly build) and a subset of its translation tables, under `lib/` and `DemoApp/public/liblouis/`. liblouis and most of the included tables are distributed under the GNU Lesser General Public License, version 2.1 or later (LGPL-2.1-or-later); the full license text is at `lib/LICENSES/liblouis-LGPL-2.1.txt`. Some tables are under LGPL-3.0-or-later (see below).
 
 Per the LGPL's relinking requirement, the source for the WebAssembly wrapper and the reproducible build script used to produce `liblouis.wasm`/`liblouis.js`/`liblouis.data` are included at `lib/liblouis-web/` so recipients can rebuild the module against a modified liblouis library. Source for upstream liblouis itself is available at [github.com/liblouis/liblouis (tag v3.38.0)](https://github.com/liblouis/liblouis/tree/v3.38.0).
 
-This distribution intentionally excludes the known LGPLv3+ upstream tables and dependent aliases: `sr-g1.ctb`, `sr-Cyrl.ctb`, `sr-common.cti`, `sr-cyrletters.cti`, `sr-latletters.cti`, `pt-pt-g2.ctb`, `pt.tbl`, `Es-Es-G0.utb`, `grc-international-es.utb`, `et-g0.utb`, `is-chardefs6.cti`, `is-chardefs8.cti`, `is.tbl`.
+`liblouis.data` in this release also contains upstream tables licensed under the GNU Lesser General Public License, version 3 or later (LGPL-3.0-or-later), and aliases that include them: `sr-g1.ctb`, `sr-Cyrl.ctb`, `sr-common.cti`, `sr-cyrletters.cti`, `sr-latletters.cti`, `pt-pt-g2.ctb`, `pt.tbl`, `Es-Es-G0.utb`, `grc-international-es.utb`, `et-g0.utb`, `is-chardefs6.cti`, `is-chardefs8.cti`, `is.tbl`. The build script in `lib/liblouis-web/` is written to leave these tables out, but the published v3.0.3 build includes them. The LGPL-3.0 text (`liblouis-tables-LGPL-3.0.txt`) and the GPL-3.0 text it incorporates (`GPL-3.0.txt`) are in `DemoApp/public/liblouis/LICENSES/`, and in the repository's [LICENSES](../../LICENSES) folder. `web-sdk-3.0.3.zip` contains only the LGPL-2.1 text, so add these two files to `lib/LICENSES/` when you redistribute the SDK.
 
 > **If you redistribute this SDK**, keep `lib/LICENSES/` and `lib/liblouis-web/` (and their `DemoApp/public/liblouis/` counterparts) alongside `liblouis.js`/`.wasm`/`.data` to stay compliant with the LGPL.
 
@@ -388,7 +388,9 @@ This distribution intentionally excludes the known LGPLv3+ upstream tables and d
     │       ├── liblouis.wasm
     │       ├── liblouis.data
     │       ├── LICENSES/
-    │       │   └── liblouis-LGPL-2.1.txt
+    │       │   ├── liblouis-LGPL-2.1.txt
+    │       │   ├── liblouis-tables-LGPL-3.0.txt
+    │       │   └── GPL-3.0.txt
     │       └── liblouis-web/
     │           ├── liblouis_web.c
     │           ├── liblouis.post.js

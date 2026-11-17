@@ -1,0 +1,17 @@
+DotPad SDK Guide
+Copyright 2022-2026 Dot Incorporation
+
+This repository contains material under different license terms:
+
+  * Sample code (*/DemoApp/), documentation and images are licensed under
+    the Apache License, Version 2.0 (see LICENSE). This does not cover the
+    SDK binaries and third-party files copied into */DemoApp/.
+
+  * DotPad SDK binaries, header and type definition files, including copies
+    inside */DemoApp/, are licensed under the DotPad SDK License Agreement
+    (see LICENSE-SDK.md).
+
+  * Third-party components bundled with the DotPad SDK are licensed under
+    their own terms (see THIRD-PARTY-NOTICES.md and the LICENSES/ directory).
+
+"Dot" and "Dot Pad" are trademarks of Dot Incorporation.

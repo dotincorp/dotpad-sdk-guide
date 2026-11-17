@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DotPad SDK 라이선스 가이드</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1d2330; --muted: #5b6475; --line: #e3e6ec;
+    --card: #f6f7f9; --accent: #1f5fbf; --code-bg: #f1f3f6;
+    --ok: #1a7f37; --ok-bg: #e8f5ec; --warn: #9a6700; --warn-bg: #fff6dd;
+    --bad: #b42318; --bad-bg: #fdecea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171c; --fg: #e6e9ef; --muted: #9aa3b2; --line: #2b313b;
+      --card: #1b1f26; --accent: #7aa7ff; --code-bg: #1f242c;
+      --ok: #5cc27a; --ok-bg: #16281c; --warn: #e0b54a; --warn-bg: #2b2414;
+      --bad: #ff8a80; --bad-bg: #2e1816;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171c; --fg: #e6e9ef; --muted: #9aa3b2; --line: #2b313b;
+    --card: #1b1f26; --accent: #7aa7ff; --code-bg: #1f242c;
+    --ok: #5cc27a; --ok-bg: #16281c; --warn: #e0b54a; --warn-bg: #2b2414;
+    --bad: #ff8a80; --bad-bg: #2e1816;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  }
+  main { max-width: 920px; margin: 0 auto; padding: 40px 16px 80px; }
+  h1 { font-size: 30px; line-height: 1.3; margin: 0 0 8px; }
+  h2 { font-size: 22px; margin: 56px 0 12px; padding-top: 8px; border-top: 1px solid var(--line); }
+  h3 { font-size: 17px; margin: 28px 0 8px; }
+  p, li { color: var(--fg); }
+  .lead { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.88em; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+  pre { background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; overflow-x: auto; font-size: 13.5px; line-height: 1.55; }
+  pre code { background: none; padding: 0; font-size: inherit; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; }
+  .scroll { overflow-x: auto; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 16px 0; }
+  .card > :first-child { margin-top: 0; } .card > :last-child { margin-bottom: 0; }
+  .callout { border-left: 4px solid var(--warn); background: var(--warn-bg); padding: 12px 16px; border-radius: 6px; margin: 16px 0; }
+  .callout.info { border-color: var(--accent); background: var(--card); }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+  .ok { color: var(--ok); background: var(--ok-bg); }
+  .warn { color: var(--warn); background: var(--warn-bg); }
+  .bad { color: var(--bad); background: var(--bad-bg); }
+  nav.toc { columns: 2; column-gap: 32px; font-size: 15px; }
+  nav.toc a { text-decoration: none; }
+  nav.toc li { break-inside: avoid; }
+  .tree { white-space: pre; }
+  ol.steps li { margin-bottom: 6px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
+  @media (max-width: 640px) { nav.toc { columns: 1; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<main>
+
+<h1>DotPad SDK 라이선스 표기 가이드</h1>
+<p class="lead">dotpad-sdk-guide 저장소(Android · iOS · Linux · Web · Windows)에 라이선스를 어떻게 정하고, 어디에, 어떤 문구로 표시할지 정리한 문서입니다. 2026-10-21 기준 저장소 내용을 직접 확인해서 작성했습니다.</p>
+
+<div class="callout">
+  <strong>참고:</strong> 이 문서는 실무 가이드이며 법률 자문이 아닙니다. 특히 <em>SDK 이용약관(§4)</em>과 <em>iOS의 LGPL 대응(§6)</em>은 공개 전에 법무 담당자나 오픈소스 전문 변호사의 검토를 받으시길 권장합니다.
+</div>
+
+<nav class="toc">
+<ol>
+  <li><a href="#summary">핵심 요약</a></li>
+  <li><a href="#status">현재 저장소 상태 진단</a></li>
+  <li><a href="#choose">라이선스 선택</a></li>
+  <li><a href="#sdk-license">SDK 바이너리 이용약관 초안</a></li>
+  <li><a href="#layout">파일 배치 구조</a></li>
+  <li><a href="#thirdparty">서드파티 고지 (플랫폼별 조치)</a></li>
+  <li><a href="#templates">복사해서 쓰는 템플릿</a></li>
+  <li><a href="#checklist">공개 전 체크리스트</a></li>
+</ol>
+</nav>
+
+<!-- ===================================================== -->
+<h2 id="summary">1. 핵심 요약</h2>
+
+<div class="card">
+<ol class="steps">
+  <li><strong>라이선스를 두 개로 나눕니다.</strong> 이 저장소에는 성격이 다른 두 가지가 섞여 있습니다.
+    <ul>
+      <li><strong>DemoApp 샘플 코드 · 문서</strong> → <strong>Apache License 2.0</strong> (개발자가 자기 앱에 자유롭게 복사·수정해서 쓰도록)</li>
+      <li><strong>SDK 바이너리</strong> (<code>.dll</code>, <code>.aar</code>, <code>.xcframework</code>, <code>.a</code>, <code>.js</code>) → <strong>DotPad SDK 이용약관</strong> (무료로 쓰고 앱과 함께 재배포할 수 있지만 소스는 공개하지 않음)</li>
+    </ul>
+  </li>
+  <li><strong>"오픈소스"라는 표현은 신중하게 써야 합니다.</strong> SDK 본체는 소스 없이 바이너리로만 배포되므로 OSI 기준의 오픈소스가 아닙니다. 대외 문구는 <em>"무료 SDK + 오픈소스 샘플 코드"</em>가 정확합니다. SDK 소스까지 공개할 계획이라면 전체를 Apache-2.0 하나로 통일하면 됩니다(§3 옵션 B).</li>
+  <li><strong>서드파티 고지를 보완해야 합니다.</strong> 현재 라이선스 문서가 있는 것은 Web 3.0.2/3.0.3뿐입니다. Windows · Android · iOS도 liblouis(LGPL)를 포함하고 있지만 고지가 없고, <strong>iOS는 liblouis가 정적 링크되어 있어</strong> LGPL 요건을 충족하려면 별도 조치가 필요합니다(§6).</li>
+  <li><strong>루트에 <code>LICENSE</code>, <code>LICENSE-SDK.md</code>, <code>THIRD-PARTY-NOTICES.md</code></strong>를 두고, README에 라이선스 섹션을 추가합니다. GitHub는 루트 <code>LICENSE</code> 파일을 읽어서 저장소 상단에 라이선스를 표시합니다.</li>
+</ol>
+</div>
+
+<!-- ===================================================== -->
+<h2 id="status">2. 현재 저장소 상태 진단</h2>
+
+<p>각 플랫폼 최신 버전의 배포물을 열어서 확인한 결과입니다.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th>플랫폼 (최신)</th><th>SDK 형태</th><th>포함된 서드파티</th><th>라이선스 고지</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Web</strong> 3.0.3</td>
+      <td><code>DotPadSDK-3.0.3.js</code> (번들)</td>
+      <td>liblouis 3.38.0 (WASM) + 테이블 일부</td>
+      <td><span class="tag ok">양호</span> LGPL 전문, 래퍼 소스, 빌드 스크립트, README 고지까지 갖춤. LGPLv3+ 테이블도 제외함</td>
+    </tr>
+    <tr>
+      <td><strong>Windows</strong> 3.0.2</td>
+      <td><code>DotPadSDK-3.0.2.dll</code></td>
+      <td>liblouis.dll, MeCab.dll, ipadic 사전, 번역 테이블 / 구버전: jsoncpp.dll, msvcp140.dll</td>
+      <td><span class="tag bad">없음</span> 고지 파일 없음. 테이블에 LGPLv3+ 파일 포함</td>
+    </tr>
+    <tr>
+      <td><strong>Android</strong> 3.0.3</td>
+      <td><code>android-sdk-3.0.3.aar</code></td>
+      <td><code>liblouis.so</code>, <code>libjnilouis.so</code>, 번역 테이블</td>
+      <td><span class="tag bad">없음</span> 고지 파일 없음. LGPLv3+ 테이블 포함</td>
+    </tr>
+    <tr>
+      <td><strong>iOS</strong> 2.3.2</td>
+      <td><code>DotPadFrameworks.xcframework</code></td>
+      <td>liblouis (<strong>프레임워크 바이너리에 정적 링크</strong>), 번역 테이블</td>
+      <td><span class="tag bad">없음</span> 고지 없음 + 재링크 불가 구조</td>
+    </tr>
+    <tr>
+      <td><strong>Linux</strong> 1.0.0</td>
+      <td><code>libdotpad_sdk-1.0.0.a</code></td>
+      <td>liblouis 심볼 확인되지 않음</td>
+      <td><span class="tag warn">확인 필요</span> 자체 구현 여부 확인</td>
+    </tr>
+    <tr>
+      <td>공통</td>
+      <td colspan="2">TTBEngine (Windows <code>TTBEngine.dll</code>, Android <code>libTTBEngine.so</code>)</td>
+      <td><span class="tag warn">확인 필요</span> 자사 개발인지 외부 라이선스인지 확인</td>
+    </tr>
+    <tr>
+      <td>저장소 전체</td>
+      <td colspan="2">루트 <code>LICENSE</code> 없음</td>
+      <td><span class="tag bad">없음</span> 현재 법적으로는 "All rights reserved" 상태라서, 외부 개발자가 샘플 코드를 가져다 쓸 권리가 없습니다</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>LGPLv3+ 테이블은 Web README에 정리된 제외 목록(<code>sr-g1.ctb</code>, <code>pt-pt-g2.ctb</code>, <code>Es-Es-G0.utb</code>, <code>et-g0.utb</code>, <code>is.tbl</code> 등)과 같은 파일입니다. 제외 목록의 13개 파일이 Android · iOS · Windows 배포물에 모두 포함되어 있습니다.</p>
+
+<!-- ===================================================== -->
+<h2 id="choose">3. 라이선스 선택</h2>
+
+<h3>옵션 A (권장): 샘플·문서는 Apache-2.0, SDK 바이너리는 자체 이용약관</h3>
+<p>현재 배포 방식(SDK는 바이너리, 샘플은 소스)을 그대로 유지하는 경우입니다.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th>대상</th><th>라이선스</th><th>이유</th></tr></thead>
+  <tbody>
+    <tr><td><code>*/DemoApp/**</code>, README·가이드 문서, 이미지</td><td><strong>Apache-2.0</strong></td><td>상업 앱에도 자유롭게 복사할 수 있어 연동 장벽이 가장 낮음. 특허 허여 조항이 있어 하드웨어 회사에 적합하고, 상표권은 부여하지 않는다는 조항(§6)이 있어 "DotPad" 브랜드를 보호할 수 있음</td></tr>
+    <tr><td>SDK 바이너리, 헤더(<code>DotSDKAPI.h</code>, <code>.d.ts</code> 등)</td><td><strong>DotPad SDK 이용약관</strong></td><td>무료 사용·재배포는 허용하고, 역설계 금지·보증 부인·책임 제한을 명시</td></tr>
+    <tr><td>liblouis, MeCab, IPAdic 등</td><td><strong>각 원 라이선스 유지</strong></td><td>바꿀 수 없음. 고지 의무만 이행</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>옵션 B: SDK 소스까지 공개한다면 전체 Apache-2.0</h3>
+<p>SDK 소스까지 공개하는 진정한 오픈소스가 목표라면 저장소 전체를 Apache-2.0 하나로 두는 것이 가장 단순합니다. 이 경우 §4의 이용약관은 필요 없고, 서드파티 고지(§6)는 그대로 필요합니다.</p>
+
+<h3>샘플 코드 라이선스 비교</h3>
+<div class="scroll">
+<table>
+  <thead><tr><th></th><th>Apache-2.0</th><th>MIT</th><th>BSD-3-Clause</th><th>GPL / LGPL</th></tr></thead>
+  <tbody>
+    <tr><td>상업 앱에 사용</td><td>가능</td><td>가능</td><td>가능</td><td>제약 있음</td></tr>
+    <tr><td>사용자 소스 공개 의무</td><td>없음</td><td>없음</td><td>없음</td><td>있음 (GPL)</td></tr>
+    <tr><td>특허 허여 명시</td><td><strong>있음</strong></td><td>없음</td><td>없음</td><td>v3만 있음</td></tr>
+    <tr><td>상표 보호 조항</td><td><strong>있음</strong></td><td>없음</td><td>이름 사용 금지 조항</td><td>없음</td></tr>
+    <tr><td>연동 확산 목적 적합도</td><td><span class="tag ok">권장</span></td><td><span class="tag ok">적합</span></td><td><span class="tag ok">적합</span></td><td><span class="tag bad">부적합</span></td></tr>
+  </tbody>
+</table>
+</div>
+<p>MIT도 좋은 선택이지만, 하드웨어 프로토콜과 관련된 특허를 보유하고 있거나 보유할 가능성이 있다면 Apache-2.0이 회사와 사용자 모두에게 더 명확합니다. GPL 계열은 "더 많은 프로그램에서 연동"이라는 목적과 맞지 않습니다.</p>
+
+<!-- ===================================================== -->
+<h2 id="sdk-license">4. SDK 바이너리 이용약관 초안 (옵션 A)</h2>
+<p>아래는 <code>LICENSE-SDK.md</code>에 들어갈 핵심 조항의 뼈대입니다. 회사의 정식 법인명과 준거법은 법무 확인 후 기입하세요.</p>
+
+<div class="card">
+<ol>
+  <li><strong>사용 허락:</strong> 닷패드 기기와 연동하는 소프트웨어를 개발·배포하는 목적으로, 무료·비독점·전 세계적으로 SDK를 사용할 수 있습니다. 상업적 사용도 포함합니다.</li>
+  <li><strong>재배포:</strong> SDK 바이너리를 수정하지 않은 상태로 본인 애플리케이션에 포함해 재배포할 수 있습니다. SDK 단독으로 재판매하거나 SDK만 따로 배포하는 것은 허용하지 않습니다.</li>
+  <li><strong>제한:</strong> 역설계·디컴파일·디스어셈블을 금지합니다. 단, 관련 법률이나 LGPL 등 서드파티 라이선스가 허용하는 범위는 예외입니다.</li>
+  <li><strong>사용 대상 기기:</strong> Dot Inc.의 기기(Dot Pad 등)와의 연동 목적으로 한정합니다. <em>(선택 조항이며, 확산이 목표라면 생략 가능)</em></li>
+  <li><strong>서드파티 구성요소:</strong> SDK에 포함된 오픈소스 구성요소는 각각의 라이선스를 따르며, 해당 라이선스가 본 약관보다 우선합니다. <em>(LGPL 준수를 위해 반드시 넣어야 하는 조항입니다)</em></li>
+  <li><strong>상표:</strong> "Dot", "Dot Pad" 등의 상표·로고에 대한 권리는 부여하지 않습니다. "Works with Dot Pad"처럼 사실관계를 밝히는 표현은 허용합니다.</li>
+  <li><strong>보증 부인 / 책임 제한:</strong> 현 상태 그대로(AS IS) 제공하며, 법이 허용하는 최대 범위에서 책임을 제한합니다.</li>
+  <li><strong>해지:</strong> 약관을 위반하면 사용 권한이 자동으로 종료됩니다.</li>
+  <li><strong>준거법·관할:</strong> 대한민국 법, 서울중앙지방법원 <em>(법무 확인)</em></li>
+</ol>
+</div>
+
+<!-- ===================================================== -->
+<h2 id="layout">5. 파일 배치 구조</h2>
+
+<pre class="tree"><code>dotpad-sdk-guide/
+├── LICENSE                    ← Apache-2.0 전문 (GitHub가 자동 인식)
+├── LICENSE-SDK.md             ← SDK 바이너리 이용약관 (§4)
+├── NOTICE                     ← Apache-2.0 NOTICE (저작권자·상표 표기)
+├── THIRD-PARTY-NOTICES.md     ← 전체 서드파티 목록 및 라이선스 요약
+├── README.md                  ← "License" 섹션 추가
+├── Android/3.0.3/
+│   ├── LICENSES/              ← 해당 버전 배포물에 포함된 서드파티 라이선스 전문
+│   │   ├── liblouis-LGPL-2.1.txt
+│   │   └── ...
+│   └── README.md              ← "License Notice" 섹션
+├── Windows/3.0.2/LICENSES/    ← liblouis, MeCab(BSD), IPAdic 라이선스
+├── iOS/2.3.2/LICENSES/
+└── Web/3.0.3/lib/LICENSES/    ← 이미 있음 (모범 사례)</code></pre>
+
+<div class="callout info">
+  <strong>배포 zip 안에도 넣어야 합니다.</strong> 개발자는 저장소가 아니라 <code>download/*.zip</code>만 받아가는 경우가 많습니다. 각 zip(및 <code>.aar</code>, <code>.xcframework</code>) 안에도 <code>LICENSE-SDK.md</code>와 <code>LICENSES/</code> 폴더를 넣어야 고지 의무가 이행됩니다. Web 3.0.3 zip이 이미 이렇게 되어 있으니 같은 방식을 따르면 됩니다.
+</div>
+
+<!-- ===================================================== -->
+<h2 id="thirdparty">6. 서드파티 고지 및 플랫폼별 조치</h2>
+
+<h3>구성요소별 라이선스와 의무</h3>
+<div class="scroll">
+<table>
+  <thead><tr><th>구성요소</th><th>라이선스</th><th>사용 플랫폼</th><th>주요 의무</th></tr></thead>
+  <tbody>
+    <tr><td>liblouis (엔진)</td><td>LGPL-2.1-or-later</td><td>전 플랫폼</td><td>라이선스 전문 동봉, 소스 입수 방법 안내, <strong>사용자가 liblouis를 교체해 재링크할 수 있어야 함</strong></td></tr>
+    <tr><td>liblouis 테이블 (대부분)</td><td>LGPL-2.1-or-later</td><td>전 플랫폼</td><td>위와 같음</td></tr>
+    <tr><td>liblouis 테이블 (일부)</td><td>LGPL-3.0-or-later</td><td>Android, iOS, Windows</td><td>Web처럼 제외하거나, 포함한다면 LGPL-3.0 전문 추가</td></tr>
+    <tr><td>MeCab</td><td>GPL / LGPL / BSD 중 선택</td><td>Windows</td><td><strong>BSD를 선택한다고 명시</strong>하고 BSD 고지문 동봉</td></tr>
+    <tr><td>IPAdic</td><td>IPAdic License (허용형)</td><td>Windows</td><td>원 저작권·라이선스 문구 동봉</td></tr>
+    <tr><td>jsoncpp</td><td>MIT (또는 Public Domain)</td><td>Windows 구버전</td><td>저작권 고지 동봉</td></tr>
+    <tr><td>BluetoothKit</td><td>MIT</td><td>iOS (전 버전)</td><td>저작권 고지와 MIT 전문 동봉</td></tr>
+    <tr><td>msvcp140.dll</td><td>Microsoft VC++ 재배포 조건</td><td>Windows 구버전</td><td>재배포는 허용됨. 공식 VC++ Redistributable 설치를 안내하는 방식이 더 깔끔함</td></tr>
+    <tr><td>TTBEngine</td><td>확인 필요</td><td>Windows, Android</td><td>자사 개발이면 SDK 약관에 포함, 외부 것이면 해당 라이선스 확인</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>플랫폼별 조치</h3>
+
+<div class="card">
+<p><span class="tag bad">우선순위 높음</span> <strong>iOS: liblouis 정적 링크 문제</strong></p>
+<p><code>DotPadFrameworks</code> 바이너리 안에 liblouis 심볼(73개)이 들어 있습니다. LGPL은 사용자가 수정한 liblouis로 교체해서 다시 링크할 수 있는 수단을 요구하는데, 지금 구조로는 그게 불가능합니다. 해결 방법은 둘 중 하나입니다.</p>
+<ol>
+  <li><strong>(권장) liblouis를 별도 동적 프레임워크로 분리</strong>합니다. <code>liblouis.xcframework</code>를 따로 두고 DotPadFrameworks가 그것을 동적으로 참조하게 만듭니다.</li>
+  <li>DotPadFrameworks의 <strong>오브젝트 파일(.o)과 링크 스크립트를 제공</strong>해서 사용자가 재링크할 수 있게 합니다. 사실상 SDK 내부 구조가 노출되므로 1번이 낫습니다.</li>
+</ol>
+<p>참고로 App Store 배포와 LGPL의 충돌은 해석이 엇갈리는 영역입니다. 최종 앱 개발자에게 영향을 주는 사안이니 법무 검토를 권장합니다.</p>
+</div>
+
+<div class="card">
+<p><span class="tag warn">보완 필요</span> <strong>Android</strong></p>
+<ul>
+  <li><code>liblouis.so</code>가 별도 공유 라이브러리로 분리되어 있어 재링크 요건은 충족합니다.</li>
+  <li><code>LICENSES/liblouis-LGPL-2.1.txt</code>를 추가하고, liblouis 버전과 소스 위치(GitHub 태그)를 README에 적습니다.</li>
+  <li><code>libjnilouis.so</code>(JNI 래퍼)를 자사에서 작성했다면, Web의 <code>liblouis-web/</code>처럼 소스를 함께 공개하는 것이 안전합니다.</li>
+  <li><code>.aar</code>의 <code>assets/tables/</code>에서 LGPLv3+ 테이블을 제외하거나, LGPL-3.0 전문을 추가합니다.</li>
+</ul>
+</div>
+
+<div class="card">
+<p><span class="tag warn">보완 필요</span> <strong>Windows</strong></p>
+<ul>
+  <li><code>liblouis.dll</code>은 DLL로 분리되어 있어 재링크 요건을 충족합니다. LGPL 전문과 소스 위치만 추가하면 됩니다.</li>
+  <li>MeCab은 "BSD 라이선스를 선택해 사용함"이라고 명시하고 BSD 고지문을 넣습니다.</li>
+  <li><code>ipadic.zip</code> 안에 원본 <code>COPYING</code>이 들어 있는지 확인하고, 없으면 <code>LICENSES/</code>에 추가합니다.</li>
+  <li><code>tables.zip</code>에서 LGPLv3+ 테이블을 정리합니다.</li>
+</ul>
+</div>
+
+<div class="card">
+<p><span class="tag ok">양호</span> <strong>Web</strong>: 3.0.2부터 갖춘 구성(LGPL 전문 + 래퍼 소스 + 빌드 스크립트 + README 고지)을 <strong>다른 플랫폼의 기준</strong>으로 삼으면 됩니다. <code>liblouis.data</code> 안에 <code>Es-Es-G0.utb</code>, <code>pt-pt-g2.ctb</code>라는 문자열이 남아 있는데, 실제 파일인지 다른 테이블의 참조인지 한 번 확인하세요.</p>
+</div>
+
+<div class="card">
+<p><span class="tag warn">구버전 처리</span> <strong>과거 버전 폴더</strong></p>
+<p>Windows 1.x~3.0.1, iOS 2.0~2.3.1, Android 1.1~3.0.2 등 이미 공개된 버전에도 같은 문제가 있습니다. 전부 다시 빌드할 필요는 없고, 각 버전 폴더에 <code>LICENSES/</code>만 추가하는 것으로 고지 의무는 상당 부분 보완됩니다. 더 이상 지원하지 않는 버전은 README에 "Deprecated"로 표시하세요.</p>
+</div>
+
+<!-- ===================================================== -->
+<h2 id="templates">7. 복사해서 쓰는 템플릿</h2>
+<p><code>Dot Inc.</code>는 정식 영문 법인명으로 바꿔 넣으세요. 저장소 첫 커밋이 2022년이므로 연도는 <code>2022-2026</code>으로 적었습니다.</p>
+
+<h3>7-1. 루트 README.md에 추가할 섹션</h3>
+<pre><code>## License
+
+This repository contains two kinds of material under different terms:
+
+| Component | License |
+|---|---|
+| Sample code (`*/DemoApp/`), documentation, images | [Apache License 2.0](LICENSE) |
+| DotPad SDK binaries (`.dll`, `.aar`, `.xcframework`, `.a`, `.js`) and headers | [DotPad SDK License Agreement](LICENSE-SDK.md) |
+| Third-party components (liblouis, MeCab, IPAdic, ...) | Their own licenses — see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) |
+
+The DotPad SDK is free to use, including in commercial applications,
+and may be redistributed unmodified as part of your application.
+
+"Dot" and "Dot Pad" are trademarks of Dot Inc. This license does not grant
+permission to use these trademarks, except to describe compatibility
+(e.g. "Works with Dot Pad").
+
+### 라이선스 (한국어)
+
+- 샘플 코드·문서: Apache License 2.0. 상업용 앱에도 자유롭게 사용·수정할 수 있습니다.
+- SDK 바이너리: DotPad SDK 이용약관. 무료로 사용할 수 있으며, 본인 앱에 포함해 재배포할 수 있습니다.
+- 포함된 오픈소스 구성요소는 각자의 라이선스를 따릅니다 (THIRD-PARTY-NOTICES.md 참고).</code></pre>
+
+<h3>7-2. NOTICE (Apache-2.0용)</h3>
+<pre><code>DotPad SDK Guide
+Copyright 2022-2026 Dot Inc.
+
+This product includes software developed by Dot Inc. (https://www.dotincorp.com).
+
+DotPad SDK binaries are distributed under the DotPad SDK License Agreement
+(see LICENSE-SDK.md). Third-party components are listed in THIRD-PARTY-NOTICES.md.</code></pre>
+
+<h3>7-3. 샘플 코드 파일 상단 헤더 (SPDX)</h3>
+<p>파일마다 전문을 넣을 필요는 없고, SPDX 식별자 두 줄이면 충분합니다.</p>
+<pre><code>// SPDX-FileCopyrightText: 2022-2026 Dot Inc.
+// SPDX-License-Identifier: Apache-2.0</code></pre>
+<p>SDK 헤더 파일(<code>DotSDKAPI.h</code>, <code>DotPadSDK-x.y.z.d.ts</code>)에는 다음처럼 적습니다.</p>
+<pre><code>// SPDX-FileCopyrightText: 2022-2026 Dot Inc.
+// SPDX-License-Identifier: LicenseRef-DotPad-SDK
+// Licensed under the DotPad SDK License Agreement. See LICENSE-SDK.md.</code></pre>
+
+<h3>7-4. THIRD-PARTY-NOTICES.md</h3>
+<pre><code># Third-Party Notices
+
+The DotPad SDK includes the following third-party components.
+Each is licensed under its own terms, which take precedence over the
+DotPad SDK License Agreement for that component.
+
+## liblouis
+- Version: 3.38.0 (Web) / x.y.z (Android, iOS, Windows)  &lt;!-- 플랫폼별 실제 버전 기입 --&gt;
+- License: LGPL-2.1-or-later
+- Source: https://github.com/liblouis/liblouis
+- Used in: Android, iOS, Web, Windows
+- License text: LICENSES/liblouis-LGPL-2.1.txt
+- You may replace the bundled liblouis with a modified version:
+  - Android: replace `jni/&lt;abi&gt;/liblouis.so`
+  - Windows: replace `liblouis.dll`
+  - Web: rebuild with `lib/liblouis-web/build_liblouis_web.sh`
+  - iOS: replace `liblouis.xcframework`  &lt;!-- §6 조치 후 --&gt;
+
+## MeCab
+- License: BSD-3-Clause (MeCab is triple-licensed GPL/LGPL/BSD; used under BSD)
+- Copyright (c) 2001-2008, Taku Kudo
+- Copyright (c) 2004-2008, Nippon Telegraph and Telephone Corporation
+- Used in: Windows
+
+## IPAdic
+- License: IPAdic License
+- Copyright Nara Institute of Science and Technology (NAIST)  &lt;!-- 연도는 ipadic COPYING 원문대로 기입 --&gt;
+- Used in: Windows (Japanese braille translation)
+
+## JsonCpp  (Windows 1.x only)
+- License: MIT
+- Copyright (c) 2007-2010 Baptiste Lepilleur and The JsonCpp Authors</code></pre>
+
+<h3>7-5. 플랫폼별 README의 License Notice (Web 3.0.3 형식 준용)</h3>
+<pre><code>## License Notice
+
+The DotPad SDK binary in this release is licensed under the
+[DotPad SDK License Agreement](../../LICENSE-SDK.md).
+
+This distribution includes liblouis vX.Y.Z and a subset of its translation tables,
+distributed under the GNU Lesser General Public License, version 2.1 or later
+(LGPL-2.1-or-later). The full license text is at `LICENSES/liblouis-LGPL-2.1.txt`.
+Source for liblouis is available at https://github.com/liblouis/liblouis/tree/vX.Y.Z.
+liblouis is shipped as a separate shared library so that you can replace it
+with a modified version.</code></pre>
+
+<h3>7-6. GitHub 저장소 설정</h3>
+<ul>
+  <li>루트에 <code>LICENSE</code>(Apache-2.0 전문)를 두면 저장소 상단에 "Apache-2.0 license"가 표시됩니다. GitHub에서 <em>Add file → Create new file → 파일명 <code>LICENSE</code> → "Choose a license template"</em>을 쓰면 전문이 자동으로 채워집니다.</li>
+  <li>저장소 About 설명에 <em>"Free DotPad SDK with Apache-2.0 sample code"</em>처럼 이중 구조를 한 줄로 밝혀 두면 오해를 줄일 수 있습니다.</li>
+  <li>외부 기여를 받을 계획이라면 <code>CONTRIBUTING.md</code>에 "기여물은 Apache-2.0으로 제공된다"는 문구(inbound = outbound)를 넣습니다.</li>
+</ul>
+
+<!-- ===================================================== -->
+<h2 id="checklist">8. 공개 전 체크리스트</h2>
+
+<div class="scroll">
+<table>
+  <thead><tr><th>#</th><th>작업</th><th>우선순위</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>라이선스 구조 결정: 옵션 A(이중) / 옵션 B(전체 Apache-2.0)</td><td><span class="tag bad">필수</span></td></tr>
+    <tr><td>2</td><td>정식 영문 법인명, 상표 등록 여부, 준거법 확인</td><td><span class="tag bad">필수</span></td></tr>
+    <tr><td>3</td><td>루트 <code>LICENSE</code>, <code>NOTICE</code>, <code>LICENSE-SDK.md</code>, <code>THIRD-PARTY-NOTICES.md</code> 추가</td><td><span class="tag bad">필수</span></td></tr>
+    <tr><td>4</td><td>루트 README에 License 섹션 추가 (7-1)</td><td><span class="tag bad">필수</span></td></tr>
+    <tr><td>5</td><td>iOS liblouis 동적 프레임워크로 분리 (다음 iOS 릴리스)</td><td><span class="tag bad">필수</span></td></tr>
+    <tr><td>6</td><td>Android · Windows · iOS 배포물에 <code>LICENSES/</code> 동봉 (zip 안 포함)</td><td><span class="tag bad">필수</span></td></tr>
+    <tr><td>7</td><td>LGPLv3+ 테이블 제외 또는 LGPL-3.0 전문 추가 (Android · iOS · Windows)</td><td><span class="tag warn">권장</span></td></tr>
+    <tr><td>8</td><td>TTBEngine 출처·라이선스 확인</td><td><span class="tag warn">권장</span></td></tr>
+    <tr><td>9</td><td>Linux 정적 라이브러리의 서드파티 포함 여부 확인</td><td><span class="tag warn">권장</span></td></tr>
+    <tr><td>10</td><td>DemoApp 소스에 SPDX 헤더 추가 (7-3)</td><td><span class="tag ok">선택</span></td></tr>
+    <tr><td>11</td><td>구버전 폴더에 <code>LICENSES/</code> 추가, 미지원 버전에 Deprecated 표시</td><td><span class="tag ok">선택</span></td></tr>
+    <tr><td>12</td><td>DemoApp이 쓰는 npm · Gradle · CocoaPods 의존성 라이선스 점검 (예: <code>license-checker</code>, Gradle License Plugin)</td><td><span class="tag ok">선택</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<footer>
+  2026-10-21 dotpad-sdk-guide 저장소(main, 781f230) 기준으로 작성했습니다. 이 문서는 법률 자문이 아니며, 최종 라이선스 문안은 법무 검토 후 확정하세요.
+</footer>
+
+</main>
+</body>
+</html>
