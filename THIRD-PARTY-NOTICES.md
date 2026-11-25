@@ -39,7 +39,7 @@ and the liblouis contributors
 |---|---|---|---|
 | Web | 3.0.2, 3.0.3 | 3.38.0 | WebAssembly module (`lib/liblouis.js`, `lib/liblouis.wasm`, `lib/liblouis.data`) |
 | Windows | 1.1.0 | 3.27.0 | Shared library (`liblouis.dll`) |
-| Windows | 1.2.0 – 3.0.2 | 3.31.0 | Shared library (`liblouis.dll`) |
+| Windows | 1.2.0 – 3.0.3 | 3.31.0 | Shared library (`liblouis.dll`) |
 | Android | 3.0.0 – 3.0.2 | 3.32.0 | Shared library (`jni/<abi>/liblouis.so`) |
 | Android | 3.0.3 | 3.27.0 | Shared library (`jni/<abi>/liblouis.so`) |
 | iOS | 2.1.0 – 2.3.2 | 3.26.0 | Linked into `DotPadFrameworks` |
@@ -68,7 +68,7 @@ The following LGPL-3.0-or-later tables, and aliases that include them, are in th
 
 | SDK releases | Tables |
 |---|---|
-| Android 3.0.0 – 3.0.3, iOS 2.3.1 – 2.3.2, Windows 3.0.1 – 3.0.2, Web 3.0.2 – 3.0.3 | `Es-Es-G0.utb`, `et-g0.utb`, `grc-international-es.utb`, `is-chardefs6.cti`, `is-chardefs8.cti`, `is.tbl`, `pt-pt-g2.ctb`, `pt.tbl`, `sr-Cyrl.ctb`, `sr-common.cti`, `sr-cyrletters.cti`, `sr-g1.ctb`, `sr-latletters.cti` |
+| Android 3.0.0 – 3.0.3, iOS 2.3.1 – 2.3.2, Windows 3.0.1 – 3.0.3, Web 3.0.2 – 3.0.3 | `Es-Es-G0.utb`, `et-g0.utb`, `grc-international-es.utb`, `is-chardefs6.cti`, `is-chardefs8.cti`, `is.tbl`, `pt-pt-g2.ctb`, `pt.tbl`, `sr-Cyrl.ctb`, `sr-common.cti`, `sr-cyrletters.cti`, `sr-g1.ctb`, `sr-latletters.cti` |
 | iOS 2.1.0 – 2.3.0, Windows 1.1.0 – 3.0.0 | `Es-Es-G0.utb`, `et-g0.utb`, `is-chardefs6.cti`, `is-chardefs8.cti`, `is.tbl`, `pt-pt-g2.ctb`, `pt.tbl`, `sr-g1.ctb` |
 
 In the Web SDK, these tables are packed into `liblouis.data`. The build script in `Web/3.0.2/lib/liblouis-web/` is written to leave them out, but the published Web 3.0.2 and 3.0.3 builds include them.

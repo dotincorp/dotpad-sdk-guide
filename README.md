@@ -47,6 +47,7 @@
 │   ├── 3.0.0
 │   ├── 3.0.1
 │   ├── 3.0.2
+│   ├── 3.0.3
 ```
 ## Sample code using DotPad SDK
 * You can test connecting to dotpad and printing by running the sample code.

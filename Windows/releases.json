@@ -4,12 +4,29 @@
   "supportedLanguages": "C++, C#",
   "githubUrl": "https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Windows",
   "product": {
-    "version": "v3.0.2",
-    "releaseDate": "2026-09-04",
+    "version": "v3.0.3",
+    "releaseDate": "2026-11-25",
     "minimumOs": "Windows 10 이상",
-    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.2/download/DotPadSDK-3.0.2.zip"
+    "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.3/download/DotPadSDK-3.0.3.zip"
   },
   "releases": [
+    {
+      "version": "v3.0.3",
+      "date": "2026-11-25",
+      "minimumOs": "Windows 10 이상",
+      "downloadUrl": "https://github.com/dotincorp/dotpad-sdk-guide/raw/refs/heads/main/Windows/3.0.3/download/DotPadSDK-3.0.3.zip",
+      "details": [
+        { "type": "NEW", "text": "Added an ARM64 (Windows on ARM) build, provided as a separate download: DotPadSDK-3.0.3-arm64.zip in the Windows/3.0.3/download folder on GitHub (https://github.com/dotincorp/dotpad-sdk-guide/tree/main/Windows/3.0.3/download)" },
+        { "type": "NEW", "text": "Added DOT_PAD_USB_SCAN_STOP API for stopping a USB scan" },
+        { "type": "IMPROVE", "text": "DOT_PAD_USB_SCAN now runs in the background for up to 8 seconds and reports only ports that respond to the DotPad protocol, once per port. The callback is now called on an SDK scan thread" },
+        { "type": "IMPROVE", "text": "Added version information to the SDK DLL" },
+        { "type": "IMPROVE", "text": "Updated the 32-bit (x86) TTBEngine.dll to the same braille engine source as the x64 build. Braille output of some text may differ from earlier x86 releases" },
+        { "type": "FIX", "text": "Fixed USB connection failures that could occur when the non-responding serial channel of the device was reported first, such as when connected through a USB hub" },
+        { "type": "FIX", "text": "Fixed a crash that could occur when starting a BLE scan while Bluetooth is off or unavailable" },
+        { "type": "FIX", "text": "Fixed a crash that could occur when the app exits or unloads the SDK without stopping a BLE scan" },
+        { "type": "FIX", "text": "Added exception handling around SDK threads and app callbacks to prevent crashes" }
+      ]
+    },
     {
       "version": "v3.0.2",
       "date": "2026-09-04",
